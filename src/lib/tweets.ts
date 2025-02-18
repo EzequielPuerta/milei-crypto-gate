@@ -49,6 +49,14 @@ export const tweets: Tweet[] = [
         tweetId: '1848084819399549062'
     },
     {
+        tweetName: 'Trump_token_17_01_2025',
+        tweetId: '1880446012168249386'
+    },
+    {
+        tweetName: 'Melania_token_19_01_2025',
+        tweetId: '1881094861279129643'
+    },
+    {
         tweetName: 'Milei_Davis_30_01_2025',
         tweetId: '1885068460268363889'
     },
