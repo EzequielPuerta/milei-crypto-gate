@@ -61,6 +61,14 @@ export const tweets: Tweet[] = [
         tweetId: '1885068460268363889'
     },
     {
+        tweetName: 'Milei_primer_descargo_15_02_2025',
+        tweetId: '1890606683291779195'
+    },
+    {
+        tweetName: 'KIP_protocol_15_02_2025',
+        tweetId: '1890606008856367576'
+    },
+    {
         tweetName: 'Bullrich_defensa_15_02_2025',
         tweetId: '1890785455123136769'
     },
@@ -79,6 +87,10 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
+    },
+    {
+        tweetName: 'KIP_protocol_se_desliga_17_02_2025',
+        tweetId: '1891418043500405167'
     },
     {
         tweetName: 'Viale_entrevista_Milei_17_02_2025',

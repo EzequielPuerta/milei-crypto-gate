@@ -671,6 +671,13 @@
             <Badge rounded large color="dark">Javier Milei</Badge>
         </p>
 
+        <p class="timeline-item-p">
+            A las 19:01 hs del 14 de febrero del 2025, Javier Milei postea un tweet sorpresivo, promocionando (o difundiendo, como insitiría posteriormente) un nuevo token llamado $LIBRA, subiendose a la ola cripto iniciada por los Trump días atras. Aunque en principio hay algunas diferencias, Milei nunca tilda la criptomoneda como una 'memecoin', algo que los Trump si hicieron y al momento de 'difundir' el token no eran parte del gobierno, pero Milei si. Además, toda una serie de irregularidades técnicas que se fueron descubriendo a lo largo de las siguientes 5 horas.
+        </p>
+
+        <p class="timeline-item-p">
+            Spoiler: el tweet en cuestión no está presente (se adjunta una captura de la misma donde se aprecia que estaba fijado en su cuenta) ya que será borrado a las horas, cuando ya era muy tarde.
+        </p>
         <Img
             src="https://www.clarin.com/2025/02/14/7of_Na1Is_720x0__1.jpg"
             alt="sample 1"
@@ -682,6 +689,55 @@
             href="https://www.clarin.com/politica/patricia-bullrich-defendio-milei-escandalo-cripto-increible-pedir-juicio-politico-tuit_0_bvcJ50UcsC.html"
             target="_blank">
             Fuente: Clarín
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Javier Milei elimina el tweet donde promociona $LIBRA e 'intenta' aclarar la situación" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Recién a las 0.38 del sábado, el presidente volvió a X. Borró el tuit promocional de $LIBRA y escribió otro en el que pretendía aclarar la cuestión. “Hace unas horas publiqué un tweet, como tantas otras infinitas veces, apoyando un supuesto emprendimiento privado del que obviamente no tengo vinculación alguna. No estaba interiorizado de los pormenores del proyecto y, luego de haberme interiorizado, decidí no seguir dándole difusión (por eso he borrado el tweet)”, arrancaba el texto. Luego volvió a su estilo habitual y trató de “ratas inmundas de la casta política” a quienes, según su criterio, quisieron “aprovechar esta situación para hacer daño”. Victimización.
+        </p>
+        <p class="timeline-item-p">
+            
+        </p>
+
+        <Tweet tweet={data.Milei_primer_descargo_15_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/politica/2025/02/16/cronologia-de-la-fallida-promocion-de-la-criptomoneda-libra-del-tuit-de-javier-milei-a-lo-que-podria-pasar-en-el-congreso/#:~:text=Reci%C3%A9n%20a%20las,hacer%20da%C3%B1o%E2%80%9D.%20Victimizaci%C3%B3n."
+            target="_blank">
+            Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="KIP Protocol, la empresa de Julián Peh, dice que el lanzamiento de $LIBRA fue un éxito" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Julian Peh</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Exactamente a la misma hora, las 0.38 del sábado, desde la cuenta de KIP Protocol postearon: “Hoy fue el lanzamiento del proyecto Viva la Libertad y la moneda $LIBRA ha sido un éxito, y queremos agradecer a todos por su confianza y apoyo. Queremos aclarar que el presidente Milei no estuvo ni está involucrado de ninguna manera en el desarrollo del proyecto que es absolutamente privado”.
+        </p>
+        <p class="timeline-item-p">
+            
+        </p>
+
+        <Tweet tweet={data.KIP_protocol_15_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/politica/2025/02/16/cronologia-de-la-fallida-promocion-de-la-criptomoneda-libra-del-tuit-de-javier-milei-a-lo-que-podria-pasar-en-el-congreso/#:~:text=Exactamente%20a%20la,es%20absolutamente%20privado%E2%80%9D."
+            target="_blank">
+            Fuente: Infobae
         </Button>
     </TimelineItem>
 
@@ -841,6 +897,40 @@
         <Button
             color="alternative"
             href="https://www.lanacion.com.ar/economia/tech-forum-emitio-un-comunicado-tras-el-escandalo-por-libra-no-tenemos-nada-que-ver-con-los-fondos-nid17022025/"
+            target="_blank">
+            Fuente: La Nación
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="KIP Protocol y Julián Peh también se desligan y desmienten al Gobierno" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Julian Peh</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            La empresa KIP Protocol que generó la memecoin $LIBRA salió a desmentir al Gobierno argentino. Si bien la compañía reconoció que hubo una reunión en octubre pasado entre el CEO Julian Peh y el presidente Javier Milei, tal como lo había comunicado la Casa Rosada este sábado, aseguró que “no hubo discusión ni mención de ninguna iniciativa específica, incluido el proyecto (“Viva la Libertad”) y el lanzamiento de tokens”.
+        </p>
+
+        <p class="timeline-item-p">
+            Según aseguró KIP Protocol en un comunicado oficial, eso no sucedió en aquel encuentro en la denominada feria comercial inaugural Tech Forum Argentina. La empresa “no se dedica a ayudar a las organizaciones a lanzar tokens”, aclaró y prosiguió en su defensa: “Somos una compañía de soluciones técnicas de IA [Inteligencia Artificial] centrada en la implementación de infraestructura de IA, es en lo que se centra nuestro negocio y sería inusual proponer algo más”.
+        </p>
+
+        <p class="timeline-item-p">
+            Ese 19 de octubre, siempre según KIP Protocol, el CEO Peh habló con Milei a través de un traductor durante unos 30 minutos. “Dialogaron sobre IA, tecnología en general y el deseo de la empresa de hacer más negocios e invertir en la Argentina. El Presidente habló de su visión de la Argentina, sus filosofías económicas y cómo daba la bienvenida a la inversión extranjera en el país, especialmente por parte de empresas de inteligencia artificial. Esta fue la primera reunión del señor Peh con el presidente Milei”, se informó.
+        </p>
+
+        <p class="timeline-item-p">
+            “KIP Protocol no tenía conocimiento ni participación en esta reunión. La empresa ciertamente no tuvo ningún representante presente en este encuentro”, aseguró. “La reunión del 19 de octubre de 2024 fue la única ocasión en la que el señor Peh o cualquier empleado de la compañía se reunió con el presidente Milei”, se afirmó de manera oficial. “KIP no tuvo ningún trato comercial con Hayden Mark Davis antes de esto. En ningún momento Davis fue empleado o representante de la empresa”, prosiguió la compañía.
+        </p>
+
+        <Tweet tweet={data.KIP_protocol_se_desliga_17_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.lanacion.com.ar/politica/la-empresa-detras-de-libra-desmintio-al-gobierno-en-la-reunion-con-milei-no-se-discutio-la-nid17022025/"
             target="_blank">
             Fuente: La Nación
         </Button>
