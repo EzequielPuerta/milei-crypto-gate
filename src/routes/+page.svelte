@@ -848,6 +848,26 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Se realizan mas de 100 denuncias contra el accionar de Javier Milei" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Javier Milei acumuló durante el fin de semana más de cien denuncias penales por la estafa con la criptomoneda $Libra. Las presentaciones fueron hechas por damnificados y por figuras de la oposición política, que plantearon que el Presidente formó parte de la defraudación cometida, ya que participó del lanzamiento de la memecoin -tuiteando una recomendación a invertir en ella apenas tres minutos después de que se lanzara públicamente- y mantuvo su mensaje anclado a su cuenta de X durante siete horas, aún después de saber que era una estafa. Para los denunciantes, el argumento de que Milei solamente cometió un error, impulsado por el entusiasmo, es poco creíble. Señalan que los vínculos que los desarrolladores del proyecto tenían con La Libertad Avanza son inocultables. 
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804483-a-javier-milei-le-llueven-las-denuncias-penales-se-presentar"
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
     <TimelineItem title="'Ese dinero es de los argentinos': Hayden Mark Davis en conversación con Dave Portnoy" date="17 de febrero, 2025" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
@@ -1038,6 +1058,70 @@
         <Button
             color="alternative"
             href="https://www.clarin.com/politica/reaccione-reaccionado-jonatan-viale-hablo-momento-santiago-caputo-interrumpio-entrevista-javier-milei_0_yCSRZ2ykZh.html"
+            target="_blank">
+            Fuente: Clarín
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Denuncian en Estados Unidos a Javier Milei y a los otros protagonistas del escándalo $LIBRA" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+            <Badge rounded large color="dark">Julián Peh</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            La presunta megaestafa digital $LIBRA llegó a las autoridades de Estados Unidos. El Departamento de Justicia y la Oficina Federal de Investigaciones (FBI) recibió al menos una denuncia criminal contra los protagonistas del fraude masivo, que generó ganancias ilícitas entre 80 y 100 millones de dólares.
+        </p>
+        <p class="timeline-item-p">
+            El llamado “reporte de operaciones criminales” señaló de manera explícita el rol que asumió el presidente Javier Milei, como también apuntó los roles que asumieron el estadounidense Hayden Mark Davis, el singapurense Julian Peh y los “empresarios” argentinos Mauricio Novelli y Manuel Terrones Godoy, de origen español.
+        </p>
+        <p class="timeline-item-p">
+            La denuncia la radicó un estudio jurídico argentino especializado en casos de insolvencia internacional y fraudes financieros, Moyano & Asociados, que también notificó a la Comisión de Valores estadounidense (SEC, por sus siglas en inglés) sobre las maniobras delictivas registradas desde la noche del viernes.
+        </p>
+        <p class="timeline-item-p">
+            Con un historial previo de cooperaciones con el FBI, la agencia inmigratoria estadounidense (ICE) y otros brazos del Departamento de Justicia, los abogados denunciantes indicaron que representan “mayormente” a inversores argentinos, pero que están al tanto de que hay “miles” más que fueron perjudicados por la maniobra fraudulenta, incluidos ciudadanos estadounidenses.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.lanacion.com.ar/politica/denuncian-en-estados-unidos-a-javier-milei-y-a-los-otros-protagonistas-del-escandalo-libra-nid17022025/"
+            target="_blank">
+            Fuente: La Nación
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="El creador de $LIBRA se jacta de pagar sobornos en Argentina y de 'controlar' a Milei" date="18 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Karina Milei</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            El escándalo cripto sigue sumando capítulos, en medio de una guerra cruzada entre el Gobierno argentino y los empresarios que le llevaron el negocio. Ahora, según publicó un sitio especializado, uno de los creadores de $Libra, Hayden Davis, se jactaba en chats de "controlar" al presidente Javier Milei, gracias a coimas que supuestamente les pagaba a funcionarios argentinos, incluida la hermana del mandatario.
+        </p>
+        <p class="timeline-item-p">
+            El sitio que publicó la revelación, con más de 3 millones de seguidores en redes, es "CoinDesk para Data & Tokens". Se basó en presuntos chats que se hicieron públicos en el mundo digital, luego del escándalo que provocó pérdidas millonarias e involucró a Milei. Se trataría de intercambios entre Hayden Davis y traders, en los que el creador de $Libra alardeaba de su influencia en el Gobierno argentino.
+        </p>
+        <p class="timeline-item-p">
+            "En mensajes de texto revisados por CoinDesk, Hayden Davis, CEO de Kelsier Ventures, afirmó que podía 'controlar' a Milei debido a los pagos que había estado haciendo a Karina Milei, una figura poderosa en el Gobierno", explica la nota del sitio especializado.
+        </p>
+        <p class="timeline-item-p">
+            La nota de CoinDesk revela supuestas frases muy fuertes de Hayden Davis. "Yo controlo a ese negro", aseguran que afirmó Davis en mensajes de texto de mediados de diciembre. Y habría agregado: "Le envío dinero a su hermana y él firma todo lo que digo y hace lo que quiero". El sitio afirma que intentó comunicarse con la oficina de Karina Milei, pero no obtuvo respuesta. Tampoco lo hizo Hayden Davis.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.clarin.com/politica/escandalo-cripto-creador-libra-jactaba-pagar-sobornos-argentina-controlar-milei_0_kWL9wBNL1C.html"
             target="_blank">
             Fuente: Clarín
         </Button>
