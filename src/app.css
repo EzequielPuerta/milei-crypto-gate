@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import '@fontsource/atkinson-hyperlegible';
+
+html,
+body {
+	height: 100%;
+    font-family: "Atkinson Hyperlegible";
+}
