@@ -840,6 +840,34 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Fallida defensa de Javier Milei y papelón de Jonatan Viale" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JonatanViale} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Jonatan Viale</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            "Pero de vuelta... es bueno que lo dijiste en mi calidad de ciudadano, no de Presidente", dice Javier Milei y la entrevista se interrumpe de repente. "Sí, sí, sí... por el juicio, claro, sí, obvio", sigue el Presidente. "Claro, podés tener problemas judiciales", le dice Viale hijo. 
+        </p>
+        <p class="timeline-item-p">
+            Ese diálogo inverosímil, que da cuenta del encubrimiento del entrevistador de TN al entrevistado, se filtró insólitamente anoche en las redes sociales, por un error de producción: el canal subió la entrevista sin recortes ni edición, y los usuarios fueron impiadosos con la situación. 
+        </p>
+        <p class="timeline-item-p">
+            En el crudo del video subido a las redes de TN, Milei estaba señalando que iba a ser el ministro de Justicia, Mariano Cúneo Libarona, quien se encargaría de la parte judicial tras el escándalo con la criptomoneda $Libra. Ahí ocurrió la interrupción y la advertencia por el posible "quilombo legal".
+        </p>
+        
+        <Tweet tweet={data.Viale_entrevista_Milei_17_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804765-ordenes-al-ensobrado"
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
     <!-- <Activity>
         <ActivityItem
             activities={[

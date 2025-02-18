@@ -9,6 +9,7 @@ import OficinaDelPresidente from '$lib/assets/profiles/oficina-del-presidente.pn
 import DavePortnoy from '$lib/assets/profiles/dave-portnoy.png';
 import LuisCaputo from '$lib/assets/profiles/luis-caputo.png';
 import PatriciaBullrich from '$lib/assets/profiles/patricia-bullrich.png';
+import JonatanViale from '$lib/assets/profiles/jonatan-viale.png';
 
 export const Photo = {
     JavierMilei,
@@ -21,7 +22,8 @@ export const Photo = {
     OficinaDelPresidente,
     DavePortnoy,
     LuisCaputo,
-    PatriciaBullrich
+    PatriciaBullrich,
+    JonatanViale
 } as const;
 
 export default Photo; 

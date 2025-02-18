@@ -71,5 +71,9 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
+    },
+    {
+        tweetName: 'Viale_entrevista_Milei_17_02_2025',
+        tweetId: '1891657237136867625'
     }
 ]; 
