@@ -1,7 +1,5 @@
 <script lang="ts">
     import {
-        Avatar,
-        Tooltip,
         Button,
         Activity,
         ActivityItem,
@@ -13,38 +11,18 @@
         Badge,
     } from 'flowbite-svelte';
     import Youtube from "svelte-youtube-embed";
-    import JavierMilei from '$lib/assets/profiles/javier-milei.png';
-    import MauricioNovelli from '$lib/assets/profiles/mauricio-novelli.png'
-    import JulianPeh from '$lib/assets/profiles/julian-peh.png'
-    import HaydenMarkDavis from '$lib/assets/profiles/hayden-mark-davis.png'
 
     import { Tweet } from 'sveltekit-tweet';
 	import type { PageData } from './$types';
+    import { Avatar as CustomAvatar } from '$lib/components/Avatar';
+    import TimelineAvatar from '$lib/components/TimelineAvatar.svelte';
+
     let { data }: {
 		data: PageData;
 	} = $props();
-
-	// const tweet_Milei_Novelli = data.tweet_Milei_Novelli;
 </script>
 
 <style>
-    .timeline-item-avatar {
-        display: flex;
-        position: absolute;
-        left: -0.75rem;
-        justify-content: center;
-        align-items: center;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: var(--primary-200);
-        border-radius: 9999px;
-        box-shadow: 0 0 0 2px white;
-        /* Dark mode styles */
-        --tw-ring-color: var(--gray-900);
-        --tw-bg-opacity: 1;
-        background-color: var(--primary-900);
-    }
-
     .timeline-item-p {
         margin-bottom: 1rem;
         font-size: 1rem;
@@ -60,10 +38,7 @@
     <!------------------------------------ 2019 ------------------------------------>
     <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Mauricio Novelli</Badge>
@@ -93,16 +68,18 @@
     <!------------------------------------ 2020 ------------------------------------>
     <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Javier Milei" src={JavierMilei}/>
-                <Tooltip>Javier Milei</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
             <Badge rounded large color="dark">Mauricio Novelli</Badge>
             <Badge rounded large color="dark">Jeremías Walsh</Badge>
+            <Badge rounded large color="dark">Agustín Laje</Badge>
+            <Badge rounded large color="dark">Emmanuel Danann</Badge>
         </p>
+
+        <Tweet tweet={data.Milei_promocion_NW_2020} />
+        <Tweet tweet={data.Milei_promocion_2_NW_2020} />
 
         <p class="timeline-item-p">
             A partir de entonces, <strong>Javier Milei</strong> mantendrá un vínculo estrecho con ellos. Es tan así que él mismo se presentaba como parte del staff de N&W, como se puede apreciar en la imagen siguiente, perteneciente a su perfil de Instagram en aquel momento.
@@ -115,16 +92,61 @@
             class="rounded-lg"
         />
 
-        <Youtube id="sdslzCjua1A" />
+        <p class="timeline-item-p">
+            El libertario fue la puerta de entrada para que dos influencers se sumaran al proyecto: Agustín Laje como capacitador y Emmanuel Danann en la promoción de los cursos.
+        </p>
+
+        <p class="timeline-item-p">
+            Agustín Laje es escritor e influencer de ultraderecha, identificado como aliado de Milei. En YouTube tiene más de 2.2 millones de suscriptores y casi un millón de seguidores en Instagram. Entre sus libros destacan El libro negro de la nueva izquierda (2016), La Batalla Cultural (2022) y Generación Idiota: una crítica al adolescentrismo (2023). Se opone a los movimientos LGBTIQ+ y feminista.
+        </p>
+
+        <p class="timeline-item-p">
+            Por su parte, Emmanuel Danann es un influencer, streamer, youtuber, y activista político argentino ultraconservador y de extrema derecha. A raíz de esto fue que APTRA decidió premiarlo como “Influencer de opinión” en la edición 2021 del Martín Fierro Digital. Logró tener alcance mediático por su canal de YouTube en donde suele hacer críticas soeces a la izquierda política, al feminismo, a la comunidad LGBT, y al ecologismo. Además de ejercer como influencer político, también incursionó en la música donde lidera como vocalista la banda de rock Danann, formada en 2008, donde llevan nueve álbumes de estudio realizados. En 2018 fue contratado por la cúpula de la AFI macrista para supuestamente infiltrarse en el partido que lidera Javier Milei aunque terminó vinculado al mismo. En el año 2024 Pablo Casas, Juez de Primera Instancia en el fuero Penal Contravencional y de Faltas, a cargo del Juzgado Nº 10, dictaminó que debía realizar 40 horas de tareas comunitarias y participar de un taller de formación contra la violencia de género por el hostigamiento sistemático en redes sociales por motivos de género contra la periodista Marina Abiuso.
+        </p>
+
+        <embed type="video/mp4" src="https://rudo.video/vod/bTKdWy?volume=0" height="530" />
+        <Button
+            color="alternative"
+            href="https://www.perfil.com/noticias/politica/escandalo-libra-de-que-se-trataban-los-cursos-que-dictaron-agustin-laje-y-javier-milei-en-nw-professional-traders.phtml#:~:text=El%20libertario%20fue%20la%20puerta%20de%20entrada%20para%20que%20dos%20influencers%20se%20sumaran%20al%20proyecto%3A%20Agust%C3%ADn%20Laje%20como%20capacitador%20y%20Emanuel%20Dannan%20en%20la%20promoci%C3%B3n%20de%20los%20cursos."
+            target="_blank">
+            Fuente: Perfil
+        </Button>
+        <Button
+            color="alternative"
+            href="https://es.wired.com/articulos/no-solo-es-milei-estas-figuras-publicas-tambien-han-sido-implicadas-en-el-escandalo-dollarlibra#:~:text=y%20transici%C3%B3n%20energ%C3%A9tica.-,Agust%C3%ADn%20Laje,adolescentrismo%20(2023).%20Se%20opone%20a%20los%20movimientos%20LGBTIQ%2B%20y%20feminista.,-Mart%C3%ADn%20Menem"
+            target="_blank">
+            Fuente: Wired
+        </Button>
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/480920-dannan-el-influencer-antiderechos-misogino-libertario-y-tamb"
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Emmanuel Danann realiza un 'vivo' con Novelli de N&W Professional Traders" date="agosto, 2020" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.EmmanuelDanann} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Emanuel Dannan</Badge>
+        </p>
+
+        <embed type="video/mp4" src="https://rudo.video/vod/bTKdYy?volume=0" height="530" />
+        <Button
+            color="alternative"
+            href="https://www.perfil.com/noticias/politica/escandalo-libra-de-que-se-trataban-los-cursos-que-dictaron-agustin-laje-y-javier-milei-en-nw-professional-traders.phtml#:~:text=En%20agosto%2C%20Dannan%20particip%C3%B3%20de%20un%20vivo%20con%20Novelli%20y%20luego%20comparti%C3%B3%20otras%20publicaciones%20con%20conversaciones%20sobre%20el%20mundo%20del%20trading."
+            target="_blank">
+            Fuente: Perfil
+        </Button>
     </TimelineItem>
 
     <!------------------------------------ 2021 ------------------------------------>
     <TimelineItem title="Primer fraude: Milei recomienda CoinX World" date="18 de diciembre, 2021" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Javier Milei" src={JavierMilei}/>
-                <Tooltip>Javier Milei</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -149,10 +171,7 @@
     <!------------------------------------ 2022 ------------------------------------>
     <TimelineItem title="Segundo fraude: Milei recomienda Vulcano" date="18 de febrero, 2022" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Javier Milei" src={JavierMilei}/>
-                <Tooltip>Javier Milei</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -187,13 +206,36 @@
         </Button>
     </TimelineItem>
 
+    <!------------------------------------ 2023 ------------------------------------>
+    <TimelineItem title="Mauricio Novelli felicita a Javier Milei por la victoria en las elecciones presidenciales" date="19 de noviembre, 2023" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Novelli_felicita_Milei_2023} />
+    </TimelineItem>
+
+    <TimelineItem title="Asume Javier Milei la Presidencia: Mauricio Novelli y Manuel Terrones Godoy serían invitados a la Gala del Teatro Colón" date="10 de diciembre, 2023" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+        </p>
+
+        <Tweet tweet={data.Asume_Milei_10_12_2023} />
+    </TimelineItem>
+
     <!------------------------------------ 2024 ------------------------------------>
     <TimelineItem title="1º reunión de Novelli: Casa Rosada con Karina Milei" date="8 de enero, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -220,10 +262,7 @@
 
     <TimelineItem title="2º reunión de Novelli: Casa Rosada con Karina Milei" date="5 de abril, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -244,10 +283,7 @@
 
     <TimelineItem title="3º reunión de Novelli: Casa Rosada con Karina Milei" date="6 de junio, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -279,10 +315,7 @@
 
     <TimelineItem title="4º reunión de Novelli: Casa Rosada con Karina Milei" date="11 de junio, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -317,10 +350,7 @@
 
     <TimelineItem title="5º reunión de Novelli: Casa Rosada con Karina Milei" date="16 de julio, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -330,7 +360,11 @@
         </p>
 
         <p class="timeline-item-p">
-            Karina recibió a Novelli pasadas las 15. Estuvieron en la reunión el youtuber Terrones Godoy; Bartosz Lipinski, cofundador y CEO de Cube Group y que trabajó también en <em>Solana</em>, la plataforma de <em>blockchain</em> sobre la que operó la estafa de <strong>LIBRA</strong>; y <strong>Hayden Mark Davis</strong>, ahora apuntado por <strong>Kit Protocol</strong> como el responsable de <strong>$LIBRA</strong>.
+            Karina recibió a Novelli pasadas las 15. Estuvieron en la reunión el youtuber Terrones Godoy (cofundador de Tech Forum); Bartosz Lipinski, cofundador y CEO de Cube Group y que trabajó también en <em>Solana</em>, la plataforma de <em>blockchain</em> sobre la que operó la estafa de <strong>LIBRA</strong>; y <strong>Hayden Mark Davis</strong>, ahora apuntado por <strong>Kit Protocol</strong> como el responsable de <strong>$LIBRA</strong>.
+        </p>
+
+        <p class="timeline-item-p">
+            Davis es fundador y CEO de Kelsier Ventures, una empresa dedicada a financiar proyectos innovadores en el ámbito de las criptomonedas y la tecnología blockchain. Ha mantenido vínculos con figuras políticas de alto perfil como Donald Trump, el presidente de Estados Unidos. Mas adelante en el tiempo, Davis se autodefinirá como “asesor” de Javier Milei.
         </p>
 
         <p class="timeline-item-p">
@@ -347,10 +381,7 @@
 
     <TimelineItem title="6º reunión de Novelli: Casa Rosada con Karina Milei" date="1 de agosto, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Karina Milei</Badge>
@@ -369,12 +400,46 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Las redes sociales de Tech Forum empiezan a traccionar" date="6 de septiembre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+        </p>
+
+        <Tweet tweet={data.Cofundadores_Tech_Forum_06_09_2024} />
+    </TimelineItem>
+
+    <TimelineItem title="Aparición de Tech Forum en TN Tecno" date="16 de septiembre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+        </p>
+
+        <Tweet tweet={data.Novelli_TN_Tecno_16_09_2024} />
+    </TimelineItem>
+
+    <TimelineItem title="Se anuncia a Javier Milei como orador principal del Tech Forum" date="17 de septiembre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Milei_main_speaker_17_09_2024} />
+    </TimelineItem>
+
     <TimelineItem title="7º reunión de Novelli: Casa Rosada con Javier Milei" date="20 de septiembre, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -389,7 +454,7 @@
             <strong>Esta fecha de reuniones es la única que figura en el registro público de audiencias, donde sólo figura el encuentro de la mañana.</strong> La síntesis de la reunión dice que “se trataron temas relacionados al Tech Forum Argentina”, el evento que organizó Novelli un mes después y al que asistió Milei. Milei y Novelli compartieron la foto de este encuentro desde la cuenta de Tech Forum.
         </p>
 
-        <!-- <Tweet {tweet_Milei_Novelli} /> -->
+        <Tweet tweet={data.Milei_Novelli_20_09_2024} />
         <Button
             color="alternative"
             href="https://www.eldestapeweb.com/politica/escandalo-cripto/los-accesos-a-la-rosada-y-olivos-del-hombre-que-conecta-al-gobierno-con-la-estafa-cripto-reuniones-con-karina-y-visita-a-milei-2025215191250#:~:text=7%20%E2%80%93%2020%20de,a%20las%2014.50hs."
@@ -400,10 +465,7 @@
 
     <TimelineItem title="8º reunión de Novelli: Quinta de Olivos con Javier Milei" date="27 de septiembre, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Mauricio Novelli" src={MauricioNovelli}/>
-                <Tooltip>Mauricio Novelli</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -426,12 +488,51 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Manuel Terrones Godoy (cofundador de Tech Forum) es acusado en el programa Argenzuela" date="19 de octubre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.ManuelTerronesGodoy} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Según informó el periodista Diego Gabriele en Argenzuela en octubre de 2024, en ocasión de la celebración del evento Tech Forum, Terrones Godoy es creador de "una cripto trucha llamada 'El Chavo del 8', con la que captó u$s250.000 y se los fugó".
+        </p>
+        <p class="timeline-item-p">
+            Radicado en México, se hizo famoso como youtuber aconsejando cómo ganar dinero jugando videojuegos. Con casi un millón de suscriptores y un promedio de 100 mil vistas por video, es uno de los comunicadores más relevantes dentro del universo de los NFTs Games.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.c5n.com/politica/escandalo-cripto-quienes-son-mauricio-novelli-y-manuel-terrones-godoy-apuntados-estar-detras-libra-n191194#:~:text=Terrones%20Godoy%20es,los%20NFTs%20Games."
+            target="_blank">
+            Fuente: C5N
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Javier Milei da su charla en el marco de la primera edición del Tech Forum" date="19 de octubre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Luego de todas estos encuentros en la Casa Rosada y en Olivos llegó el <strong>Tech Forum</strong>, el evento sobre “tecnologías disruptivas” que organizó Novelli en octubre del año pasado y que tiene una próxima convocatoria del 3 al 5 de abril próximos.
+        </p>
+        <p class="timeline-item-p">
+            Milei fue el orador de cierre en la misma sala del Hotel Libertador donde festejó su triunfo electoral. Dio un discurso de 44 minutos. 
+        </p>
+
+        <Tweet tweet={data.Milei_Tech_Forum_Infobae_19_10_2024} />
+    </TimelineItem>
+
     <TimelineItem title="Reunión de Julián Peh con Javier Milei post Tech Forum" date="19 de octubre, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Julián Peh" src={JulianPeh}/>
-                <Tooltip>Julián Peh</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -441,35 +542,26 @@
         </p>
 
         <p class="timeline-item-p">
-            Luego de todas estos encuentros en la Casa Rosada y en Olivos llegó el <strong>Tech Forum</strong>, el evento sobre “tecnologías disruptivas” que organizó Novelli en octubre del año pasado y que tiene una próxima convocatoria del 3 al 5 de abril próximos.
+            En ese marco fue que se reunió con Julián Peh, empresario de Singapur y CEO de Kit Protocol, la firma detrás de esta estafa virtual. Peh es un empresario tecnológico singapurense con más de dos décadas de experiencia en el sector. Fundó Kip Network Inc. en 2019 y, según su sitio web, ha participado en cuatro salidas exitosas a la bolsa. Se especializa en fusiones, adquisiciones y tecnologías Web3 desde 2016.
         </p>
         <p class="timeline-item-p">
-            Milei fue el orador de cierre en la misma sala del Hotel Libertador donde festejó su triunfo electoral. Dio un discurso de 44 minutos. En ese marco fue que se reunió con Julián Peh, el CEO de Kit Protocol, la firma detrás de esta estafa virtual.
+            El periodista Agustín Giménez ha señalado que Kip Network Inc. estuvo involucrada en la emisión de una criptomoneda en la República Centroafricana, cuyo valor fue inflado artificialmente antes de retirar la liquidez, dejando a los inversores sin posibilidad de recuperar sus fondos.
         </p>
+
         <p class="timeline-item-p">
             La reunión de Milei con Peh fue el 19 de octubre de 2024. La juntada, según el registro de audiencias oficial del Ministerio del Interior, fue en el Hotel Libertador. Es extraño: Milei ya era presidente pero eligió juntarse con Peh en el hotel que fue su morada entre que ganó las elecciones y se mudó a la quinta de Olivos. Y más extraño es que lo pusieran en el registro de audiencias público, que sólo contiene las que se producen en las oficinas públicas.
         </p>
         
-        <Img
-            src="https://resizer.glanacion.com/resizer/v2/milei-con-julian-peh-el-responsable-de-kip-KPEQWETN4VDMVAYAQLQXSRPHWU.jpeg?auth=292c8ca2ccb44ad0c695d45e2d84e4f50c862be50dfb43dc6cf87e9b4b44046f&width=780&height=585&quality=70&smart=true"
-            alt=""
-            size="max-w-lg"
-            class="rounded-lg"
-        />
+        <Tweet tweet={data.Milei_Peh_20_10_2024} />
 
         <p class="timeline-item-p">
             Hubo foto grupal en el Tech Forum. Milei en el centro; hacia la derecha, con anteojos, Julian Peh; más a la derecha, en la punta, Mauricio Novelli.
         </p>
 
-        <Img
-            src="https://cdn.eldestapeweb.com/eldestape/022025/1739655327096/tech%20forum.webp?cw=1200&ch=800&extw=jpeg"
-            alt=""
-            size="max-w-lg"
-            class="rounded-lg"
-        />
+        <Tweet tweet={data.Grupal_Tech_Forum_20_10_2024} />
 
         <p class="timeline-item-p">
-            Del encuentro privado de Milei con Peh participaron el vocero presidencial Manuel Adorni y Novelli. Según la información oficial: “Analizaron cómo la tecnología de IA descentralizada de KIP puede respaldar a Argentina”. “El presidente Milei expresó un fuerte apoyo a estas innovaciones e iniciativas, posicionando a KIP como un actor fundamental en la transformación tecnológica de Argentina. Este compromiso de alto nivel coloca a $KIP en el centro de atención como un actor clave de IA en Latinoamérica”, sostuvo Julian Peh tras el encuentro con Milei. Ya sabemos como terminó.
+            Del encuentro privado de Milei con Peh participaron el vocero presidencial Manuel Adorni y Novelli. Según la información oficial: “Analizaron cómo la tecnología de IA descentralizada de KIP puede respaldar a Argentina”. “El presidente Milei expresó un fuerte apoyo a estas innovaciones e iniciativas, posicionando a KIP como un actor fundamental en la transformación tecnológica de Argentina. Este compromiso de alto nivel coloca a $KIP en el centro de atención como un actor clave de IA en Latinoamérica”, sostuvo Julian Peh tras el encuentro con Milei.
         </p>
 
         <Button
@@ -484,15 +576,18 @@
             target="_blank">
             Fuente: La Nación
         </Button>
+        <Button
+            color="alternative"
+            href="https://es.wired.com/articulos/no-solo-es-milei-estas-figuras-publicas-tambien-han-sido-implicadas-en-el-escandalo-dollarlibra#:~:text=posible%20esquema%20piramidal.-,Julian%20Peh,liquidez%2C%20dejando%20a%20los%20inversores%20sin%20posibilidad%20de%20recuperar%20sus%20fondos.,-Hayden%20Mark%20Davis"
+            target="_blank">
+            Fuente: Wired
+        </Button>
     </TimelineItem>
 
     <!------------------------------------ 2025 ------------------------------------>
     <TimelineItem title="Reunión de Hayden Mark Davis con Javier Milei" date="30 de enero, 2025" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Hayden Mark Davis" src={HaydenMarkDavis}/>
-                <Tooltip>Hayden Mark Davis</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -503,7 +598,7 @@
             Davis volvió el 30 de enero de 2025 a la Casa Rosada. Lo contó el propio Milei, que publicó en sus redes la foto con Davis y escribió: “Hoy mantuvimos una muy interesante charla con el empresario Hayden Mark Davis, quien me estuvo asesorando sobre el impacto y las aplicaciones de la tecnología blockchain e inteligencia artificial en el país. Seguimos trabajando para acelerar el desarrollo tecnológico argentino y hacer de Argentina una potencia tecnológica mundial”. El Destape pidió pero aún no tuvo respuesta oficial por la planilla de ingresos a Casa Rosada de enero de 2025, por lo que no puede confirmar si Novelli también estuvo ese día. No sería extraño.
         </p>
 
-        <Tweet tweet={data.tweet} />
+        <Tweet tweet={data.Milei_Davis_30_01_2025} />
         <Button
             color="alternative"
             href="https://www.eldestapeweb.com/politica/escandalo-cripto/los-accesos-a-la-rosada-y-olivos-del-hombre-que-conecta-al-gobierno-con-la-estafa-cripto-reuniones-con-karina-y-visita-a-milei-2025215191250#:~:text=Davis%20volvi%C3%B3%20el,No%20ser%C3%ADa%20extra%C3%B1o."
@@ -512,13 +607,57 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Javier Milei sube y dejado fijado el famoso tweet sobre la promoción de $LIBRA" date="14 de febrero, 2025 - 19:01 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Img
+            src="https://www.clarin.com/2025/02/14/7of_Na1Is_720x0__1.jpg"
+            alt="sample 1"
+            size="max-w-xl"
+            class="rounded-lg"
+        />
+        <Button
+            color="alternative"
+            href="https://www.clarin.com/politica/patricia-bullrich-defendio-milei-escandalo-cripto-increible-pedir-juicio-politico-tuit_0_bvcJ50UcsC.html"
+            target="_blank">
+            Fuente: Clarín
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Patricia Bullrich, de las primeras en defender a Javier Milei" date="15 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.PatriciaBullrich} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Patricia Bullrich</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            "Me parece que lo que está pasando, o lo que pasó anoche con respecto a un tuit del Presidente, fue como una bomba atómica para intentar bajar al Presidente de un hondazo. Una cosa increíble. Una cosa increíble pedir juicio político por un tuit", esgrimió la ministra -una de las voces más fuertes dentro del elenco del oficialismo- en defensa del mandatario y contra la oposición. Bullrich dijo que la intención del Presidente fue promover una iniciativa que tenía como fin hacerle "bien al país".
+        </p>
+
+        <p class="timeline-item-p">
+            "Realmente ese tuit tuvo solo la intención de generar o mostrar cómo se podían financiar pequeñas empresas, emprendedores. Después cada uno toma su decisión. Bueno, lo tuvo que sacar porque fue increíble", agregó,
+        </p>
+        
+        <Tweet tweet={data.Bullrich_defensa_15_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.clarin.com/politica/patricia-bullrich-defendio-milei-escandalo-cripto-increible-pedir-juicio-politico-tuit_0_bvcJ50UcsC.html"
+            target="_blank">
+            Fuente: Clarín
+        </Button>
+    </TimelineItem>
 
     <TimelineItem title="Charles Hoskinson (cofundador de Cardano y ex cofundador de Ethereum) denuncia coimas en el Tech Forum" date="15 de febrero, 2025" classTime="text-md">
         <svelte:fragment slot="icon">
-            <span class="timeline-item-avatar">
-                <Avatar data-name="Javier Milei" src={JavierMilei}/>
-                <Tooltip>Javier Milei</Tooltip>
-            </span>
+            <TimelineAvatar avatar={CustomAvatar.CharlesHoskinson} />
         </svelte:fragment>
         <p class="timeline-item-p">
             <Badge rounded large color="dark">Javier Milei</Badge>
@@ -535,6 +674,168 @@
             href="https://www.cronista.com/economia-politica/el-creador-de-una-de-las-cripto-mas-famosas-denuncio-un-pedido-de-coimas-en-el-entorno-de-milei-cosas-magicas/"
             target="_blank">
             Fuente: El Cronista
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Hayden Mark Davis realiza su descargo" date="15 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Hayden Mark Davis, CEO de Kelsier Ventures, empresa detrás de <strong>$LIBRA</strong>, culpó al presidente argentino por la abrupta caída. "A pesar de los compromisos previos, el presidente y su equipo inesperadamente revirtieron su postura. Es fundamental reconocer que las inversiones en memecoins dependen de la confianza y el respaldo. Cuando [el Gobierno argentino] eliminó sus publicaciones, los inversores que habían adquirido el token, confiando en su respaldo, se sintieron traicionados", aseguró.
+        </p>
+        <Tweet tweet={data.Davis_descargo_15_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="La cuenta de X de la 'Oficina del Presidente' ensaya su intento de descargo" date="15 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.OficinaDelPresidente} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Julián Peh</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Milei instruyó el sábado a la Oficina Anticorrupción a investigar si algún funcionario de su gobierno había incurrido en una conducta inapropiada (incluido él mismo, así de ridículo como suena) tras confirmarse que <strong>$LIBRA</strong> es una “moneda meme”, caracterizada por carecer de respaldo en la economía real. Esta medida fue lo que desató una ola de más de 100 denuncias en contra del mandatario.
+        </p>
+        <Tweet tweet={data.Oficina_Presidente_descargo_15_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="Dave Portnoy, empresario de medios y contacto de Hayden Mark Davis contó que le regalaron 6.5 millones de $LIBRA pero las devolvió" date="16 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.DavePortnoy} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Dave Portnoy</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            El millonario Dave Portnoy (que tiene contacto frecuente con Hayden Davis) apareció públicamente denunciando una supuesta coima en la que recibió un total de 6.5 millones de la mencionada cripto para que escriba un mensaje en X (ex Twitter) y le diera impulso. No obstante, notó que la cosa estaba rara y las devolvió.
+        </p>
+
+        <p class="timeline-item-p">
+            En un space de X, Portnoy, dueño de un medio relacionado con los deportes y conocido por apoyar a Donald Trump y decenas de comentarios racistas, relató que estuvo a punto de estar involucrada en la increíble estafa que ocurrió el viernes pasado, de la cual se “salvó” por no haber publicado nada al respecto.
+        </p>
+        <Tweet tweet={data.Dave_Portnoy_coima_16_02_2025} />
+
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804477-criptoestafa-de-milei-un-multimillonario-conto-que-le-regala"
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="'Ese dinero es de los argentinos': Hayden Mark Davis en conversación con Dave Portnoy" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Dave Portnoy</Badge>
+            <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Una entrevista entre Dave Portnoy, empresario y dueño de Barstool Sports, y Hayden Davis, creador del controvertido token $LIBRA, reveló detalles sorprendentes sobre el revuelo que involucró al presidente argentino Javier Milei. Durante la conversación, Davis habló sobre los fondos que aún tiene bajo su control, supuestos compromisos incumplidos por el Gobierno argentino, y su relación con Milei y su equipo. Davis, al ser consultado sobre el dinero en cuestión, se encargó de aclarar que no era suyo. “Ese dinero es de los argentinos“, afirmó de manera contundente.
+        </p>
+        <p class="timeline-item-p">
+            Un aspecto central de la conversación fue una supuesta promesa incumplida de Javier Milei de hacer un video en apoyo de la moneda, algo que nunca sucedió. Según Davis, la estrategia original incluía una serie de tuits y videos, siendo el presidente de Argentina una pieza clave. De hecho, llegó a asegurar que Milei había comprometido a su equipo a grabar un video para respaldar el proyecto, pero Davis mencionó que este video nunca se concretó.
+        </p>
+        <p class="timeline-item-p">
+            Davis también hizo referencia a un “periodista de tercera parte” que, según sus palabras, documentó todo el proceso. Se comprometió a revelar este material más tarde, posiblemente esa misma semana. El creador de $LIBRA mencionó que, en su búsqueda por demostrar la transparencia del proyecto, había contactado a un periodista externo para que cubriera todos los detalles de su encuentro con Milei y las decisiones clave.
+        </p>
+        <embed type="video/mp4" src="https://cdn.jwplayer.com/previews/6ESbExJK" width="600" height="340" />
+
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/economia/2025/02/17/ese-dinero-es-de-los-argentinos-la-definicion-del-cerebro-detras-de-libra-sobre-los-fondos-que-tiene-bajo-su-control/"
+            target="_blank">
+            Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Tech Forum se desliga del escándalo" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Luego de las declaraciones del presidente Javier Milei en relación al escándalo que se desató alrededor de la criptomoneda $LIBRA, el Tech Forum, que está envuelto en el caso porque Mauricio Novelli, uno de sus creadores, organizó el encuentro en el que el mandatario conoció al CEO de Kip Protocol, emitió un comunicado para aclarar la situación y explicó que no tiene “nada que ver con los fondos conseguidos” a través del memecoin.
+        </p>
+
+        <p class="timeline-item-p">
+            “Kielsier Ventures y Kip Protocol, de quienes somos asesores, lanzaron el viernes pasado la criptomoneda $LIBRA. La intención de sus creadores (conforme consta en su prospecto) consistía en generar una masa de dinero con las ganancias del proyecto para donarle a emprendedores locales que se encuentran obstaculizados de acceder a créditos. Mas allá de que consideramos que se trata de una iniciativa muy interesante para el desarrollo económico del país, nuestra participación en el manejo de los tokens y el dinero fue nula”, explicaron.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.lanacion.com.ar/economia/tech-forum-emitio-un-comunicado-tras-el-escandalo-por-libra-no-tenemos-nada-que-ver-con-los-fondos-nid17022025/"
+            target="_blank">
+            Fuente: La Nación
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Milei y un retweet que en cuestión de minutos, hace saltar la cotización de $LIBRA nuevamente" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Lejos de alejarse del tema, Javier Milei volvió a postear material sobre la criptomoneda $LIBRA en X (exTwitter). El presidente utilizó un mensaje de Dario Epstein, consultor de la city muy cercano a La Libertad Avanza, donde se explicaba que "no era sencillo" realizar la compra.
+        </p>
+        <p class="timeline-item-p">
+            El reposteo de los pasos a seguir para la compra de $LIBRA fue leído como un nuevo apoyo del presidente a la memecoin, que derivó en un escándalo el viernes pasado, y el volumen operado del token volvió a dispararse. Así, en pocos minutos, se dio una situación similar a la de la semana pasada: el precio pasó de u$s0,38 centavos a los u$s0,77 centavos veinte minutos después.
+        </p>
+        <p class="timeline-item-p">
+            La capitalización de mercado llegó a los 640 millones de dólares y con la nueva caída, desde el mercado cripto se estima que se esfumaron más de 25 millones de dólares en una hora.
+        </p>
+        <Tweet tweet={data.Milei_Retweet_17_02_2025} />
+
+        <Button
+            color="alternative"
+            href="https://www.ambito.com/finanzas/javier-milei-retuiteo-un-posteo-libra-el-token-volo-y-se-volvio-hundir-cuestion-minutos-n6114529"
+            target="_blank">
+            Fuente: Ámbito
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Luis Caputo salió a defender a Javier Milei" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.LuisCaputo} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Luis Caputo</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            "No hubo dolo, ni delito ni corrupción", enfatizó el ministro de Economía, Luis Caputo, atajándose de los cargos que empiezan a hacerse contra la intervención del presidente, Javier Milei, en la promoción de la criptomoneda conocida como $Libra.
+        </p>
+
+        <embed type="video/mp4" src="https://geo.dailymotion.com/player/xt5ee.html?video=x9emfyy" width="600" height="340" />
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804737-milei-estafador-eso-es-absurdo"
+            target="_blank">
+            Fuente: Página12
         </Button>
     </TimelineItem>
 

@@ -1,12 +1,16 @@
 import type { PageServerLoad } from './$types';
 import { getTweet } from 'sveltekit-tweet/server';
+import { tweets } from '$lib/tweets';
 
 export const load = (async () => {
-    // const tweetId_Milei_Novelli = '1837216757062504746';
-    const tweetId = '1885068460268363889';
-	
-    // const tweet_Milei_Novelli = await getTweet(tweetId_Milei_Novelli);
-    const tweet = await getTweet(tweetId);
+    const tweetResults: Record<string, any> = {};
 
-	return { tweet };
+    const tweetPromises = tweets.map(async tweet => {
+        const result = await getTweet(tweet.tweetId);
+        tweetResults[`${tweet.tweetName}`] = result;
+    });
+
+    await Promise.all(tweetPromises);
+
+    return tweetResults;
 }) satisfies PageServerLoad;
