@@ -243,7 +243,7 @@
         </p>
 
         <p class="timeline-item-p">
-            En los primeros días del gobierno de los hermanos Milei, Novelli ingresó a ver a Karina pocos minutos antes de las 15 hs y se fue pasadas las 19.30. Un día largo en la Rosada. 
+            En los primeros días del gobierno de los hermanos Milei, Novelli ingresó a ver a Karina pocos minutos antes de las 15 hs y se fue pasadas las 19.30. Un día largo en la Rosada. Ésta será la primera de 8 reuniones oficiales que tendrá Novelli con los hermanos Milei, post asunción.
         </p>
         <p class="timeline-item-p">
             Dato de color, ninguna de las reuniones de Karina Milei con Novelli figuran en el registro oficial de audiencias. Todos fueron detectadas por <strong>El Destape</strong> en la planilla de accesos a la Casa Rosada.
