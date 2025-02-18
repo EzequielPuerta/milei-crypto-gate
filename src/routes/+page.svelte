@@ -1063,7 +1063,7 @@
         </Button>
     </TimelineItem>
 
-    <TimelineItem title="Denuncian en Estados Unidos a Javier Milei y a los otros protagonistas del escándalo $LIBRA" date="17 de febrero, 2025" classTime="text-md">
+    <TimelineItem title="Denuncian en Estados Unidos a Javier Milei y a los otros protagonistas del escándalo $LIBRA" date="18 de febrero, 2025" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
         </svelte:fragment>
