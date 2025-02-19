@@ -889,7 +889,7 @@
 
         <TimelineItem title="El influencer Ape se viraliza tras declarar en pleno ataque de ira, haber perdido mas de 1 millón de dólares" date="14 de febrero, 2025 - 21:50 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
-                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+                <TimelineAvatar avatar={CustomAvatar.Ape} />
             </svelte:fragment>
             <p class="timeline-item-p">
                 <Badge rounded large color="dark">Ape</Badge>
@@ -1219,7 +1219,7 @@
 
         <TimelineItem title="El influencer Ape comparte una captura de pantalla mostrando que Javier Milei lo ha bloqueado en X" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
-                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+                <TimelineAvatar avatar={CustomAvatar.Ape} />
             </svelte:fragment>
             <p class="timeline-item-p">
                 <Badge rounded large color="dark">Ape</Badge>
@@ -1793,6 +1793,58 @@
                 href="https://comunicacionadhoc.com/2025/02/06/imagen-digital-de-javier-milei-enero-2025/"
                 target="_blank">
                 Fuente: AdHoc - Informe enero 2025
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="El influencer estadounidense Ape dice haber sido amenazado por Milei" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.Ape} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Ape</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                El influencer estadounidense Ape, uno de los que denuncia haber sido afectado por la estafa multimillonaria con criptomonedas que tuvo como protagonista al presidente Javier Milei, dijo haber recibido una amenaza desde la cuenta oficial de X del mandatario. Fuentes del Gobierno desmintieron al inversor cripto y aseguraron que el líder de La Libertad Avanza no envió ese mensaje. 
+            </p>
+            <p class="timeline-item-p">
+                "Recibí un DM del presidente de Argentina. ¡Está negando todo! ¿$LIBRA nunca pasó? ¡No puedo creer a este tipo! Vas a tratar de silenciarme, ¿eh? ¿Mantén mi nombre afuera de esto? Demasiado tarde", escribió el influencer en su cuenta de X, junto a una captura de pantalla del supuesto mensaje de Milei.
+            </p>
+            <p class="timeline-item-p">
+                Según se lee en la captura de pantalla, el mandatario le habría escrito: "Dejá de difundir mentiras sobre mí en las noticias de Argentina. Nunca estuve involucrado con $LIBRA, y si sigues haciendo afirmaciones falsas, tomaré acciones legales contra ti. Mantén mi nombre fuera de esto, mandril". 
+            </p>
+
+            <Tweet tweet={data.Ape_amenazas_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.pagina12.com.ar/805206-criptogate-el-influencer-ape-dice-haber-sido-amenazado-por-m"
+                target="_blank">
+                Fuente: Página12
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Preparan en EEUU una nueva multimillonaria demanda por la estafa cripto que promocionó Milei" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Uno de los estudios de abogados especializados en delitos con criptomonedas más importante del mundo, Burwick Law, prepara una demanda civil multimillonaria en Estados Unidos por los perjuicios que generó el escándalo $LIBRA, que promocionó el viernes pasado el presidente Javier Milei desde sus redes sociales. Esta presentación se sumará a la del estudio jurídico Moyano, que pidió, ante el Departamento de Justicia, la Oficina Federal de Investigaciones (FBI) y la Comisión de Valores estadounidense, que el Presidente sea investigado.
+            </p>
+            <p class="timeline-item-p">
+                Son más de 200 personas de Argentina, Estados Unidos, Europa y Asia que se vieron afectadas por la multimillonaria estafa que difundió el mandatario argentino por varias horas desde su cuenta de la red social X y que ahora preparan acciones legales. Desde el estudio Burwick Law confirmaron en redes sociales que están preparando esta demanda, que fue revelada también por el portal La Nación.
+            </p>
+
+            <Tweet tweet={data.Demanda_millonaria_USA_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.eldestapeweb.com/politica/escandalo-cripto/preparan-en-eeuu-una-multimillonaria-demanda-por-la-estafa-cripto-que-promociono-milei-202521914195"
+                target="_blank">
+                Fuente: El Destape
             </Button>
         </TimelineItem>
 

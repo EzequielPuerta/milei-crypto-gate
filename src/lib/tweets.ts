@@ -187,5 +187,13 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'AdHoc_informe_19_02_2025',
         tweetId: '1891587610964824171'
+    },
+    {
+        tweetName: 'Ape_amenazas_19_02_2025',
+        tweetId: '1892227655199752560'
+    },
+    {
+        tweetName: 'Demanda_millonaria_USA_19_02_2025',
+        tweetId: '1892243166150980087'
     }
 ]; 
