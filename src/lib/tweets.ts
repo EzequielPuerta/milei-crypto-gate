@@ -171,5 +171,9 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Santiago_Caputo_Tatuaje_18_02_2025',
         tweetId: '1892032958170554404'
+    },
+    {
+        tweetName: 'Hayden_identidad_falsa_19_02_2025',
+        tweetId: '1891994203195908291'
     }
 ]; 

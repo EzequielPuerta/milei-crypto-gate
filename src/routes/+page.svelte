@@ -1586,6 +1586,21 @@
             <Tweet tweet={data.Santiago_Caputo_Tatuaje_18_02_2025} />
         </TimelineItem>
 
+        <TimelineItem title="Hayden Mark Davis sería una identidad falsa" date="19 de febrero, 2025 - 01:28 hs" classTime="text-md">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Según abogados denunciantes, la identidad de Hayden Mark Davis sería falsa; una posibilidad que ya se había barajado al no poder encontrar nada relacionado a él en internet, previo a todo el suceso de $LIBRA.
+            </p>
+
+            <Tweet tweet={data.Hayden_identidad_falsa_19_02_2025} />
+        </TimelineItem>
+
         <!-- <Activity>
             <ActivityItem
                 activities={[
