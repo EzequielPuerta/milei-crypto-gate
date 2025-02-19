@@ -29,7 +29,9 @@ export const Avatar = {
     JonatanViale: createAvatar("Charles Hoskinson", Photo.JonatanViale),
     DonaldTrump: createAvatar("Charles Hoskinson", Photo.DonaldTrump),
     MelaniaTrump: createAvatar("Charles Hoskinson", Photo.MelaniaTrump),
-    MaximilianoFirtman: createAvatar("Charles Hoskinson", Photo.MaximilianoFirtman)
+    MaximilianoFirtman: createAvatar("Charles Hoskinson", Photo.MaximilianoFirtman),
+    LiliaLemoine: createAvatar("Charles Hoskinson", Photo.LiliaLemoine),
+    AgustinLaje: createAvatar("Charles Hoskinson", Photo.AgustinLaje)
 } as const;
 
 export const TimelineAvatar = (avatar: AvatarConfig) => `

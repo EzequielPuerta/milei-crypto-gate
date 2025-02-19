@@ -77,6 +77,14 @@ export const tweets: Tweet[] = [
         tweetId: '1890536722754130357'
     },
     {
+        tweetName: 'Milei_hackeado_14_02_2025',
+        tweetId: '1890563967942021317'
+    },
+    {
+        tweetName: 'Lilia_sobre_Milei_hackeado_14_02_2025',
+        tweetId: '1890554031530987866'
+    },
+    {
         tweetName: 'Milei_primer_descargo_15_02_2025',
         tweetId: '1890606683291779195'
     },
@@ -99,6 +107,14 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Oficina_Presidente_descargo_15_02_2025',
         tweetId: '1890937875677495542'
+    },
+    {
+        tweetName: 'Jupiter_Exchange_tweet_16_02_2025',
+        tweetId: '1891181433588470052'
+    },
+    {
+        tweetName: 'Meow_tweet_17_02_2025',
+        tweetId: '1891664435321647186'
     },
     {
         tweetName: 'Dave_Portnoy_coima_16_02_2025',

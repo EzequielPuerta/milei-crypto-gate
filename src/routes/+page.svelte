@@ -716,6 +716,9 @@
             <Badge rounded large color="dark">Javier Milei</Badge>
         </p>
 
+        <p class="timeline-item-p">
+            Efectivamente se descubre que el dominio web 'vivalalibertadproject.com' había sido registrado el mismo día del lanzamiento, momentos antes del mismo. Además el correo electrónico del sitio del proyecto era una simple cuenta de Gmail.
+        </p>
         <Tweet tweet={data.Domain_info_14_02_2025} />
     </TimelineItem>
 
@@ -740,6 +743,40 @@
             target="_blank">
             Fuente: Infobae
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Lilia Lemoine desmiente a los escépticos que difunden la versión del hackeo a Milei" date="14 de febrero, 2025 - 21:09 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.LiliaLemoine} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Lilia Lemoine</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Milei_hackeado_14_02_2025} />
+        <Tweet tweet={data.Lilia_sobre_Milei_hackeado_14_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="Agustín Laje sale a bancar a Milei" date="14 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.AgustinLaje} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Agustin Laje</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Agustín Laje, el politólogo y escritor de ultraderecha especializado en la lucha contra la “ideología de género” y el “marxismo cultural”, realizó el siguiente tweet de apoyo a Javier Milei. Minutos después, Laje borró el mensaje sin dar mayores explicaciones.
+        </p>
+
+        <Img
+            src="https://cdn.eldestapeweb.com/eldestape/022025/1739636442756/GjygRgeXUAAp-yy.webp?cw=933&ch=1407&extw=jpeg"
+            alt="Agustín Laje sale a bancar a Milei"
+            size="max-w-xl"
+            class="rounded-lg"
+        />
     </TimelineItem>
 
     <TimelineItem title="La billetera cripto Ripio anuncia que el token $LIBRA se encuentra disponible en su plataforma" date="14 de febrero, 2025 - 21:40 hs" classTime="text-md">
@@ -934,6 +971,95 @@
             href="https://www.pagina12.com.ar/804477-criptoestafa-de-milei-un-multimillonario-conto-que-le-regala"
             target="_blank">
             Fuente: Página12
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Agustín Laje, presidente de la Fundación Faro, estaría involucrado en las coimas alrededor de Tech Forum y $LIBRA" date="16 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.AgustinLaje} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Agustín Laje</Badge>
+            <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            <Badge rounded large color="dark">Santiago Caputo</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            La ruta de las posibles coimas que se pagaron para que el presidente Javier Milei respaldara la estafa de la criptomoneda $LIBRA conducen por varios caminos al militante libertario Agustín Laje, elegido por Santiago Caputo como presidente de su fundación El Faro, vehículo para recaudar fondos para la campaña de este año.
+        </p>
+        <p class="timeline-item-p">
+            Ahora se supo incluso que, previo a la estafa, este grupo analizó lanzar una moneda meme destinada a financiar la Fundación Faro de Santiago Caputo y su hermano Francisco, un ex coaching motivacional con creciente peso en el armado libertario, en especial en la recaudación de fondos.
+        </p>
+        <p class="timeline-item-p">
+            Este domingo La Nación reveló que los libertarios analizaron lanzar un meme coin con la figura de Milei para financiar la Fundación faro de Laje y Caputo, iniciativa que como todas las que vinculan al círculo de mayor confianza de Milei con los empresarios cripto, estuvo rodeada de pedidos de coimas.  
+        </p>
+        <p class="timeline-item-p">
+            El experto en finanzas descentralizadas Diogenes Casares reveló en X chats sobre esos rumores y relató que un funcionario le dijo que un grupo americano "entre ellos el fundador de Jupiter (que dotó tecnología para el lanzamiento de LIBRA), había propuesto la idea".
+        </p>
+        <p class="timeline-item-p">
+            "El token se iba a llamar $afuera y era para hacer fundraising de la Fundación Faro para 'financiar la batalla cultural'. Pero entiendo no prospero", le dijo a Casares una de las fuentes consultadas, en alusión al instituto que lidera Laje.
+        </p>
+        <p class="timeline-item-p">
+            Ante eso, el experto en finanzas descentralizadas sostuvo: "Me dijeron que alguien cercano a Milei había recibido un soborno de US$5 millones para ponerlo frente a él. Para ser claros, esto NO significa que Milei recibió dinero, sino que alguien cercano a él había recibido dinero para facilitar que Milei promocionara el token. La naturaleza de alto nivel de esta persona y la calidad de la fuente (aunque no puedo verificarlo por completo para que quede claro) me preocuparon mucho y me hicieron presionar más".
+        </p>
+        <p class="timeline-item-p">
+            En la siguiente foto se ve a Agustín Laje y Mauricio Novelli en un partido de la NBA, a una semana del lanzamiento de $LIBRA. La foto sería eliminada posteriormente.
+        </p>
+
+        <Img
+            src="https://fotos.perfil.com///2025/02/17/900/0/escandalo-libra-1968787.jpg?webp"
+            alt="Agustín Laje y Mauricio Novelli una semana antes del lanzamiento de $LIBRA"
+            size="max-w-xl"
+            class="rounded-lg"
+        />
+
+        <p class="timeline-item-p">
+            Manuel Adorni también es apuntado, por haber participado en la reunión con Julián Peh, después de la Tech Forum, el 19 de octubre del 2024.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.lapoliticaonline.com/politica/la-ruta-de-las-coimas-lleva-a-agustin-laje-y-la-fundacion-de-los-hermanos-caputo/"
+            target="_blank">
+            Fuente: La Política Online
+        </Button>
+        <Button
+            color="alternative"
+            href="https://www.lanacion.com.ar/politica/el-escandalo-de-libra-abrio-una-caja-de-pandora-pedidos-de-coimas-y-gestiones-para-acceder-a-milei-nid16022025/"
+            target="_blank">
+            Fuente: La Nación
+        </Button>
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804938-cripto-coimas-y-la-pista-de-la-plata-negra"
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="El escándalo de $LIBRA impacta de lleno a Jupiter Exchange, Meteora y el ecosistema Solana" date="16 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            El lanzamiento del token $LIBRA era ampliamente conocido entre los conocedores de memecoin hasta dos semanas antes de su dramática subida y caída, según Jupiter Exchange. “Nos enteramos de esto hace ~2 semanas directamente de Kelsier Ventures. Aunque al principio no estábamos seguros, luego vimos pruebas creíbles en forma de tweets públicos de la cuenta personal de Milei de que iba en serio.”
+        </p>
+
+        <p class="timeline-item-p">
+            Si bien no hay pruebas directas que incriminen a los miembros de Jupiter Exchange, las transacciones onchain muestran que la caída del token fue causada por monederos con información privilegiada que comenzaron a cobrar el token solo tres horas después de que debutara para su negociación, causando una caída del 94% del mismo. Es por eso que el fundador de dos de los sistemas más populares de intercambio de criptomonedas le pidió la renuncia a otro de los cofundadores.
+        </p>
+
+        <Tweet tweet={data.Jupiter_Exchange_tweet_16_02_2025} />
+        <Tweet tweet={data.Meow_tweet_17_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.lanacion.com.ar/economia/jupiter-responde-al-escandalo-de-libra-y-renuncia-el-cofundador-de-meteora-nid18022025/"
+            target="_blank">
+            Fuente: La Nación
         </Button>
     </TimelineItem>
 
