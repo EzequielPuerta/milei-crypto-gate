@@ -12,7 +12,6 @@
     } from 'flowbite-svelte';
     import Youtube from "svelte-youtube-embed";
 
-    import { injectAnalytics } from '@vercel/analytics/sveltekit'
     import { Tweet } from 'sveltekit-tweet';
 	import type { PageData } from './$types';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';

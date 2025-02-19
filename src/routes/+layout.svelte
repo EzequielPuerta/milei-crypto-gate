@@ -2,6 +2,7 @@
 	import '../app.css';
     import Header from './header.svelte';
     import Footer from './footer.svelte';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
 </script>
 
 <div class="layout">
@@ -17,7 +18,7 @@
 <style>
     .layout {
         height: 100%;
-        max-inline-size: 1440px;
+        max-inline-size: 100%;
         display: grid;
         grid-template-rows: auto 1fr auto;
         margin-inline: auto;
@@ -29,8 +30,15 @@
         margin-left: 2em;
     }
 
+    @media (min-width: 768px) {
+        .layout {
+            padding-inline: var(--size-5);
+        }
+    }
+
     @media (min-width: 1440px) {
         .layout {
+            max-inline-size: 1440px;
             padding-inline: 0;
         }
     }
