@@ -149,6 +149,14 @@ export const tweets: Tweet[] = [
         tweetId: '1891241783377473923'
     },
     {
+        tweetName: 'Davis_Milei_17_02_2025',
+        tweetId: '1891462344955326838'
+    },
+    {
+        tweetName: 'Minidoge_crowdfund_17_02_2025',
+        tweetId: '1891452868642918568'
+    },
+    {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
     },
@@ -175,5 +183,9 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Hayden_identidad_falsa_19_02_2025',
         tweetId: '1891994203195908291'
+    },
+    {
+        tweetName: 'AdHoc_informe_19_02_2025',
+        tweetId: '1891587610964824171'
     }
 ]; 

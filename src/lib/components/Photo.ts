@@ -21,6 +21,7 @@ import FranFijap from '$lib/assets/profiles/fran-fijap.png';
 import SantiagoCaputo from '$lib/assets/profiles/santiago-caputo.png';
 import DiegoSantilli from '$lib/assets/profiles/diego-santilli.png';
 import GuillermoFrancos from '$lib/assets/profiles/guillermo-francos.png';
+import AlejandroMelik from '$lib/assets/profiles/alejandro-melik.png';
 
 export const Photo = {
     JavierMilei,
@@ -45,7 +46,8 @@ export const Photo = {
     FranFijap,
     SantiagoCaputo,
     DiegoSantilli,
-    GuillermoFrancos
+    GuillermoFrancos,
+    AlejandroMelik
 } as const;
 
 export default Photo; 

@@ -1280,6 +1280,54 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="En una nueva entrevista, Hayden Mark Davis dice esperar instrucciones del Gobierno Nacional" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Stephen Findeisen</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Fue durante una entrevista con el youtuber experto en cripto Stephen Findeisen, más conocido como Coffeezilla.
+            </p>
+
+            <Tweet tweet={data.Davis_Milei_17_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.letrap.com.ar/politica/mensaje-javier-milei-el-creador-libra-dijo-que-espera-instrucciones-del-gobierno-n5414137"
+                target="_blank">
+                Fuente: Letra P
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="La memecoin Minidoge lanzó una recaudación de fondos para pagarle a las 'víctimas de LIBRA'" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Minidoge, una memecoin que traders, influencers cripto y medios especializados en Estados Unidos vinculan con Musk, lanzó un crowdfund -una recaudación de fondos virtual- para pagarle a las "víctimas de LIBRA".
+            </p>
+            <p class="timeline-item-p">
+                Este lunes, esta misma memecoin llamó a su comunidad a "donar para las víctimas de $LIBRA", a quienes les pide la dirección de la plataforma en la cual fue lanzada la cripto el viernes, el monto que perdieron y una captura de pantalla de la compra que hicieron. Acto seguido, arrobaron a Elon Musk, hoy funcionario nacional de Estados Unidos como titular del Departamento de Eficiencia Gubernamental.
+            </p>
+
+            <Tweet tweet={data.Minidoge_crowdfund_17_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.eldestapeweb.com/politica/escandalo-cripto/una-memecoin-que-vinculan-a-musk-se-metio-en-el-escandalo-por-la-estafa-cripto-de-libra-202521710466"
+                target="_blank">
+                Fuente: El Destape
+            </Button>
+        </TimelineItem>
+
         <TimelineItem title="Tech Forum se desliga del escándalo" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
@@ -1395,7 +1443,7 @@
             </p>
 
             <p class="timeline-item-p">
-                El hijo de Diego Santilli y la periodista Nancy Pazos invirtió en $Libra por el posteo de Javier Milei en X (antes Twitter), y perdió dinero de “sus ahorros”. Pese a ese hecho, el diputado del PRO, que viene amagando con su pase a las filas libertarias, salió a defender al presidente: "Le hicieron una cama al propio presidente", dijo.
+                El hijo del diputado del PRO, Diego Santilli y la periodista Nancy Pazos invirtió en $Libra por el posteo de Javier Milei en X (antes Twitter), y perdió dinero de “sus ahorros”. Pese a ese hecho, el diputado del PRO, que viene amagando con su pase a las filas libertarias, salió a defender al presidente: "Le hicieron una cama al propio presidente", dijo.
             </p>
 
             <p class="timeline-item-p">
@@ -1683,6 +1731,68 @@
                 href="https://www.cronista.com/economia-politica/adorni-explico-por-que-santiago-caputo-interrumpio-la-entrevista-a-milei-tiene-el-defecto/#:~:text=el%20vocero%20Manuel%20Adorni%20dialog%C3%B3%20con%20A24%C2%A0y%20fue%20terminante%20al%20indicar%20que%20el%20accionar%20del%20consultor%20pol%C3%ADtico%20fue%20%22equivocado%22%20y%2C%20adem%C3%A1s%2C%20afirm%C3%B3%20que%20el%20propio%20Milei%20le%20dijo%20que%20fue%20%22innecesario%22."
                 target="_blank">
                 Fuente: Cronista
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Alejandro Melik, titular de la Oficina Anticorrupción, ex socio del Ministro de Justicia Cuneo Libarona y encargado de investigar a Milei en el escándalo cripto" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.AlejandroMelik} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Alejandro Melik</Badge>
+                <Badge rounded large color="dark">Mariano Cuneo Libarona</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La entrevista de Jonatan Viale a Javier Milei reveló que la estrategia judicial de defensa del Presidente en el escándalo cripto está a cargo del ministro de Justicia, Mariano Cuneo Libarona. El Gobierno delegó la investigación del hecho en la Oficina Anticorrupción (OA), a cargo de Alejandro Melik, que responde al titular de la cartera judicial.
+            </p>
+            <p class="timeline-item-p">
+                Socio de Cuneo Libarona, Melnik fue abogado de Guillermo Cóppola durante la década del '90 en el mediático caso del jarrón con cocaína y también fue letrado del club River Plate. Las crónicas y fotografías de la época lo muestran en agosto 2007, por ejemplo, en una conferencia de prensa con una activa participación por el asesinato de Gonzalo Acro, que se dio en el marco de un enfrentamiento entre facciones de barras del club. Melnik fue designado en la OA a fines de 2023. 
+            </p>
+            <p class="timeline-item-p">
+                El sábado, el Gobierno nacional, a través de la cuenta Oficina del Presidente, rechazó cualquier responsabilidad directa del mandatario y anunció que abrirá dos investigaciones, ambas bajo la órbita del Poder Ejecutivo: la OA y una Unidad de Tareas de Investigación (UTI).
+            </p>
+            <p class="timeline-item-p">
+                Francos consideró que la intervención de Caputo fue un error y mostró falta de criterio. Así se suma al vocero Manuel Adorni, quién dialogó con A24 y fue terminante al indicar que el accionar del consultor político fue "equivocado" y, además, afirmó que el propio Milei le dijo que fue "innecesario".
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.eldestapeweb.com/politica/escandalo-cripto/quien-es-alejandro-melik-el-ex-socio-de-cuneo-libarona-y-encargado-de-investigar-a-milei-en-el-escandalo-cripto-202521817471"
+                target="_blank">
+                Fuente: El Destape
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="La consultora especializada en comunicación política digital 'Ad Hoc' publicó el impacto del escándalo $LIBRA en las redes" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                * Según el informe publicado en un hilo de X de la propia cuenta de Ad Hoc, el nombre de Javier Milei fue mencionado en mas de 3,5 millones de publicaciones a nivel global en las primeras 72 hs del suceso.
+            </p>
+            <p class="timeline-item-p">
+                * La conversación duplicó a la del escándalo de Alberto Fernández en agosto del 2024. Solo en Argentina, hubo 2,5 millones de menciones digitales durante las primeras 72 hs.
+            </p>
+            <p class="timeline-item-p">
+                * 6 de cada 10 menciones a Milei en el fin de semana posterior al lanzamiento de $LIBRA, fueron negativas. El episodio rompió el techo de negatividad, superando a otros eventos digitales como las repercusiones tras el discurso del libertario en el Foro de Davos, que según la propia consultora, marcó un pico de negatividad en la imagen de Javier Milei. 
+            </p>
+            <p class="timeline-item-p">
+                * La idea de que el Presidente fue parte de una estafa y los debates sobre el juicio político centralizaron la conversación.
+                Las respuestas de los creadores de LIBRA fueron rápidamente viralizadas por los usuarios.
+            </p>
+
+            <Tweet tweet={data.AdHoc_informe_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://comunicacionadhoc.com/2025/02/06/imagen-digital-de-javier-milei-enero-2025/"
+                target="_blank">
+                Fuente: AdHoc - Informe enero 2025
             </Button>
         </TimelineItem>
 
