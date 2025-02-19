@@ -12,6 +12,7 @@ import PatriciaBullrich from '$lib/assets/profiles/patricia-bullrich.png';
 import JonatanViale from '$lib/assets/profiles/jonatan-viale.png';
 import DonaldTrump from '$lib/assets/profiles/donald-trump.png';
 import MelaniaTrump from '$lib/assets/profiles/melania-trump.png';
+import MaximilianoFirtman from '$lib/assets/profiles/maximiliano-firtman.png';
 
 export const Photo = {
     JavierMilei,
@@ -27,7 +28,8 @@ export const Photo = {
     PatriciaBullrich,
     JonatanViale,
     DonaldTrump,
-    MelaniaTrump
+    MelaniaTrump,
+    MaximilianoFirtman
 } as const;
 
 export default Photo; 

@@ -61,12 +61,32 @@ export const tweets: Tweet[] = [
         tweetId: '1885068460268363889'
     },
     {
+        tweetName: 'Domain_info_14_02_2025',
+        tweetId: '1890528233860325742'
+    },
+    {
+        tweetName: 'Ripio_tweet_14_02_2025',
+        tweetId: '1890561816910016734'
+    },
+    {
+        tweetName: 'Bubblemaps_tweet_14_02_2025',
+        tweetId: '1890531084221182326'
+    },
+    {
+        tweetName: 'Bubblemaps_tweet_2_14_02_2025',
+        tweetId: '1890536722754130357'
+    },
+    {
         tweetName: 'Milei_primer_descargo_15_02_2025',
         tweetId: '1890606683291779195'
     },
     {
         tweetName: 'KIP_protocol_15_02_2025',
         tweetId: '1890606008856367576'
+    },
+    {
+        tweetName: 'Lookonchain_cashout_15_02_2025',
+        tweetId: '1890619615883219455'
     },
     {
         tweetName: 'Bullrich_defensa_15_02_2025',
@@ -87,6 +107,10 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
+    },
+    {
+        tweetName: 'Maxi_Firtman_sobre_Davis_17_02_2025',
+        tweetId: '1891898453199868166'
     },
     {
         tweetName: 'KIP_protocol_se_desliga_17_02_2025',

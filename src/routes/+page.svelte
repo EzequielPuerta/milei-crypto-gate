@@ -489,6 +489,22 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Maximiliano Firtman advierte señales de sospecha acerca del Tech Forum" date="18 de octubre, 2024" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.MaximilianoFirtman} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Maximiliano Firtman</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Maximiliano Firtman, programador, docente y periodista especializado en tecnología, publica en X un mensaje advirtiendo que los organizadores de Tech Forum son estafadores. Lo llama un asesor de Milei, preocupado por su tweet, diciendo que si era verdad “suspendían todo”. Firtman les hace un informe y se los envía, pero no hacen nada.
+        </p>
+
+        <Tweet tweet={data.Maxi_Firtman_sobre_Davis_17_02_2025} />
+    </TimelineItem>
+
     <TimelineItem title="Manuel Terrones Godoy (cofundador de Tech Forum) es acusado en el programa Argenzuela" date="19 de octubre, 2024" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.ManuelTerronesGodoy} />
@@ -692,6 +708,58 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Se revela que el dominio web 'vivalalibertadproject.com' fue registrado en el mismo día del lanzamiento" date="14 de febrero, 2025 - 19:27 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Domain_info_14_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="La cuenta Bubblemaps advierte que el 82% de $LIBRA está desbloqueado" date="14 de febrero, 2025 - 19:38 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            La empresa de análisis de blockchain Bubblemaps advierte antes del colapso sobre la tokenomics defectuosa de $LIBRA, revelando que el 82% del suministro estaba desbloqueado y vendible desde el principio (lo que en el argot financiero se conoce como <em>rug pull</em>).
+        </p>
+
+        <Tweet tweet={data.Bubblemaps_tweet_14_02_2025} />
+        <Tweet tweet={data.Bubblemaps_tweet_2_14_02_2025} />
+        
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/economia/2025/02/16/glosario-cripto-que-significan-rug-pull-pump-and-dump-staking-y-otros-terminos-del-mundo-digital/#:~:text=interesantes%20de%20conocer%3A-,Rug%20Pull,la%20experta%20en%20criptomonedas%20%E2%80%9CLady%20Market%E2%80%9D%2C%20en%20su%20cuenta%20de%20X.,-%E2%80%9CGeneralmente%20los%20due%C3%B1os"
+            target="_blank">
+            Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="La billetera cripto Ripio anuncia que el token $LIBRA se encuentra disponible en su plataforma" date="14 de febrero, 2025 - 21:40 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            A menos de 3 horas del lanzamiento de $LIBRA, la billetera cripto Ripio informa que la tienen listada en su plataforma.
+        </p>
+        <p class="timeline-item-p">
+            
+        </p>
+
+        <Tweet tweet={data.Ripio_tweet_14_02_2025} />
+    </TimelineItem>
+
     <TimelineItem title="Javier Milei elimina el tweet donde promociona $LIBRA e 'intenta' aclarar la situación" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -738,6 +806,27 @@
             href="https://www.infobae.com/politica/2025/02/16/cronologia-de-la-fallida-promocion-de-la-criptomoneda-libra-del-tuit-de-javier-milei-a-lo-que-podria-pasar-en-el-congreso/#:~:text=Exactamente%20a%20la,es%20absolutamente%20privado%E2%80%9D."
             target="_blank">
             Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Se conocen los primeros números, 8 billeteras vinculadas a $LIBRA retiraron 107 millones de USD" date="15 de febrero, 2025 - 01:30 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Luego que el precio de $LIBRA se desplome en tan solo un par de horas, se conoce que 8 billeteras obtuvieron ganancias por 107 millones de dólares.
+        </p>
+
+        <Tweet tweet={data.Lookonchain_cashout_15_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.perfil.com/noticias/cordoba/caso-libra-primera-denuncia-penal-en-cordoba-contra-milei-por-el-criptoescandalo.phtml#:~:text=%22Hubo%20ocho%20ganadores%2C%20cuyas%20identidades%20est%C3%A1n%20protegidas%20por%20el%20anonimato%2C%20que%20se%20hicieron%20en%20una%20noche%20con%20un%20bot%C3%ADn%20de%20107%20millones%20de%20d%C3%B3lares%22%2C%20indica%20el%20documento."
+            target="_blank">
+            Fuente: Perfil
         </Button>
     </TimelineItem>
 
@@ -888,6 +977,8 @@
             Davis también hizo referencia a un “periodista de tercera parte” que, según sus palabras, documentó todo el proceso. Se comprometió a revelar este material más tarde, posiblemente esa misma semana. El creador de $LIBRA mencionó que, en su búsqueda por demostrar la transparencia del proyecto, había contactado a un periodista externo para que cubriera todos los detalles de su encuentro con Milei y las decisiones clave.
         </p>
         <embed type="video/mp4" src="https://cdn.jwplayer.com/previews/6ESbExJK" width="600" height="340" />
+
+        <Tweet tweet={data.Maxi_Firtman_sobre_Davis_17_02_2025} />
 
         <Button
             color="alternative"
