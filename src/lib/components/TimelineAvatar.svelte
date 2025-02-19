@@ -6,7 +6,7 @@
 </script>
 
 <span class="timeline-item-avatar">
-    <FlowbiteAvatar data-name={avatar.name} src={avatar.src}/>
+    <FlowbiteAvatar data-name={avatar.name} src={avatar.src} size="md"/>
     <Tooltip>{avatar.name}</Tooltip>
 </span> 
 
@@ -14,14 +14,14 @@
     .timeline-item-avatar {
         display: flex;
         position: absolute;
-        left: -0.75rem;
+        left: -1.5rem;
         justify-content: center;
         align-items: center;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
         background-color: var(--primary-200);
         border-radius: 9999px;
-        box-shadow: 0 0 0 2px white;
+        box-shadow: 0 0 0 1px white;
         /* Dark mode styles */
         --tw-ring-color: var(--gray-900);
         --tw-bg-opacity: 1;

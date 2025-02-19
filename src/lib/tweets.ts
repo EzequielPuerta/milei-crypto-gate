@@ -61,12 +61,20 @@ export const tweets: Tweet[] = [
         tweetId: '1885068460268363889'
     },
     {
+        tweetName: 'Insiders_buying_14_02_2025',
+        tweetId: '1890765376281031053'
+    },
+    {
         tweetName: 'Domain_info_14_02_2025',
         tweetId: '1890528233860325742'
     },
     {
         tweetName: 'Ripio_tweet_14_02_2025',
         tweetId: '1890561816910016734'
+    },
+    {
+        tweetName: 'Nicolas_Passini_tweet_14_02_2025',
+        tweetId: '1890538287162368213'
     },
     {
         tweetName: 'Bubblemaps_tweet_14_02_2025',
@@ -85,12 +93,24 @@ export const tweets: Tweet[] = [
         tweetId: '1890554031530987866'
     },
     {
+        tweetName: 'Ape_rugged_14_02_2025',
+        tweetId: '1890564360117891113'
+    },
+    {
+        tweetName: 'Kobeissi_Letter_15_02_2025',
+        tweetId: '1890611963203334190'
+    },
+    {
         tweetName: 'Milei_primer_descargo_15_02_2025',
         tweetId: '1890606683291779195'
     },
     {
         tweetName: 'KIP_protocol_15_02_2025',
         tweetId: '1890606008856367576'
+    },
+    {
+        tweetName: 'Fran_Fijap_15_02_2025',
+        tweetId: '1890628739609833810'
     },
     {
         tweetName: 'Lookonchain_cashout_15_02_2025',
@@ -109,6 +129,10 @@ export const tweets: Tweet[] = [
         tweetId: '1890937875677495542'
     },
     {
+        tweetName: 'Fernando_Molina_analisis_16_02_2025',
+        tweetId: '1891126301215355307'
+    },
+    {
         tweetName: 'Jupiter_Exchange_tweet_16_02_2025',
         tweetId: '1891181433588470052'
     },
@@ -121,8 +145,16 @@ export const tweets: Tweet[] = [
         tweetId: '1891173384966344896'
     },
     {
+        tweetName: 'Ape_blocked_16_02_2025',
+        tweetId: '1891241783377473923'
+    },
+    {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
+    },
+    {
+        tweetName: 'Santilli_Hijo_17_02_2025',
+        tweetId: '1891494711099084956'
     },
     {
         tweetName: 'Maxi_Firtman_sobre_Davis_17_02_2025',
@@ -135,5 +167,9 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Viale_entrevista_Milei_17_02_2025',
         tweetId: '1891657237136867625'
+    },
+    {
+        tweetName: 'Santiago_Caputo_Tatuaje_18_02_2025',
+        tweetId: '1892032958170554404'
     }
 ]; 

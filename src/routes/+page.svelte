@@ -690,6 +690,9 @@
         <p class="timeline-item-p">
             A las 19:01 hs del 14 de febrero del 2025, Javier Milei postea un tweet sorpresivo, promocionando (o difundiendo, como insitiría posteriormente) un nuevo token llamado $LIBRA, subiendose a la ola cripto iniciada por los Trump días atras. Aunque en principio hay algunas diferencias, Milei nunca tilda la criptomoneda como una 'memecoin', algo que los Trump si hicieron y al momento de 'difundir' el token no eran parte del gobierno, pero Milei si. Además, toda una serie de irregularidades técnicas que se fueron descubriendo a lo largo de las siguientes 5 horas.
         </p>
+        <p class="timeline-item-p">
+            En la teoría, la idea del proyecto (cuya <a href="https://www.vivalalibertadproject.com/es-ar">web</a> aún es accesible) era "impulsar la economía Argentina financiando pequeños proyectos y empresas locales, apoyando a quienes buscan emprender y contribuir al desarrollo del país."
+        </p>
 
         <p class="timeline-item-p">
             Spoiler: el tweet en cuestión no está presente (se adjunta una captura de la misma donde se aprecia que estaba fijado en su cuenta) ya que será borrado a las horas, cuando ya era muy tarde.
@@ -708,6 +711,33 @@
         </Button>
     </TimelineItem>
 
+    <TimelineItem title="Los 'insiders' adquirieron el token $LIBRA al instante del lanzamiento" date="14 de febrero, 2025 - 19:01 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Fernando Molina</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            "Estuvo todo digitado desde el minuto 0". Así lo afirmó Fernando Molina, especialista en información y análisis cripto, en relación al escándalo de Javier Milei y $LIBRA, tras la promoción presidencial del token que causó estafas millonarias a 44.000 usuarios.
+        </p>
+        <p class="timeline-item-p">
+            "Si quedan dudas miren las fotos: las compras más grandes se hicieron literalmente al mismo momento que Milei sacó el tweet (a los 00 segundos). La única forma de saber que era la memecoin de Milei era teniendo el dato previamente, siendo un insider. Estuvo todo digitado desde el minuto 0".
+        </p>
+        <p class="timeline-item-p">
+            Nota: la hora indicada en la imagen del tweet está en horario UTC. Por lo tanto las 22:01 serían las 19:01 hora Argentina. Es decir, exactamente el instante en que Milei postea el primer tweet sobre $LIBRA. Esto evidencia que su participación es absolutamente necesaria para la sucesión de los hechos.
+        </p>
+
+        <Tweet tweet={data.Insiders_buying_14_02_2025} />
+        <Button
+            color="alternative"
+            href="https://www.tiempoar.com.ar/ta_article/milei-y-el-cripto-escandalo-con-libra-estuvo-todo-digitado-desde-el-minuto-cero/"
+            target="_blank">
+            Fuente: Tiempo Argentino
+        </Button>
+    </TimelineItem>
+
     <TimelineItem title="Se revela que el dominio web 'vivalalibertadproject.com' fue registrado en el mismo día del lanzamiento" date="14 de febrero, 2025 - 19:27 hs" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -717,7 +747,7 @@
         </p>
 
         <p class="timeline-item-p">
-            Efectivamente se descubre que el dominio web 'vivalalibertadproject.com' había sido registrado el mismo día del lanzamiento, momentos antes del mismo. Además el correo electrónico del sitio del proyecto era una simple cuenta de Gmail.
+            Efectivamente se descubre que el dominio web 'vivalalibertadproject.com' había sido registrado el mismo día del lanzamiento, momentos antes del mismo, y solo por un año. Además el correo electrónico del sitio del proyecto era una simple cuenta de Gmail y la web te vincula a un Google Form para aplicar. Por último, la información del dueño del dominio era privada.
         </p>
         <Tweet tweet={data.Domain_info_14_02_2025} />
     </TimelineItem>
@@ -743,6 +773,64 @@
             target="_blank">
             Fuente: Infobae
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Nicolas Passini levanta sospechas sobre la wallet del desarrollador de $LIBRA" date="14 de febrero, 2025 - 20:07 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.NicolasPassini} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Nicolas Passini</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Nicolás Passini, experto en cripto finanzas, indicó los mismos <em>red flags</em> que muchos otros usuarios de X. A esta altura de la noche, la idea que la cuenta de Javier Milei había sido hackeada todavía tenía peso.
+        </p>
+        <Tweet tweet={data.Nicolas_Passini_tweet_14_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="Fran Fijap bancó el token $LIBRA, invirtiendo al menos 4.140 dólares" date="14 de febrero, 2025 - 20:20 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.FranFijap} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Fran Fijap</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Fran Fijap, el youtuber libertario, se mostró entusiasmado con su inversión de $LIBRA y lo compartió en X. Por la captura que mostró, se deduce que invirtió 4.140 dólares y al momento de subir el tweet estaba obteniendo 3.420.30 dólares de ganancia. Se desconoce si pudo mantenerla o si perdió todo, pero al tiempo borró su tweet y subió otro practicando una defensa acérrima a Javier Milei.
+        </p>
+
+        <Img
+            src="https://pbs.twimg.com/media/Gj2MVSzWIAAfzD0.jpg:large"
+            alt="Fran Fijap muestra en X su inversión en LIBRA"
+            size="max-w-xl"
+            class="rounded-lg"
+        />
+        <Tweet tweet={data.Fran_Fijap_15_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="'El Gordo Dan' sale a apoyar a Javier Milei" date="14 de febrero, 2025 - 20:24 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.ElGordoDan} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">El Gordo Dan</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Daniel Parisini, conocido por su nombre en redes sociales 'Gordo Dan', salió a bancar el tweet de Milei. Él es un activista político ultraconservador y de extrema derecha, empresario de medios argentino que ha llegado a ejercer la medicina. Es quien el 16 de noviembre del 2024 lanzó "Las Fuerzas del Cielo", la agrupación que pretende ser "el brazo armado" y "la guardia pretoriana" de Javier Milei.
+        </p>
+        <p class="timeline-item-p">
+            Como tantos otros tweets y posteos, fue borrado al poco tiempo.
+        </p>
+
+        <Img
+            src="https://media.minutouno.com/p/95c02b5819a435b95af9a0fa893f3688/adjuntos/150/imagenes/042/187/0042187667/610x0/smart/imagepng.png"
+            alt="El Gordo Dan sale a bancar a Milei"
+            size="max-w-xl"
+            class="rounded-lg"
+        />
     </TimelineItem>
 
     <TimelineItem title="Lilia Lemoine desmiente a los escépticos que difunden la versión del hackeo a Milei" date="14 de febrero, 2025 - 21:09 hs" classTime="text-md">
@@ -790,11 +878,20 @@
         <p class="timeline-item-p">
             A menos de 3 horas del lanzamiento de $LIBRA, la billetera cripto Ripio informa que la tienen listada en su plataforma.
         </p>
-        <p class="timeline-item-p">
-            
-        </p>
 
         <Tweet tweet={data.Ripio_tweet_14_02_2025} />
+    </TimelineItem>
+
+    <TimelineItem title="El influencer Ape se viraliza tras declarar en pleno ataque de ira, haber perdido mas de 1 millón de dólares" date="14 de febrero, 2025 - 21:50 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Ape</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Ape_rugged_14_02_2025} />
     </TimelineItem>
 
     <TimelineItem title="Javier Milei elimina el tweet donde promociona $LIBRA e 'intenta' aclarar la situación" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
@@ -844,6 +941,24 @@
             target="_blank">
             Fuente: Infobae
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="'Javier Milei acaba de destruir el mercado de memecoin' según The Kobeissi Letter" date="15 de febrero, 2025 - 00:59 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            La cuenta de X del boletín informativo The Kobeissi Letter publicó dicha sentencia, iniciando un hilo que recapituló lo acontecido horas antes. En la imagen del post (utilizada por múltiples medios) se aprecia el impacto del <em>rug pull</em>.
+        </p>
+        <p class="timeline-item-p">
+            La noche terminó con el precio del token desplomandose hasta los veinte centavos de dolar, habiendo alcanzado su máximo en cinco dólares cada token.
+        </p>
+
+        <Tweet tweet={data.Kobeissi_Letter_15_02_2025} />
     </TimelineItem>
 
     <TimelineItem title="Se conocen los primeros números, 8 billeteras vinculadas a $LIBRA retiraron 107 millones de USD" date="15 de febrero, 2025 - 01:30 hs" classTime="text-md">
@@ -947,6 +1062,40 @@
         <Tweet tweet={data.Oficina_Presidente_descargo_15_02_2025} />
     </TimelineItem>
 
+    <TimelineItem title="El especialista cripto Fernando Molina comparte los números del post mortem" date="16 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Fernando Molina</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            * El 62% de las wallets perdieron entre 1 y 1k
+        </p>
+        <p class="timeline-item-p">
+            * Un 21% ganó entre 1 y 1k
+        </p>
+        <p class="timeline-item-p">
+            * Casi un 9% perdió entre 1k y 10k
+        </p>
+        <p class="timeline-item-p">
+            * Un 2.7% perdió entre 10ky 100k
+        </p>
+        <p class="timeline-item-p">
+            * Los que ganaron más de 100k son solo el 0.18%
+        </p>
+        <Tweet tweet={data.Fernando_Molina_analisis_16_02_2025} />
+
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/economia/2025/02/18/ganadores-y-perdedores-los-numeros-de-quienes-salieron-beneficiados-por-libra-y-quienes-pagaron-el-costo/"
+            target="_blank">
+            Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
     <TimelineItem title="Dave Portnoy, empresario de medios y contacto de Hayden Mark Davis contó que le regalaron 6.5 millones de $LIBRA pero las devolvió" date="16 de febrero, 2025" classTime="text-md">
         <svelte:fragment slot="icon">
             <TimelineAvatar avatar={CustomAvatar.DavePortnoy} />
@@ -1014,7 +1163,7 @@
         />
 
         <p class="timeline-item-p">
-            Manuel Adorni también es apuntado, por haber participado en la reunión con Julián Peh, después de la Tech Forum, el 19 de octubre del 2024.
+            Manuel Adorni también es apuntado, por haber participado en la reunión con Julián Peh, después de la Tech Forum, el 19 de octubre del 2024. Lo mismo vale para Karina Milei, ambos ya incluidos en múltiples denuncias que acumula el caso $LIBRA.
         </p>
 
         <Button
@@ -1061,6 +1210,18 @@
             target="_blank">
             Fuente: La Nación
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="El influencer Ape comparte una captura de pantalla mostrando que Javier Milei lo ha bloqueado en X" date="16 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Ape</Badge>
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <Tweet tweet={data.Ape_blocked_16_02_2025} />
     </TimelineItem>
 
     <TimelineItem title="Se realizan mas de 100 denuncias contra el accionar de Javier Milei" date="17 de febrero, 2025" classTime="text-md">
@@ -1198,6 +1359,49 @@
             target="_blank">
             Fuente: Ámbito
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Los pedidos de juicio político por $LIBRA llegan a Diputados" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            En medio de un clima político marcado por divisiones internas y fragmentación, el Congreso de la Nación se encuentra en el centro de un debate sobre la posible investigación del caso de la criptomoneda $LIBRA y el papel del presidente Javier Milei. Ya se han presentado los primeros pedidos de juicio político contra el mandatario, mientras que otros sectores impulsan la creación de una comisión investigadora. Sin embargo, las disputas internas dentro de los bloques parlamentarios, incluidas las filas libertarias, y la atomización de la oposición complican cualquier avance en estas iniciativas.
+        </p>
+
+        <Button
+            color="alternative"
+            href="https://www.infobae.com/politica/2025/02/17/los-pedidos-de-juicio-politico-por-libra-llegan-a-diputados-con-la-comision-acefala-y-tensiones-cruzadas/"
+            target="_blank">
+            Fuente: Infobae
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Diego Santilli salió a defender a Milei a pesar que su hijo perdió dinero invirtiendo en $LIBRA" date="17 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.DiegoSantilli} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Diego Santilli</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            El hijo de Diego Santilli y la periodista Nancy Pazos invirtió en $Libra por el posteo de Javier Milei en X (antes Twitter), y perdió dinero de “sus ahorros”. Pese a ese hecho, el diputado del PRO, que viene amagando con su pase a las filas libertarias, salió a defender al presidente: "Le hicieron una cama al propio presidente", dijo.
+        </p>
+
+        <p class="timeline-item-p">
+            “A mi hijo lo que le tentó fue que el presidente de la Nación, en el que él confía, tiraba una nueva criptomoneda, y el hecho de que él la recomendara pensó que iba a ser un éxito, le dio seguridad”, contó Pazos en el programa de Georgina Barbarroza en Telefé.
+        </p>
+
+        <p class="timeline-item-p">
+            Se trata de Teo Santilli Pazos, licenciado en Negocios Digitales, quien perdió dinero tras invertir en la moneda cripto $Libra promocionada por Milei el viernes por la noche. Su padre, el diputado en tránsito al libertarianismo, aseguró que su hijo  “es responsable sobre lo que tiene que hacer cuando te va bien y cuando te va mal”.
+        </p>
+
+        <Tweet tweet={data.Santilli_Hijo_17_02_2025} />
     </TimelineItem>
 
     <TimelineItem title="Luis Caputo salió a defender a Javier Milei" date="17 de febrero, 2025" classTime="text-md">
@@ -1342,6 +1546,41 @@
             target="_blank">
             Fuente: Clarín
         </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Se precisó que 74.698 wallets participaron en la pérdida de capital de más de 286 millones de dólares" date="18 de febrero, 2025" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Javier Milei</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Se precisó que hubo más de 74 mil inversores que en total llegaron a acumular una pérdida de capital de más de 286 millones de dólares. En el detalle, se indicó que hubo 71.369 que perdieron hasta 10.000 dólares, 2.409 perdieron entre 10.000 y 50.000, 438 perdieron entre 50.000 y 100.000, 318 perdieron entre 100.000 y 250.000, 87 perdieron más de 250.000, 52 perdieron más de 500.000 y 25 perdieron más de 1.000.000 de dólares. Hubo argentinos entre los perdedores.
+        </p>
+        <Button
+            color="alternative"
+            href="https://www.pagina12.com.ar/804715-no-una-dos-veces-fomento-la-estafa-libra#:~:text=se%20precis%C3%B3%20que,entre%20los%20perdedores."
+            target="_blank">
+            Fuente: Página12
+        </Button>
+    </TimelineItem>
+
+    <TimelineItem title="Santiago Caputo y su tatuaje referente Libra" date="18 de febrero, 2025 - 23:06 hs" classTime="text-md">
+        <svelte:fragment slot="icon">
+            <TimelineAvatar avatar={CustomAvatar.SantiagoCaputo} />
+        </svelte:fragment>
+        <p class="timeline-item-p">
+            <Badge rounded large color="dark">Santiago Caputo</Badge>
+            <Badge rounded large color="dark">Maximiliano Firtman</Badge>
+        </p>
+
+        <p class="timeline-item-p">
+            Maximiliano Firtman comparte en su cuenta de X un fotograma de la entrevista de Viale a Javier Milei, en el momento exacto cuando Santiago Caputo entra en el plano de la cámara y se visualiza un tatuaje de Libra en su brazo derecho.
+        </p>
+
+        <Tweet tweet={data.Santiago_Caputo_Tatuaje_18_02_2025} />
     </TimelineItem>
 
     <!-- <Activity>

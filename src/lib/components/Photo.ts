@@ -15,6 +15,11 @@ import MelaniaTrump from '$lib/assets/profiles/melania-trump.png';
 import MaximilianoFirtman from '$lib/assets/profiles/maximiliano-firtman.png';
 import LiliaLemoine from '$lib/assets/profiles/lilia-lemoine.png';
 import AgustinLaje from '$lib/assets/profiles/agustin-laje.png';
+import NicolasPassini from '$lib/assets/profiles/nicolas-passini.png';
+import ElGordoDan from '$lib/assets/profiles/el-gordo-dan.png';
+import FranFijap from '$lib/assets/profiles/fran-fijap.png';
+import SantiagoCaputo from '$lib/assets/profiles/santiago-caputo.png';
+import DiegoSantilli from '$lib/assets/profiles/diego-santilli.png';
 
 export const Photo = {
     JavierMilei,
@@ -33,7 +38,12 @@ export const Photo = {
     MelaniaTrump,
     MaximilianoFirtman,
     LiliaLemoine,
-    AgustinLaje
+    AgustinLaje,
+    NicolasPassini,
+    ElGordoDan,
+    FranFijap,
+    SantiagoCaputo,
+    DiegoSantilli
 } as const;
 
 export default Photo; 
