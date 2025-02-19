@@ -3,6 +3,8 @@
     import Header from './header.svelte';
     import Footer from './footer.svelte';
     import { injectAnalytics } from '@vercel/analytics/sveltekit'
+
+    injectAnalytics();
 </script>
 
 <div class="layout">
