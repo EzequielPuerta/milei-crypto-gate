@@ -1848,6 +1848,34 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="Javier Milei pidió investigar el 'vínculo' entre 'políticos corruptos' y 'periodistas ensobrados'" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Jonatan Viale</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Javier Milei pidió investigar el "vínculo directo" entre "los políticos corruptos y los periodistas ensobrados", en medio de la polémica por el escándalo de la criptomoneda $LIBRA. El mandatario se manifestó en estos términos al hacerse eco del descargo del periodista Jonatan Viale por la interrupción de la entrevista que le hiciera el lunes último.
+            </p>
+            <p class="timeline-item-p">
+                "Ayer a la noche Jonatan Viale reveló tener conocimiento de algo que advierto desde 2021: existe vínculo directo entre los políticos corruptos y los periodistas ensobrados", expresó Milei en un texto publicado en X.
+            </p>
+            <p class="timeline-item-p">
+                Y planteó que "la Justicia debería investigar, según lo dicho en TN, si el ex precandidato a presidente que sacó 11 puntos usó recursos de los porteños para su campaña presidencial y/o para ensuciar y calumniar al resto de los candidatos, ensobrando a todo aquel que esté a la venta", dijo en referencia al ex jefe de Gobierno porteño Horacio Rodríguez Larreta, que resultó derrotado por Patricia Bullrich en las PASO de Juntos por el Cambio (JxC), informó la Agencia Noticias Argentinas.
+            </p>
+
+            <Tweet tweet={data.Milei_ensobrados_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.losandes.com.ar/politica/criptogate-javier-milei-pidio-investigar-el-vinculo-politicos-corruptos-y-periodistas-ensobrados-n5939112"
+                target="_blank">
+                Fuente: Los Andes
+            </Button>
+        </TimelineItem>
+
         <!-- <Activity>
             <ActivityItem
                 activities={[

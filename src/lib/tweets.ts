@@ -195,5 +195,9 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Demanda_millonaria_USA_19_02_2025',
         tweetId: '1892243166150980087'
+    },
+    {
+        tweetName: 'Milei_ensobrados_19_02_2025',
+        tweetId: '1892261781483245729'
     }
 ]; 
