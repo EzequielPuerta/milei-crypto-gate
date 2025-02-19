@@ -1601,6 +1601,89 @@
             <Tweet tweet={data.Hayden_identidad_falsa_19_02_2025} />
         </TimelineItem>
 
+        <TimelineItem title="Hayden Davis negó el pago de coimas a Karina Milei" date="19 de febrero, 2025" classTime="text-md">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Juan Carlos Pallarols</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Karina Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                En medio del escándalo cripto, el trader estadounidense Hayden Mark Davis se despegó de los chats atribuidos a su persona donde aseguraba pagarle sobornos a Karina Milei, la secretaria general de Presidencia, para acceder y "controlar" al Presidente.
+            </p>
+            <p class="timeline-item-p">
+                Este martes, el medio especializado en criptomonedas Coindesk había publicado una serie de chats atribuidos a Hayden Davis, CEO de Kelsier Ventures, donde afirmaba en diciembre pasado que tenía influencia sobre Milei debido a pagos realizados a su hermana Karina. "Envié $$ a su hermana y él firma lo que sea y hace lo que yo quiera. Una locura", se lee en el texto enviado a un remitente desconocido.
+            </p>
+            <p class="timeline-item-p">
+                Sin embargo, ahora desde el entorno del empresario salieron a desmentir la veracidad de los mensajes, asegurando que Davis nunca los escribió.
+            </p>
+            <p class="timeline-item-p">
+                "Distintas notas en la prensa afirman que pagué al presidente Javier Milei o a su hermana, Karina Milei, para lanzar la memecoin Libra. Son completamente falsos. Nunca les hice ningún pago, ni ellos lo pidieron. Su única preocupación era asegurar que las ganancias de Libra beneficiaran a la gente y a la economía de Argentina", dijo. "Esto no es más que un ataque políticamente motivado contra el presidente Milei", sumó.
+            </p>
+
+            <p class="timeline-item-p">
+                Paralelamente a esto, en las redes reflotó la denuncia pública del histórico orfebre Juan Carlos Pallarols. Ocurrió el 3 de septiembre del 2023, previo a la victoria de Javier Milei. Pallarols apareció en TN y denunció públicamente que Karina Milei le pidió dinero para tener una cena con Javier Milei.
+            </p>
+            <p class="timeline-item-p">
+                A Milei no le gustó nada lo que dijo en su momento Pallarols y lo trató de "tremendo mentiroso". "No saben siquiera armar una mentira. Siendo yo un bilardista fanático jamás me pondría la vestimenta de ganador hasta que no termine el partido", explicó el candidato. "Frente a esta mentira, en caso de ganar(las elecciones) pediré de manera explícita que mis atributos no los haga Pallarols", advirtió Milei.
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.losandes.com.ar/politica/pese-los-chats-hayden-davis-nego-el-pago-sobornos-karina-milei-controlar-al-presidente-n5939077"
+                target="_blank">
+                Fuente: Los Andes
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.lapoliticaonline.com/politica/la-polemica-del-baston-pallarols-denuncio-que-karina-le-pidio-2-mil-dolares-para-cenar-con-milei/"
+                target="_blank">
+                Fuente: La Política Online
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Guillermo Francos criticó a Santiago Caputo por interrumpir la entrevista de Jonatan Viale a Javier Milei" date="19 de febrero, 2025" classTime="text-md">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.GuillermoFrancos} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Guillermo Francos</Badge>
+                <Badge rounded large color="dark">Santiago Caputo</Badge>
+                <Badge rounded large color="dark">Manuel Adorni</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Karina Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                El Jefe de Gabinete Guillermo Francos, que ya había tenido roces previos con Santiago Caputo, sostuvo que el asesor intervino en el reportaje “por una estupidez” y agregó que esto le servirá para darse cuenta de que “nadie es superpoderoso”.
+            </p>
+            <p class="timeline-item-p">
+                En una entrevista con Radio Rivadavia, Francos detalló la reacción del presidente: “[Milei] se enojó [con Caputo], incluso sin saber que esa parte iba a salir al aire. Se enojó con Santiago Caputo porque le pareció una irresponsabilidad que, sin ningún acuerdo previo con el conductor del programa, interrumpiera. Pero además interrumpió para una estupidez, porque la verdad es que cuando uno mira la causa de la interrupción dice: ‘¿Cuál es el sentido?’”.
+            </p>
+            <p class="timeline-item-p">
+                El jefe de Gabinete también reflexionó sobre el aprendizaje que debería extraer Caputo de este episodio: “De todas maneras me parece que también Santiago Caputo habrá aprendido una lección: que nadie es superpoderoso, que todas las cosas tienen sus límites. El Presidente se lo ha marcado y me parece importante”.
+            </p>
+            <p class="timeline-item-p">
+                Francos consideró que la intervención de Caputo fue un error y mostró falta de criterio. Así se suma al vocero Manuel Adorni, quién dialogó con A24 y fue terminante al indicar que el accionar del consultor político fue "equivocado" y, además, afirmó que el propio Milei le dijo que fue "innecesario".
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.perfil.com/noticias/politica/guillermo-francos-critico-a-santiago-caputo-por-interrumpir-la-entrevista-de-jonatan-viale-a-milei-nadie-es-superpoderoso.phtml"
+                target="_blank">
+                Fuente: Perfil
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.cronista.com/economia-politica/adorni-explico-por-que-santiago-caputo-interrumpio-la-entrevista-a-milei-tiene-el-defecto/#:~:text=el%20vocero%20Manuel%20Adorni%20dialog%C3%B3%20con%20A24%C2%A0y%20fue%20terminante%20al%20indicar%20que%20el%20accionar%20del%20consultor%20pol%C3%ADtico%20fue%20%22equivocado%22%20y%2C%20adem%C3%A1s%2C%20afirm%C3%B3%20que%20el%20propio%20Milei%20le%20dijo%20que%20fue%20%22innecesario%22."
+                target="_blank">
+                Fuente: Cronista
+            </Button>
+        </TimelineItem>
+
         <!-- <Activity>
             <ActivityItem
                 activities={[

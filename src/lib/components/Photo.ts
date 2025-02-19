@@ -20,6 +20,7 @@ import ElGordoDan from '$lib/assets/profiles/el-gordo-dan.png';
 import FranFijap from '$lib/assets/profiles/fran-fijap.png';
 import SantiagoCaputo from '$lib/assets/profiles/santiago-caputo.png';
 import DiegoSantilli from '$lib/assets/profiles/diego-santilli.png';
+import GuillermoFrancos from '$lib/assets/profiles/guillermo-francos.png';
 
 export const Photo = {
     JavierMilei,
@@ -43,7 +44,8 @@ export const Photo = {
     ElGordoDan,
     FranFijap,
     SantiagoCaputo,
-    DiegoSantilli
+    DiegoSantilli,
+    GuillermoFrancos
 } as const;
 
 export default Photo; 
