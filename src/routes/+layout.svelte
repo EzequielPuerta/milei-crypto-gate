@@ -57,7 +57,8 @@
 
     main {
         margin-top: 2em;
-        margin-left: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 
     @media (min-width: 768px) {

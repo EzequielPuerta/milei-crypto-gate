@@ -30,6 +30,7 @@
         margin-bottom: 1rem;
         font-size: 1rem;
         font-weight: 400;
+        text-align: justify;
         color: #6b7280;
         /* Dark mode styles */
         color: #9ca3af; 
