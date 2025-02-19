@@ -27,9 +27,10 @@
         margin-top: 5em;
     }
     .timeline-item-p {
+        margin-top: 1rem;
         margin-bottom: 1rem;
-        font-size: 1rem;
         font-weight: 400;
+        font-size: large;
         text-align: justify;
         color: #6b7280;
         /* Dark mode styles */
@@ -41,7 +42,7 @@
 <div class="timeline">
     <Timeline order="vertical">
         <!------------------------------------ 2019 ------------------------------------>
-        <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-md">
+        <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -71,7 +72,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2020 ------------------------------------>
-        <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-md">
+        <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -130,7 +131,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Emmanuel Danann realiza un 'vivo' con Novelli de N&W Professional Traders" date="agosto, 2020" classTime="text-md">
+        <TimelineItem title="Emmanuel Danann realiza un 'vivo' con Novelli de N&W Professional Traders" date="agosto, 2020" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.EmmanuelDanann} />
             </svelte:fragment>
@@ -149,7 +150,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2021 ------------------------------------>
-        <TimelineItem title="Primer fraude: Milei recomienda CoinX World" date="18 de diciembre, 2021" classTime="text-md">
+        <TimelineItem title="Primer fraude: Milei recomienda CoinX World" date="18 de diciembre, 2021" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -174,7 +175,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2022 ------------------------------------>
-        <TimelineItem title="Segundo fraude: Milei recomienda Vulcano" date="18 de febrero, 2022" classTime="text-md">
+        <TimelineItem title="Segundo fraude: Milei recomienda Vulcano" date="18 de febrero, 2022" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -212,7 +213,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2023 ------------------------------------>
-        <TimelineItem title="Mauricio Novelli felicita a Javier Milei por la victoria en las elecciones presidenciales" date="19 de noviembre, 2023" classTime="text-md">
+        <TimelineItem title="Mauricio Novelli felicita a Javier Milei por la victoria en las elecciones presidenciales" date="19 de noviembre, 2023" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -224,7 +225,7 @@
             <Tweet tweet={data.Novelli_felicita_Milei_2023} />
         </TimelineItem>
 
-        <TimelineItem title="Asume Javier Milei la Presidencia: Mauricio Novelli y Manuel Terrones Godoy serían invitados a la Gala del Teatro Colón" date="10 de diciembre, 2023" classTime="text-md">
+        <TimelineItem title="Asume Javier Milei la Presidencia: Mauricio Novelli y Manuel Terrones Godoy serían invitados a la Gala del Teatro Colón" date="10 de diciembre, 2023" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -238,7 +239,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2024 ------------------------------------>
-        <TimelineItem title="1º reunión de Novelli: Casa Rosada con Karina Milei" date="8 de enero, 2024" classTime="text-md">
+        <TimelineItem title="1º reunión de Novelli: Casa Rosada con Karina Milei" date="8 de enero, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -265,7 +266,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="2º reunión de Novelli: Casa Rosada con Karina Milei" date="5 de abril, 2024" classTime="text-md">
+        <TimelineItem title="2º reunión de Novelli: Casa Rosada con Karina Milei" date="5 de abril, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -286,7 +287,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="3º reunión de Novelli: Casa Rosada con Karina Milei" date="6 de junio, 2024" classTime="text-md">
+        <TimelineItem title="3º reunión de Novelli: Casa Rosada con Karina Milei" date="6 de junio, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -318,7 +319,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="4º reunión de Novelli: Casa Rosada con Karina Milei" date="11 de junio, 2024" classTime="text-md">
+        <TimelineItem title="4º reunión de Novelli: Casa Rosada con Karina Milei" date="11 de junio, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -353,7 +354,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="5º reunión de Novelli: Casa Rosada con Karina Milei" date="16 de julio, 2024" classTime="text-md">
+        <TimelineItem title="5º reunión de Novelli: Casa Rosada con Karina Milei" date="16 de julio, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -384,7 +385,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="6º reunión de Novelli: Casa Rosada con Karina Milei" date="1 de agosto, 2024" classTime="text-md">
+        <TimelineItem title="6º reunión de Novelli: Casa Rosada con Karina Milei" date="1 de agosto, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -405,7 +406,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Las redes sociales de Tech Forum empiezan a traccionar" date="6 de septiembre, 2024" classTime="text-md">
+        <TimelineItem title="Las redes sociales de Tech Forum empiezan a traccionar" date="6 de septiembre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -417,7 +418,7 @@
             <Tweet tweet={data.Cofundadores_Tech_Forum_06_09_2024} />
         </TimelineItem>
 
-        <TimelineItem title="Aparición de Tech Forum en TN Tecno" date="16 de septiembre, 2024" classTime="text-md">
+        <TimelineItem title="Aparición de Tech Forum en TN Tecno" date="16 de septiembre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -429,7 +430,7 @@
             <Tweet tweet={data.Novelli_TN_Tecno_16_09_2024} />
         </TimelineItem>
 
-        <TimelineItem title="Se anuncia a Javier Milei como orador principal del Tech Forum" date="17 de septiembre, 2024" classTime="text-md">
+        <TimelineItem title="Se anuncia a Javier Milei como orador principal del Tech Forum" date="17 de septiembre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -442,7 +443,7 @@
             <Tweet tweet={data.Milei_main_speaker_17_09_2024} />
         </TimelineItem>
 
-        <TimelineItem title="7º reunión de Novelli: Casa Rosada con Javier Milei" date="20 de septiembre, 2024" classTime="text-md">
+        <TimelineItem title="7º reunión de Novelli: Casa Rosada con Javier Milei" date="20 de septiembre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -468,7 +469,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="8º reunión de Novelli: Quinta de Olivos con Javier Milei" date="27 de septiembre, 2024" classTime="text-md">
+        <TimelineItem title="8º reunión de Novelli: Quinta de Olivos con Javier Milei" date="27 de septiembre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -493,7 +494,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Maximiliano Firtman advierte señales de sospecha acerca del Tech Forum" date="18 de octubre, 2024" classTime="text-md">
+        <TimelineItem title="Maximiliano Firtman advierte señales de sospecha acerca del Tech Forum" date="18 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MaximilianoFirtman} />
             </svelte:fragment>
@@ -509,7 +510,7 @@
             <Tweet tweet={data.Maxi_Firtman_sobre_Davis_17_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Manuel Terrones Godoy (cofundador de Tech Forum) es acusado en el programa Argenzuela" date="19 de octubre, 2024" classTime="text-md">
+        <TimelineItem title="Manuel Terrones Godoy (cofundador de Tech Forum) es acusado en el programa Argenzuela" date="19 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.ManuelTerronesGodoy} />
             </svelte:fragment>
@@ -532,7 +533,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Javier Milei da su charla en el marco de la primera edición del Tech Forum" date="19 de octubre, 2024" classTime="text-md">
+        <TimelineItem title="Javier Milei da su charla en el marco de la primera edición del Tech Forum" date="19 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -551,7 +552,7 @@
             <Tweet tweet={data.Milei_Tech_Forum_Infobae_19_10_2024} />
         </TimelineItem>
 
-        <TimelineItem title="Reunión de Julián Peh con Javier Milei post Tech Forum" date="19 de octubre, 2024" classTime="text-md">
+        <TimelineItem title="Reunión de Julián Peh con Javier Milei post Tech Forum" date="19 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
             </svelte:fragment>
@@ -606,7 +607,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2025 ------------------------------------>
-        <TimelineItem title="Se lanza $TRUMP, la cripto de Donald Trump" date="17 de enero, 2025" classTime="text-md">
+        <TimelineItem title="Se lanza $TRUMP, la cripto de Donald Trump" date="17 de enero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.DonaldTrump} />
             </svelte:fragment>
@@ -635,7 +636,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Se lanza $MELANIA, la cripto de Melania Trump" date="18 de enero, 2025" classTime="text-md">
+        <TimelineItem title="Se lanza $MELANIA, la cripto de Melania Trump" date="18 de enero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MelaniaTrump} />
             </svelte:fragment>
@@ -661,7 +662,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Reunión de Hayden Mark Davis con Javier Milei" date="30 de enero, 2025" classTime="text-md">
+        <TimelineItem title="Reunión de Hayden Mark Davis con Javier Milei" date="30 de enero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -683,7 +684,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Javier Milei sube y dejado fijado el famoso tweet sobre la promoción de $LIBRA" date="14 de febrero, 2025 - 19:01 hs" classTime="text-md">
+        <TimelineItem title="Javier Milei sube y dejado fijado el famoso tweet sobre la promoción de $LIBRA" date="14 de febrero, 2025 - 19:01 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -715,7 +716,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Los 'insiders' adquirieron el token $LIBRA al instante del lanzamiento" date="14 de febrero, 2025 - 19:01 hs" classTime="text-md">
+        <TimelineItem title="Los 'insiders' adquirieron el token $LIBRA al instante del lanzamiento" date="14 de febrero, 2025 - 19:01 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -742,7 +743,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Se revela que el dominio web 'vivalalibertadproject.com' fue registrado en el mismo día del lanzamiento" date="14 de febrero, 2025 - 19:27 hs" classTime="text-md">
+        <TimelineItem title="Se revela que el dominio web 'vivalalibertadproject.com' fue registrado en el mismo día del lanzamiento" date="14 de febrero, 2025 - 19:27 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -756,7 +757,7 @@
             <Tweet tweet={data.Domain_info_14_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="La cuenta Bubblemaps advierte que el 82% de $LIBRA está desbloqueado" date="14 de febrero, 2025 - 19:38 hs" classTime="text-md">
+        <TimelineItem title="La cuenta Bubblemaps advierte que el 82% de $LIBRA está desbloqueado" date="14 de febrero, 2025 - 19:38 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -779,7 +780,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Nicolas Passini levanta sospechas sobre la wallet del desarrollador de $LIBRA" date="14 de febrero, 2025 - 20:07 hs" classTime="text-md">
+        <TimelineItem title="Nicolas Passini levanta sospechas sobre la wallet del desarrollador de $LIBRA" date="14 de febrero, 2025 - 20:07 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.NicolasPassini} />
             </svelte:fragment>
@@ -793,7 +794,7 @@
             <Tweet tweet={data.Nicolas_Passini_tweet_14_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Fran Fijap bancó el token $LIBRA, invirtiendo al menos 4.140 dólares" date="14 de febrero, 2025 - 20:20 hs" classTime="text-md">
+        <TimelineItem title="Fran Fijap bancó el token $LIBRA, invirtiendo al menos 4.140 dólares" date="14 de febrero, 2025 - 20:20 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.FranFijap} />
             </svelte:fragment>
@@ -814,7 +815,7 @@
             <Tweet tweet={data.Fran_Fijap_15_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="'El Gordo Dan' sale a apoyar a Javier Milei" date="14 de febrero, 2025 - 20:24 hs" classTime="text-md">
+        <TimelineItem title="'El Gordo Dan' sale a apoyar a Javier Milei" date="14 de febrero, 2025 - 20:24 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.ElGordoDan} />
             </svelte:fragment>
@@ -837,7 +838,7 @@
             />
         </TimelineItem>
 
-        <TimelineItem title="Lilia Lemoine desmiente a los escépticos que difunden la versión del hackeo a Milei" date="14 de febrero, 2025 - 21:09 hs" classTime="text-md">
+        <TimelineItem title="Lilia Lemoine desmiente a los escépticos que difunden la versión del hackeo a Milei" date="14 de febrero, 2025 - 21:09 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.LiliaLemoine} />
             </svelte:fragment>
@@ -850,7 +851,7 @@
             <Tweet tweet={data.Lilia_sobre_Milei_hackeado_14_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Agustín Laje sale a bancar a Milei" date="14 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Agustín Laje sale a bancar a Milei" date="14 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.AgustinLaje} />
             </svelte:fragment>
@@ -871,7 +872,7 @@
             />
         </TimelineItem>
 
-        <TimelineItem title="La billetera cripto Ripio anuncia que el token $LIBRA se encuentra disponible en su plataforma" date="14 de febrero, 2025 - 21:40 hs" classTime="text-md">
+        <TimelineItem title="La billetera cripto Ripio anuncia que el token $LIBRA se encuentra disponible en su plataforma" date="14 de febrero, 2025 - 21:40 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -886,7 +887,7 @@
             <Tweet tweet={data.Ripio_tweet_14_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="El influencer Ape se viraliza tras declarar en pleno ataque de ira, haber perdido mas de 1 millón de dólares" date="14 de febrero, 2025 - 21:50 hs" classTime="text-md">
+        <TimelineItem title="El influencer Ape se viraliza tras declarar en pleno ataque de ira, haber perdido mas de 1 millón de dólares" date="14 de febrero, 2025 - 21:50 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -898,7 +899,7 @@
             <Tweet tweet={data.Ape_rugged_14_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Javier Milei elimina el tweet donde promociona $LIBRA e 'intenta' aclarar la situación" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
+        <TimelineItem title="Javier Milei elimina el tweet donde promociona $LIBRA e 'intenta' aclarar la situación" date="15 de febrero, 2025 - 00:38 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -922,7 +923,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="KIP Protocol, la empresa de Julián Peh, dice que el lanzamiento de $LIBRA fue un éxito" date="15 de febrero, 2025 - 00:38 hs" classTime="text-md">
+        <TimelineItem title="KIP Protocol, la empresa de Julián Peh, dice que el lanzamiento de $LIBRA fue un éxito" date="15 de febrero, 2025 - 00:38 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
             </svelte:fragment>
@@ -947,7 +948,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="'Javier Milei acaba de destruir el mercado de memecoin' según The Kobeissi Letter" date="15 de febrero, 2025 - 00:59 hs" classTime="text-md">
+        <TimelineItem title="'Javier Milei acaba de destruir el mercado de memecoin' según The Kobeissi Letter" date="15 de febrero, 2025 - 00:59 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -965,7 +966,7 @@
             <Tweet tweet={data.Kobeissi_Letter_15_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Se conocen los primeros números, 8 billeteras vinculadas a $LIBRA retiraron 107 millones de USD" date="15 de febrero, 2025 - 01:30 hs" classTime="text-md">
+        <TimelineItem title="Se conocen los primeros números, 8 billeteras vinculadas a $LIBRA retiraron 107 millones de USD" date="15 de febrero, 2025 - 01:30 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -986,7 +987,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Patricia Bullrich, de las primeras en defender a Javier Milei" date="15 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Patricia Bullrich, de las primeras en defender a Javier Milei" date="15 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.PatriciaBullrich} />
             </svelte:fragment>
@@ -1012,7 +1013,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Charles Hoskinson (cofundador de Cardano y ex cofundador de Ethereum) denuncia coimas en el Tech Forum" date="15 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Charles Hoskinson (cofundador de Cardano y ex cofundador de Ethereum) denuncia coimas en el Tech Forum" date="15 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.CharlesHoskinson} />
             </svelte:fragment>
@@ -1034,7 +1035,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Hayden Mark Davis realiza su descargo" date="15 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Hayden Mark Davis realiza su descargo" date="15 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -1049,7 +1050,7 @@
             <Tweet tweet={data.Davis_descargo_15_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="La cuenta de X de la 'Oficina del Presidente' ensaya su intento de descargo" date="15 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="La cuenta de X de la 'Oficina del Presidente' ensaya su intento de descargo" date="15 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.OficinaDelPresidente} />
             </svelte:fragment>
@@ -1066,7 +1067,7 @@
             <Tweet tweet={data.Oficina_Presidente_descargo_15_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="El especialista cripto Fernando Molina comparte los números del post mortem" date="16 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="El especialista cripto Fernando Molina comparte los números del post mortem" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1100,7 +1101,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Dave Portnoy, empresario de medios y contacto de Hayden Mark Davis contó que le regalaron 6.5 millones de $LIBRA pero las devolvió" date="16 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Dave Portnoy, empresario de medios y contacto de Hayden Mark Davis contó que le regalaron 6.5 millones de $LIBRA pero las devolvió" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.DavePortnoy} />
             </svelte:fragment>
@@ -1127,7 +1128,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Agustín Laje, presidente de la Fundación Faro, estaría involucrado en las coimas alrededor de Tech Forum y $LIBRA" date="16 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Agustín Laje, presidente de la Fundación Faro, estaría involucrado en las coimas alrededor de Tech Forum y $LIBRA" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.AgustinLaje} />
             </svelte:fragment>
@@ -1190,7 +1191,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="El escándalo de $LIBRA impacta de lleno a Jupiter Exchange, Meteora y el ecosistema Solana" date="16 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="El escándalo de $LIBRA impacta de lleno a Jupiter Exchange, Meteora y el ecosistema Solana" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1216,7 +1217,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="El influencer Ape comparte una captura de pantalla mostrando que Javier Milei lo ha bloqueado en X" date="16 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="El influencer Ape comparte una captura de pantalla mostrando que Javier Milei lo ha bloqueado en X" date="16 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1228,7 +1229,7 @@
             <Tweet tweet={data.Ape_blocked_16_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Se realizan mas de 100 denuncias contra el accionar de Javier Milei" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Se realizan mas de 100 denuncias contra el accionar de Javier Milei" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1248,7 +1249,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="'Ese dinero es de los argentinos': Hayden Mark Davis en conversación con Dave Portnoy" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="'Ese dinero es de los argentinos': Hayden Mark Davis en conversación con Dave Portnoy" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -1279,7 +1280,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Tech Forum se desliga del escándalo" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Tech Forum se desliga del escándalo" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
             </svelte:fragment>
@@ -1304,7 +1305,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="KIP Protocol y Julián Peh también se desligan y desmienten al Gobierno" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="KIP Protocol y Julián Peh también se desligan y desmienten al Gobierno" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JulianPeh} />
             </svelte:fragment>
@@ -1338,7 +1339,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Milei y un retweet que en cuestión de minutos, hace saltar la cotización de $LIBRA nuevamente" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Milei y un retweet que en cuestión de minutos, hace saltar la cotización de $LIBRA nuevamente" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1365,7 +1366,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Los pedidos de juicio político por $LIBRA llegan a Diputados" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Los pedidos de juicio político por $LIBRA llegan a Diputados" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1385,7 +1386,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Diego Santilli salió a defender a Milei a pesar que su hijo perdió dinero invirtiendo en $LIBRA" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Diego Santilli salió a defender a Milei a pesar que su hijo perdió dinero invirtiendo en $LIBRA" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.DiegoSantilli} />
             </svelte:fragment>
@@ -1408,7 +1409,7 @@
             <Tweet tweet={data.Santilli_Hijo_17_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Luis Caputo salió a defender a Javier Milei" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Luis Caputo salió a defender a Javier Milei" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.LuisCaputo} />
             </svelte:fragment>
@@ -1430,7 +1431,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Fallida defensa de Javier Milei y papelón de Jonatan Viale" date="17 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Fallida defensa de Javier Milei y papelón de Jonatan Viale" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JonatanViale} />
             </svelte:fragment>
@@ -1459,7 +1460,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="'No reaccioné como tendría que haber reaccionado': Jonatan Viale sobre la entrevista con Milei" date="18 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="'No reaccioné como tendría que haber reaccionado': Jonatan Viale sobre la entrevista con Milei" date="18 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JonatanViale} />
             </svelte:fragment>
@@ -1488,7 +1489,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Denuncian en Estados Unidos a Javier Milei y a los otros protagonistas del escándalo $LIBRA" date="18 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Denuncian en Estados Unidos a Javier Milei y a los otros protagonistas del escándalo $LIBRA" date="18 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1521,7 +1522,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="El creador de $LIBRA se jacta de pagar sobornos en Argentina y de 'controlar' a Milei" date="18 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="El creador de $LIBRA se jacta de pagar sobornos en Argentina y de 'controlar' a Milei" date="18 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -1552,7 +1553,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Se precisó que 74.698 wallets participaron en la pérdida de capital de más de 286 millones de dólares" date="18 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Se precisó que 74.698 wallets participaron en la pérdida de capital de más de 286 millones de dólares" date="18 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
@@ -1571,7 +1572,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Santiago Caputo y su tatuaje referente Libra" date="18 de febrero, 2025 - 23:06 hs" classTime="text-md">
+        <TimelineItem title="Santiago Caputo y su tatuaje referente Libra" date="18 de febrero, 2025 - 23:06 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.SantiagoCaputo} />
             </svelte:fragment>
@@ -1587,7 +1588,7 @@
             <Tweet tweet={data.Santiago_Caputo_Tatuaje_18_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Hayden Mark Davis sería una identidad falsa" date="19 de febrero, 2025 - 01:28 hs" classTime="text-md">
+        <TimelineItem title="Hayden Mark Davis sería una identidad falsa" date="19 de febrero, 2025 - 01:28 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -1602,7 +1603,7 @@
             <Tweet tweet={data.Hayden_identidad_falsa_19_02_2025} />
         </TimelineItem>
 
-        <TimelineItem title="Hayden Davis negó el pago de coimas a Karina Milei" date="19 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Hayden Davis negó el pago de coimas a Karina Milei" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
             </svelte:fragment>
@@ -1646,7 +1647,7 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Guillermo Francos criticó a Santiago Caputo por interrumpir la entrevista de Jonatan Viale a Javier Milei" date="19 de febrero, 2025" classTime="text-md">
+        <TimelineItem title="Guillermo Francos criticó a Santiago Caputo por interrumpir la entrevista de Jonatan Viale a Javier Milei" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.GuillermoFrancos} />
             </svelte:fragment>
