@@ -21,6 +21,10 @@ export const tweets: Tweet[] = [
         tweetId: '1891254639909044401'
     },
     {
+        tweetName: 'Sergio_Morales_ADN_23_07_2024',
+        tweetId: '1815883503403471272'
+    },
+    {
         tweetName: 'Cofundadores_Tech_Forum_06_09_2024',
         tweetId: '1832185840467841437'
     },
@@ -157,6 +161,14 @@ export const tweets: Tweet[] = [
         tweetId: '1891452868642918568'
     },
     {
+        tweetName: 'Kelsier_modus_operandi_17_02_2025',
+        tweetId: '1891687156633997474'
+    },
+    {
+        tweetName: 'Kelsier_modus_operandi_Nick_17_02_2025',
+        tweetId: '1891671608915271700'
+    },
+    {
         tweetName: 'Milei_Retweet_17_02_2025',
         tweetId: '1891444794515165198'
     },
@@ -181,6 +193,10 @@ export const tweets: Tweet[] = [
         tweetId: '1892032958170554404'
     },
     {
+        tweetName: 'Cristina_Perez_18_02_2025',
+        tweetId: '1892017667835310192'
+    },
+    {
         tweetName: 'Hayden_identidad_falsa_19_02_2025',
         tweetId: '1891994203195908291'
     },
@@ -199,5 +215,29 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Milei_ensobrados_19_02_2025',
         tweetId: '1892261781483245729'
+    },
+    {
+        tweetName: 'Seguimiento_wallets_Kelsier_19_02_2025',
+        tweetId: '1892295763524538556'
+    },
+    {
+        tweetName: 'Seguimiento_wallets_Arkham_19_02_2025',
+        tweetId: '1892261454100725982'
+    },
+    {
+        tweetName: 'Descargo_Larreta_19_02_2025',
+        tweetId: '1892327052096721087'
+    },
+    {
+        tweetName: 'Investigacion_Libra_19_02_2025',
+        tweetId: '1891613721262264614'
+    },
+    {
+        tweetName: 'Diogenes_Caseres_coima_19_02_2025',
+        tweetId: '1892201869365129723'
+    },
+    {
+        tweetName: 'Contrato_Davis_19_02_2025',
+        tweetId: '1892382929403167069'
     }
 ]; 

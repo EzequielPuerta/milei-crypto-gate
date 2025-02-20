@@ -23,6 +23,10 @@ import DiegoSantilli from '$lib/assets/profiles/diego-santilli.png';
 import GuillermoFrancos from '$lib/assets/profiles/guillermo-francos.png';
 import AlejandroMelik from '$lib/assets/profiles/alejandro-melik.png';
 import Ape from '$lib/assets/profiles/ape.png';
+import HoracioRodriguezLarreta from '$lib/assets/profiles/horacio-rodriguez-larreta.png';
+import CristinaPerez from '$lib/assets/profiles/cristina-perez.png';
+import DiogenesCaseres from '$lib/assets/profiles/diogenes-caseres.png';
+import SergioMorales from '$lib/assets/profiles/sergio-morales.png';
 
 export const Photo = {
     JavierMilei,
@@ -49,7 +53,11 @@ export const Photo = {
     DiegoSantilli,
     GuillermoFrancos,
     AlejandroMelik,
-    Ape
+    Ape,
+    HoracioRodriguezLarreta,
+    CristinaPerez,
+    DiogenesCaseres,
+    SergioMorales
 } as const;
 
 export default Photo; 

@@ -164,7 +164,7 @@
             <p class="timeline-item-p">
                 Mas tarde, la empresa (cuya sede central se encontraba en El Salvador) sería denunciada por fraude.
             </p>
-            <Youtube id="LeyMsR7UNl8" />          
+            <Youtube id="LeyMsR7UNl8" />
 
             <Button
                 color="alternative"
@@ -212,7 +212,99 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="La CNV intimó a CoinX para que deje de ofrecer inversiones" date="9 de junio, 2022" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La Comisión Nacional de Valores (CNV) intimó a la empresa Coinx y a su dueño para que cese en forma inmediata la oferta de atesoramiento de inversiones y cualquier acto de valores negociables porque no está habilitada para operar.
+            </p>
+            <p class="timeline-item-p">
+                Se trata de una empresa que era promocionada por el entonces diputado nacional y líder de Avanza Libertad, Javier Milei, quien ya había anticipado sus intenciones de postularse a la presidencia del país.
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.lavoz.com.ar/politica/la-cnv-intimo-a-una-empresa-promocionada-por-javier-milei-para-que-deje-de-ofrecer-inversiones/"
+                target="_blank">
+                Fuente: La Voz
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="'Mis opinions las cobro' y 'No estafaron a nadie'. Milei defendió a CoinX" date="28 de junio, 2022" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Antes de asumir como Presidente, el periodista Jairo Straccia le preguntó a Javier Milei por qué recomendó CoinX, un sitio que estafó a sus inversores, cuando era diputado. 
+            </p>
+            <Youtube id="9JeYVa4-y5E" />
+            <Button
+                color="alternative"
+                href="https://www.eldiarioar.com/politica/2021-diputado-milei-llamo-invertir-empresa-termino-escandalo-fraude-estafa-piramidal_1_12058704.html"
+                target="_blank">
+                Fuente: El Diario AR
+            </Button>
+        </TimelineItem>
+
         <!------------------------------------ 2023 ------------------------------------>
+        <TimelineItem title="Allanan por estafa a Coinx, empresa cripto que prometía ganancias extraordinarias" date="9 de junio, 2022" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Coinx World, la empresa cripto que Javier Milei apoyó públicamente en diciembre de 2021 cuando ya era diputado, es allanada por la Policía Federal en puntos como Buenos Aires y Santa Fe, en el marco de una investigación iniciada en 2022 por el delito de estafa a cargo del Juzgado Federal N°12, subrogado por Ariel Lijo.
+            </p>
+            <p class="timeline-item-p">
+                El rastro de la firma es difuso. Para empezar, no hay ninguna empresa llamada Coinx en los registros de la AFIP. Es una marca, casualmente registrada en el Instituto Nacional de la Propiedad Intelectual en el rubro de software, no de operaciones financieras. Y la empresa a la que le pertenece es Proyectos RSS, con domicilio fiscal en Avenida del Libertador.
+            </p>
+            <p class="timeline-item-p">
+                Está registrada en la AFIP al menos desde 2018, no como dedicada a las operaciones financieras, sino a las instalaciones eléctricas, con aportes impagos a empleados según registros previsionales. Juan Manuel Malaspina, mencionado por la CNV, presentado como director de inversiones en piezas del grupo, ni siquiera fue empleado en blanco de Proyectos RSS.
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.infobae.com/sociedad/policiales/2023/08/07/allanan-por-estafa-a-coinx-otra-empresa-cripto-que-prometia-ganancias-extraordinarias/"
+                target="_blank">
+                Fuente: Infobae
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Allanan al máximo jefe de Wenance por una causa por estafa. Mauricio Novelli trabajaba para las firmas involucradas" date="3 de agosto, 2023" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La situación de la fintech de préstamos Wenance y su máximo jefe, Alejandro Muszak, cobró un giro para peor en las últimas horas. Ayer miércoles, la División Antifraudes de la Policía Federal allanó a Muszak en su domicilio de la Avenida del Libertador en Palermo por órdenes del Juzgado de Instrucción N°3 de Ushuaia, Tierra del Fuego.
+            </p>
+            <p class="timeline-item-p">
+                El motivo: una causa por estafa centrada en fideicomisos de la empresa, donde hay, según fuentes del expediente, varias víctimas identificadas y una querella constituida. Hay, por lo menos, 50 inversionistas identificados, con un daño estimado en 250 millones.
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.infobae.com/sociedad/policiales/2023/08/03/allanaron-al-maximo-jefe-de-wenance-por-una-causa-por-estafa-hay-mas-de-150-victimas/"
+                target="_blank">
+                Fuente: Infobae
+            </Button>
+        </TimelineItem>
+
         <TimelineItem title="Mauricio Novelli felicita a Javier Milei por la victoria en las elecciones presidenciales" date="19 de noviembre, 2023" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
@@ -327,6 +419,7 @@
                 <Badge rounded large color="dark">Karina Milei</Badge>
                 <Badge rounded large color="dark">Mauricio Novelli</Badge>
                 <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+                <Badge rounded large color="dark">Sergio Morales</Badge>
             </p>
 
             <p class="timeline-item-p">
@@ -382,6 +475,27 @@
                 href="https://www.eldestapeweb.com/politica/escandalo-cripto/los-accesos-a-la-rosada-y-olivos-del-hombre-que-conecta-al-gobierno-con-la-estafa-cripto-reuniones-con-karina-y-visita-a-milei-2025215191250#:~:text=5%20%E2%80%93%2016%20de,responsable%20de%20%24LIBRA."
                 target="_blank">
                 Fuente: El Destape
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Se anuncia la participación de Sergio Morales como orador de la Argentina Digital Nation (ADN)" date="23 de julio, 2024" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.SergioMorales} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Sergio Morales</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Sergio Morales se anuncia como disertador para la conferencia ADN, Argentina Digital Nation. El encuentro sería el 31 de julio. Allí fue presentado como "Coordinador de Asesoramiento Técnico de la Presidencia de la Nación", aunque no figura ningún nombramiento suyo en el Boletín Oficial. A éste momento, ya habia estado presente en al menos dos de las reuniones mantenidos por Mauricio Novelli con Karina Milei.
+            </p>
+
+            <Tweet tweet={data.Sergio_Morales_ADN_23_07_2024} />
+            <Button
+                color="alternative"
+                href="https://www.c5n.com/politica/escandalo-libra-el-contrato-que-compromete-javier-milei-hayden-davis-n191531#:~:text=el%2031%20de%20julio%2C%20Morales%20disert%C3%B3%20en%20otro%20foro%20llamado%20Argentina%20Digital%20Nation.%20All%C3%AD%20fue%20presentado%20como%20%22Coordinador%20de%20Asesoramiento%20T%C3%A9cnico%20de%20la%20Presidencia%20de%20la%20Naci%C3%B3n%22%2C%20aunque%20no%20figura%20ning%C3%BAn%20nombramiento%20suyo%20en%20el%20Bolet%C3%ADn%20Oficial."
+                target="_blank">
+                Fuente: C5N
             </Button>
         </TimelineItem>
 
@@ -1387,6 +1501,37 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="Explican el modus operandi de Kelsier Ventures, la firma de Hayden Mark Davis, el cerebro detrás de $LIBRA" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Fernando Molina</Badge>
+                <Badge rounded large color="dark">Nick O'Neill</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                En el tweet subido por Nick O'Neill (y recomendado por Fernando Molina), se explica como Kelsier ofrece su servicio de lanzamiento de tokens, sniping de la liquidez y lavado de dinero como hicieron con $MELANIA y $LIBRA . 
+            </p>
+            <p class="timeline-item-p">
+                - 2% de los tokens se quedan ellos
+                Y 3000 dólares por día o el 20% de lo que quieras retirar del mercado y lavar
+            </p>
+            <p class="timeline-item-p">
+                - Tienen diferentes precios para el Market Cap que queres que salga tu token
+            </p>
+            <p class="timeline-item-p">
+                - Aclara que todos los lanzamientos de tokens que hacen los snipean. Lo hacen entre un 87% y un 97% de los tokens. Locura 
+            </p>
+            <p class="timeline-item-p">
+                - da a entender que el 90% de los snipers los hacen insiders. Sus propios bots, familia, amigo
+            </p>
+
+            <Tweet tweet={data.Kelsier_modus_operandi_17_02_2025} />
+            <Tweet tweet={data.Kelsier_modus_operandi_Nick_17_02_2025} />
+        </TimelineItem>
+
         <TimelineItem title="Milei y un retweet que en cuestión de minutos, hace saltar la cotización de $LIBRA nuevamente" date="17 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -1636,6 +1781,17 @@
             <Tweet tweet={data.Santiago_Caputo_Tatuaje_18_02_2025} />
         </TimelineItem>
 
+        <TimelineItem title="Cristina Pérez: 'Hay un círculo que pide plata a cambio de acercar empresarios a Milei'" date="18 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.CristinaPerez} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Cristina Perez</Badge>
+            </p>
+
+            <Tweet tweet={data.Cristina_Perez_18_02_2025} />
+        </TimelineItem>
+
         <TimelineItem title="Hayden Mark Davis sería una identidad falsa" date="19 de febrero, 2025 - 01:28 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
@@ -1848,13 +2004,14 @@
             </Button>
         </TimelineItem>
 
-        <TimelineItem title="Javier Milei pidió investigar el 'vínculo' entre 'políticos corruptos' y 'periodistas ensobrados'" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+        <TimelineItem title="Javier Milei pidió investigar el 'vínculo' entre 'políticos corruptos' y 'periodistas ensobrados', incriminando particularmente a Horacio Rodríguez Larreta" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
             <p class="timeline-item-p">
                 <Badge rounded large color="dark">Javier Milei</Badge>
                 <Badge rounded large color="dark">Jonatan Viale</Badge>
+                <Badge rounded large color="dark">Horacio Rodríguez Larreta</Badge>
             </p>
 
             <p class="timeline-item-p">
@@ -1873,6 +2030,145 @@
                 href="https://www.losandes.com.ar/politica/criptogate-javier-milei-pidio-investigar-el-vinculo-politicos-corruptos-y-periodistas-ensobrados-n5939112"
                 target="_blank">
                 Fuente: Los Andes
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Horacio Rodríguez Larreta salió a contestarle a Javier Milei y adelantó que lo denunciará" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HoracioRodriguezLarreta} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Horacio Rodríguez Larreta</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Jonatan Viale</Badge>
+                
+            </p>
+
+            <p class="timeline-item-p">
+                El exjefe de Gobierno porteño, Horacio Rodríguez Larreta, le contestó este miércoles al presidente Javier Milei, quien lo acusó de presuntos sobornos a periodistas. Pidió que el Congreso lo investigue por el escándalo cripto y le anticipó que lo demandará por las acusaciones: "Nos vemos en Tribunales".
+            </p>
+            <p class="timeline-item-p">
+                El exjefe de Gobierno porteño recordó los insultos y acusaciones que el líder libertario le propina desde hace años, incluso desde antes de asumir como diputado nacional en 2021. Esta vez no sólo decidió contestar, sino presentar una demanda judicial por las graves acusaciones de supuestos sobornos a periodistas que hiciera Jonatan Viale, a la que se sumó Javier Milei.
+            </p>
+            <p class="timeline-item-p">
+                "Quiero que se investigue a fondo. A diferencia tuya, no tengo nada que esconder", aseguró Rodríguez Larreta. Después subió la apuesta y pidió que "el Congreso se ponga firme y te investigue por la estafa de $Libra. Y que la Justicia los investigue a vos y a tu hermana por 'difundir' negocios truchos".
+            </p>
+
+            <Tweet tweet={data.Descargo_Larreta_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.ambito.com/politica/horacio-rodriguez-larreta-salio-cruzar-javier-milei-nos-vemos-tribunales-n6115394"
+                target="_blank">
+                Fuente: Ámbito
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Análisis de Arkham que muestra 1000 wallets vinculadas Kelsier Ventures" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            </p>
+
+            <Tweet tweet={data.Seguimiento_wallets_Kelsier_19_02_2025} />
+            <Tweet tweet={data.Seguimiento_wallets_Arkham_19_02_2025} />
+        </TimelineItem>
+
+        <TimelineItem title="Una web muestra las billeteras que obtuvieron las principales ganancias y mediante un bot publica en X cada vez que una transferencia es detectada" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <Tweet tweet={data.Investigacion_Libra_19_02_2025} />
+        </TimelineItem>
+
+        <TimelineItem title="Lourdes Arrieta, diputada libertaria, dijo que pagó para ser candidata de Milei y pidió la renuncia de Karina" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La diputada nacional Lourdes Arrieta dijo que pagó para ser candidata de Javier Milei en Mendoza y pidió que Karina Milei dé un paso al costado mientras es apuntada por cobrar coimas.
+            </p>
+            <p class="timeline-item-p">
+                Arrieta, que abandonó el bloque de La Libertad Avanza para conformar un monobloque llamado Las Fuerzas del Cielo, habló con El Destape Radio del criptogate y dijo que en otro gobierno, la hermana del presidente ya debería haber dado un paso al costado.
+            </p>
+            <p class="timeline-item-p">
+                Arrieta confesó que para ser candidata en la lista libertaria tuvo que pagar. "La plata para la candidatura la puse yo, 60 mil pesos vendiendo cremas para caminar la calle", dijo Arrieta.
+            </p>
+            
+            <Youtube id="Ezd7XC1FDTE" />
+
+            <Button
+                color="alternative"
+                href="https://www.lapoliticaonline.com/politica/la-diputada-de-las-fuerzas-del-cielo-dijo-que-pago-para-ser-candidata-de-milei-y-pidio-la-renuncia-de-karina/"
+                target="_blank">
+                Fuente: La Política Online
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Piden que se cite a declarar al empresario cripto Diógenes Caseres que habló de un supuesto pedido de coima" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.DiogenesCaseres} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Diógenes Caseres</Badge>
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La Justicia recibió un pedido para que se cite como testigo al experto en cripto y cofundador de la firma Stream Finance, Diógenes Caseres luego de que el mismo detallara maniobras de sobornos que habrían efectuado empresarios vinculados al ecosistema cripto a funcionarios del actual Gobierno. El objetivo detrás de esta maniobra, según Caseres, era que el presidente Javier Milei promocionara el polémico token $LIBRA.
+            </p>
+            <p class="timeline-item-p">
+                Casares hizo públicas conversaciones que mantuvo con diversos colegas del rubro financiero en donde se anticipaba el lanzamiento de una criptomoneda vinculada con el Presidente Milei. En esta línea, la acusación del cofundador de Stream Finance apuntó directamente contra el gobierno y manifestó que empresarios desembolsaron la suma total de u$s5.000.000 para lograr que Milei publicara el link promocionando el criptoactivo.
+            </p>
+
+            <Tweet tweet={data.Diogenes_Caseres_coima_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.ambito.com/politica/caso-libra-piden-que-se-cite-declarar-al-empresario-cripto-diogenes-casares-que-hablo-un-supuesto-pedido-coima-n6115175"
+                target="_blank">
+                Fuente: Ámbito
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="C5N mostró al aire un supuesto contrato que compromete a Javier Milei con Hayden Mark Davis" date="19 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.SergioMorales} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Sergio Morales</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+                <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Reveló que "junto con Mauricio Novelli y Manuel Terrones Godoy, los organizadores de Tech Forum, Morales redactó un borrador del contrato que pidió Hayden Davis para un acuerdo de asociación entre el Kelsier Group y la Argentina".
+            </p>
+            <p class="timeline-item-p">
+                "Es un borrador de cuatro páginas, que no llegó a firmarse, pero era el reaseguro que quiso Davis cuando vio que no eran fiables los 'criptobros' del entorno del Presidente", agregó el periodista.
+            <p class="timeline-item-p">
+                Según Bercovich, el borrador del contrato, que no implica la comisión de un delito, establece una "asociación indirecta con el gobierno de Argentina" e indica que ellos van a ser "los asesores exclusivos de Milei y del Gobierno en materia de criptoactivos".
+            <p class="timeline-item-p">
+                El propio Morales participó del evento Argentina Tech Forum que se realizó el 19 de octubre en el hotel Libertador, que tuvo a Milei como principal orador y en el que el Presidente conoció a Julian Peh, CEO de la empresa KIP Protocol. También participó de la conferencia ADN, Argentina Digital Nation, semanas antes de la ya mencionada, y estuvo presente en varias de las reuniones que mantuvieron Mauricio Novelli y Manuel Terrones Godoy con los hermanos Milei en Casa Rosada y Olivos.
+            </p>
+
+            <Tweet tweet={data.Contrato_Davis_19_02_2025} />
+            <Button
+                color="alternative"
+                href="https://www.c5n.com/politica/escandalo-libra-el-contrato-que-compromete-javier-milei-hayden-davis-n191531"
+                target="_blank">
+                Fuente: C5N
             </Button>
         </TimelineItem>
 
