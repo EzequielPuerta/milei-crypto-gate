@@ -41,6 +41,10 @@ export const tweets: Tweet[] = [
         tweetId: '1837216757062504746'
     },
     {
+        tweetName: 'Firtman_Tech_Forum_18_10_2024',
+        tweetId: '1847250244158763366'
+    },
+    {
         tweetName: 'Milei_Tech_Forum_Infobae_19_10_2024',
         tweetId: '1847771285809431028'
     },
