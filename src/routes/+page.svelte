@@ -621,7 +621,7 @@
                 Maximiliano Firtman, programador, docente y periodista especializado en tecnología, publica en X un mensaje advirtiendo que los organizadores de Tech Forum son estafadores. Lo llama un asesor de Milei, preocupado por su tweet, diciendo que si era verdad “suspendían todo”. Firtman les hace un informe y se los envía, pero no hacen nada.
             </p>
 
-            <Tweet tweet={data.Maxi_Firtman_sobre_Davis_17_02_2025} />
+            <Tweet tweet={data.Firtman_Tech_Forum_18_10_2024} />
         </TimelineItem>
 
         <TimelineItem title="Manuel Terrones Godoy (cofundador de Tech Forum) es acusado en el programa Argenzuela" date="19 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
