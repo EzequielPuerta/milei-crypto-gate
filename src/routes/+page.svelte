@@ -20,6 +20,18 @@
     let { data }: {
 		data: PageData;
 	} = $props();
+
+    import TimeSidebar from '../lib/components/TimeSidebar.svelte';
+
+    const anchors = [
+        { id: 'anchor-2019', label: '2019' },
+        { id: 'anchor-2020', label: '2020' },
+        { id: 'anchor-2021', label: '2021' },
+        { id: 'anchor-2022', label: '2022' },
+        { id: 'anchor-2023', label: '2023' },
+        { id: 'anchor-2024', label: '2024' },
+        { id: 'anchor-2025', label: '2025' },
+    ];
 </script>
 
 <style>
@@ -41,7 +53,10 @@
 
 <div class="timeline">
     <Timeline order="vertical">
+        <TimeSidebar {anchors} />
         <!------------------------------------ 2019 ------------------------------------>
+        <div id="anchor-2019" style="position: absolute; top: 0;"></div>
+
         <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
@@ -72,6 +87,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2020 ------------------------------------>
+        <div id="anchor-2020" style="position: absolute; top: 0;"></div>
         <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -149,7 +165,31 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="Comparten en la cuenta de Instagram de N&W Professional Traders, una foto de una clase de Javier Milei durante la Pandemia" date="26 de noviembre, 2020" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+                <Badge rounded large color="dark">Jeremías Walsh</Badge>
+            </p>
+
+            <Img
+                src="https://www.infobae.com/resizer/v2/QK3WDR6OW5DMNCHN2MO4VCA2PA.png?auth=c3b4287d879b976ddaa9b4affa2bcedd98b99db0c483274e11719bc494103db3&smart=true&width=1200&height=733&quality=85"
+                alt="Clase de Milei en N&W"
+                class="rounded-lg"
+            />
+            <Button
+                color="alternative"
+                href="https://www.infobae.com/politica/2025/02/19/quienes-son-mauricio-novelli-y-manuel-terrones-godoy-los-jovenes-empresarios-involucrados-en-el-caso-libra/#:~:text=Milei%20conoce%20a,relevados%20por%20Infobae."
+                target="_blank">
+                Fuente: Infobae
+            </Button>
+        </TimelineItem>
+
         <!------------------------------------ 2021 ------------------------------------>
+        <div id="anchor-2021" style="position: absolute; top: 0;"></div>
         <TimelineItem title="Primer fraude: Milei recomienda CoinX World" date="18 de diciembre, 2021" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -175,6 +215,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2022 ------------------------------------>
+        <div id="anchor-2022" style="position: absolute; top: 0;"></div>
         <TimelineItem title="Segundo fraude: Milei recomienda Vulcano" date="18 de febrero, 2022" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -256,6 +297,7 @@
         </TimelineItem>
 
         <!------------------------------------ 2023 ------------------------------------>
+        <div id="anchor-2023" style="position: absolute; top: 0;"></div>
         <TimelineItem title="Allanan por estafa a Coinx, empresa cripto que prometía ganancias extraordinarias" date="9 de junio, 2022" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -317,20 +359,34 @@
             <Tweet tweet={data.Novelli_felicita_Milei_2023} />
         </TimelineItem>
 
-        <TimelineItem title="Asume Javier Milei la Presidencia: Mauricio Novelli y Manuel Terrones Godoy serían invitados a la Gala del Teatro Colón" date="10 de diciembre, 2023" classTime="text-lg" classH3="text-2xl">
+        <TimelineItem title="Asume Javier Milei la Presidencia: Mauricio Novelli, Manuel Terrones Godoy y Jeremías Walsh fueron invitados a la Gala del Teatro Colón" date="10 de diciembre, 2023" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
             </svelte:fragment>
             <p class="timeline-item-p">
                 <Badge rounded large color="dark">Javier Milei</Badge>
                 <Badge rounded large color="dark">Mauricio Novelli</Badge>
+                <Badge rounded large color="dark">Jeremías Walsh</Badge>
                 <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
             </p>
 
+            <Img
+                src="https://www.infobae.com/resizer/v2/GZE6OLFVWVEWRDZWIL7R3QYKE4.png?auth=d5bf68514d2ec9098dfd0956fb6d41243e9bd73278e7cbdca2a8e810e8631742&smart=true&width=1200&height=1800&quality=85"
+                size="max-w-lg"
+                alt="Terrones Godoy, Walsh y Novelli en la puerta del teatro Colón en la gala de asunción de Milei"
+                class="rounded-lg"
+            />
             <Tweet tweet={data.Asume_Milei_10_12_2023} />
+            <Button
+                color="alternative"
+                href="https://www.infobae.com/politica/2025/02/19/quienes-son-mauricio-novelli-y-manuel-terrones-godoy-los-jovenes-empresarios-involucrados-en-el-caso-libra/#:~:text=Gracias%20a%20su,W%20Professional%20Traders."
+                target="_blank">
+                Fuente: Infobae
+            </Button>
         </TimelineItem>
 
         <!------------------------------------ 2024 ------------------------------------>
+        <div id="anchor-2024" style="position: absolute; top: 0;"></div>
         <TimelineItem title="1º reunión de Novelli: Casa Rosada con Karina Milei" date="8 de enero, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
@@ -350,11 +406,22 @@
                 Un dato curioso: al mismo momento entraron a la Casa Rosada 3 importantes representantes del FMI: Luis Cubeduu, Ashvin Ahuja y Ben Kelmanson. Según la planilla los directivos del FMI se reunieron con el entonces jefe de gabinete Nicolás Posse. Y más curioso es que, según las mismas planillas de ingreso, Novelli y los hombres del FMI se retiraron a exactamente a la misma hora, las 19.33hs.
             </p>
 
+            <Img
+                src="https://resizer.glanacion.com/resizer/v2/mauricio-novelli-ingreso-a-casa-rosada-autorizado-PKYO5MXU65EDJGO54FP22ZIMQ4.jpg?auth=e7501e372e2b3518478ed10f933ce4794a5d9937d6ea085a2f738ae243d46301&width=780&height=336&quality=70&smart=true"
+                alt="Mauricio Novelli ingresó a Casa Rosada autorizado por Karina Milei el 8 de enero de 2024, según documentos oficiales."
+                class="rounded-lg"
+            />
             <Button
                 color="alternative"
                 href="https://www.eldestapeweb.com/politica/escandalo-cripto/los-accesos-a-la-rosada-y-olivos-del-hombre-que-conecta-al-gobierno-con-la-estafa-cripto-reuniones-con-karina-y-visita-a-milei-2025215191250#:~:text=1%20%E2%80%93%208%20de,en%20la%20Rosada."
                 target="_blank">
                 Fuente: El Destape
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.lanacion.com.ar/politica/karina-milei-la-puerta-de-entrada-a-la-casa-rosada-para-los-personajes-detras-de-la-criptomoneda-nid16022025/#:~:text=El%208%20de%20enero%20del,anterior%20a%20la%20del%20Presidente."
+                target="_blank">
+                Fuente: La Nación
             </Button>
         </TimelineItem>
 
@@ -456,6 +523,7 @@
                 <Badge rounded large color="dark">Mauricio Novelli</Badge>
                 <Badge rounded large color="dark">Manuel Terrones Godoy</Badge>
                 <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Bartosz Lipinski</Badge>
             </p>
 
             <p class="timeline-item-p">
@@ -467,7 +535,7 @@
             </p>
 
             <p class="timeline-item-p">
-                Davis volvería a Casa Rosada mas adelante...
+                Ésta sería la primer visita de Davis a la Casa Rosada. Como mínimo, volvería 2 veces mas adelante. Esta visita <strong>no fue informada en el Registro de Audiencias</strong>. Se conoció por un pedido de acceso a la información pública realizado por La Nación.
             </p>
 
             <Button
@@ -475,6 +543,12 @@
                 href="https://www.eldestapeweb.com/politica/escandalo-cripto/los-accesos-a-la-rosada-y-olivos-del-hombre-que-conecta-al-gobierno-con-la-estafa-cripto-reuniones-con-karina-y-visita-a-milei-2025215191250#:~:text=5%20%E2%80%93%2016%20de,responsable%20de%20%24LIBRA."
                 target="_blank">
                 Fuente: El Destape
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.lanacion.com.ar/politica/karina-milei-la-puerta-de-entrada-a-la-casa-rosada-para-los-personajes-detras-de-la-criptomoneda-nid16022025/#:~:text=dos%20ingresos%20de%20Novelli%20coinciden%20con%20los%20de%20Hayden%20Mark%20Davis.%20Ambos%20entraron%20el%2016%20de%20julio%2C%20autorizados%20por%20Karina%20Milei%2C%20entre%20las%2015%3A07%20y%20las%2015%3A45."
+                target="_blank">
+                Fuente: La Nación
             </Button>
         </TimelineItem>
 
@@ -608,6 +682,23 @@
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="9º reunión de Novelli: Quinta de Olivos con Javier Milei" date="4 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.lanacion.com.ar/politica/karina-milei-la-puerta-de-entrada-a-la-casa-rosada-para-los-personajes-detras-de-la-criptomoneda-nid16022025/#:~:text=La%20segunda%20ocurri%C3%B3%20el%204%20de%20octubre%2C%2015%20d%C3%ADas%20antes%20del%20encuentro%20del%20Presidente%20con%20el%20CEO%20de%20la%20compa%C3%B1%C3%ADa%20que%20promocion%C3%B3%20al%20token%20en%20cuesti%C3%B3n."
+                target="_blank">
+                Fuente: La Nación
+            </Button>
+        </TimelineItem>
+
         <TimelineItem title="Maximiliano Firtman advierte señales de sospecha acerca del Tech Forum" date="18 de octubre, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MaximilianoFirtman} />
@@ -675,6 +766,7 @@
                 <Badge rounded large color="dark">Julián Peh</Badge>
                 <Badge rounded large color="dark">Mauricio Novelli</Badge>
                 <Badge rounded large color="dark">Manuel Adorni</Badge>
+                <Badge rounded large color="dark">Bartosz Lipinski</Badge>
             </p>
 
             <p class="timeline-item-p">
@@ -687,7 +779,7 @@
             <p class="timeline-item-p">
                 La reunión de Milei con Peh fue el 19 de octubre de 2024. La juntada, según el registro de audiencias oficial del Ministerio del Interior, fue en el Hotel Libertador. Es extraño: Milei ya era presidente pero eligió juntarse con Peh en el hotel que fue su morada entre que ganó las elecciones y se mudó a la quinta de Olivos. Y más extraño es que lo pusieran en el registro de audiencias público, que sólo contiene las que se producen en las oficinas públicas.
             </p>
-            
+
             <Tweet tweet={data.Milei_Peh_20_10_2024} />
 
             <p class="timeline-item-p">
@@ -699,6 +791,13 @@
             <p class="timeline-item-p">
                 Del encuentro privado de Milei con Peh participaron el vocero presidencial Manuel Adorni y Novelli. Según la información oficial: “Analizaron cómo la tecnología de IA descentralizada de KIP puede respaldar a Argentina”. “El presidente Milei expresó un fuerte apoyo a estas innovaciones e iniciativas, posicionando a KIP como un actor fundamental en la transformación tecnológica de Argentina. Este compromiso de alto nivel coloca a $KIP en el centro de atención como un actor clave de IA en Latinoamérica”, sostuvo Julian Peh tras el encuentro con Milei.
             </p>
+
+            <Img
+                src="https://www.infobae.com/resizer/v2/UFTFCI5NGRAH3KWIQBJWKN2J6U.png?auth=f6de3541f6a1023267da39abf25484498c5711087cb206f696096a871fd4b206&smart=true&width=1200&height=800&quality=85"
+                alt="Tres de las visitas de Novelli a la Casa Rosada en septiembre y octubre de 2024, con Milei en la Presidencia"
+                size="max-w-xl"
+                class="rounded-lg"
+            />
 
             <Button
                 color="alternative"
@@ -714,13 +813,90 @@
             </Button>
             <Button
                 color="alternative"
+                href="https://www.infobae.com/politica/2025/02/19/quienes-son-mauricio-novelli-y-manuel-terrones-godoy-los-jovenes-empresarios-involucrados-en-el-caso-libra/#:~:text=Pero%20sus%20visitas%20habr%C3%ADan%20sido%20al%20menos%209%2C%20seg%C3%BAn%20public%C3%B3%20el%20diario%20La%20Naci%C3%B3n%2C%20m%C3%A1s%20otras%20tres%20a%20la%20Residencia%20de%20Olivos.%20Esto%20significa%20que%20se%20reuni%C3%B3n%20con%20Milei%20o%20su%20hermana%20en%2C%20por%20lo%20menos%2C%20doce%20oportunidades%20a%20lo%20largo%20del%20a%C3%B1o%3A%20en%20enero%2C%20abril%2C%20junio%2C%20julio%2C%20agosto%2C%20septiembre%2C%20octubre%20y%20noviembre."
+                target="_blank">
+                Fuente: Infobae
+            </Button>
+            <Button
+                color="alternative"
                 href="https://es.wired.com/articulos/no-solo-es-milei-estas-figuras-publicas-tambien-han-sido-implicadas-en-el-escandalo-dollarlibra#:~:text=posible%20esquema%20piramidal.-,Julian%20Peh,liquidez%2C%20dejando%20a%20los%20inversores%20sin%20posibilidad%20de%20recuperar%20sus%20fondos.,-Hayden%20Mark%20Davis"
                 target="_blank">
                 Fuente: Wired
             </Button>
         </TimelineItem>
 
+        <TimelineItem title="10º reunión de Novelli: Casa Rosada con Javier Milei" date="1 de noviembre, 2024" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Manuel Adorni</Badge>
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.ambito.com/politica/quienes-son-mauricio-novelli-y-manuel-terrones-godoy-los-empresarios-involucrados-el-caso-libra-n6115080#:~:text=Desde%20el%20cuestionado%20evento%20hasta%20la%20explosi%C3%B3n%20del%20esc%C3%A1ndalo%20las%20visitas%20se%20profundizaron%20con%20ingresos%20de%20Novelli%20a%20la%20Rosada%20el%201%C2%B0%20de%20noviembre%2C%20el%2010%20y%20el%2021.%20Este%20%C3%BAltimo%20acompa%C3%B1ado%20de%20Mark%20Hayden%20Davis."
+                target="_blank">
+                Fuente: Ámbito
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="11º reunión de Novelli: Quinta de Olivos con Javier Milei" date="10 de noviembre, 2024" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.lanacion.com.ar/politica/karina-milei-la-puerta-de-entrada-a-la-casa-rosada-para-los-personajes-detras-de-la-criptomoneda-nid16022025/#:~:text=Y%20la%20tercera%20fue%20el%2010%20de%20noviembre%2C%20unos%2011%20d%C3%ADas%20previos%20a%20su%20visita%20a%20la%20sede%20de%20Gobierno%20con%20Mark%20Hayden%20Davis."
+                target="_blank">
+                Fuente: La Nación
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="12º reunión de Novelli: Casa Rosada con Javier Milei" date="21 de noviembre, 2024" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Esta visita <strong>no fue informada en el Registro de Audiencias</strong>. Se conoció por un pedido de acceso a la información pública realizado por La Nación.
+            </p>
+
+            <Img
+                src="https://resizer.glanacion.com/resizer/v2/mauricio-novelli-y-mark-hayden-davis-ingresaron-a-NAJGHA7JZ5E3HJI644Z34IITUM.jpg?auth=55ffaaef124a7740698f1ad318f577bbb56a4098230d2b181a98400581dbe700&width=780&height=351&quality=70&smart=true"
+                alt="Mauricio Novelli y Mark Hayden Davis ingresaron a la Casa Rosada el 21 de noviembre del año pasado, según documentos oficiales."
+                size="max-w-xl"
+                class="rounded-lg"
+            />
+
+            <Button
+                color="alternative"
+                href="https://www.ambito.com/politica/quienes-son-mauricio-novelli-y-manuel-terrones-godoy-los-empresarios-involucrados-el-caso-libra-n6115080#:~:text=Desde%20el%20cuestionado%20evento%20hasta%20la%20explosi%C3%B3n%20del%20esc%C3%A1ndalo%20las%20visitas%20se%20profundizaron%20con%20ingresos%20de%20Novelli%20a%20la%20Rosada%20el%201%C2%B0%20de%20noviembre%2C%20el%2010%20y%20el%2021.%20Este%20%C3%BAltimo%20acompa%C3%B1ado%20de%20Mark%20Hayden%20Davis."
+                target="_blank">
+                Fuente: Ámbito
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.lanacion.com.ar/politica/karina-milei-la-puerta-de-entrada-a-la-casa-rosada-para-los-personajes-detras-de-la-criptomoneda-nid16022025/#:~:text=El%20segundo%2C%20el%2021%20de%20noviembre%2C%20entre%20las%2014%3A30%20y%20las%2015%3A17.%20Ninguno%20de%20ellos%20fue%20informado%20en%20el%20Registro%20de%20Audiencias."
+                target="_blank">
+                Fuente: La Nación
+            </Button>
+        </TimelineItem>
+
         <!------------------------------------ 2025 ------------------------------------>
+        <div id="anchor-2025" style="position: absolute; top: 0;"></div>
         <TimelineItem title="Se lanza $TRUMP, la cripto de Donald Trump" date="17 de enero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.DonaldTrump} />
@@ -2169,6 +2345,174 @@
                 href="https://www.c5n.com/politica/escandalo-libra-el-contrato-que-compromete-javier-milei-hayden-davis-n191531"
                 target="_blank">
                 Fuente: C5N
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="Se conoció otra foto de Hayden Davis con Javier Milei" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.HaydenMarkDavis} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Hayden Mark Davis</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                Mientras el Gobierno intenta despegar al presidente Javier Milei de cualquier vínculo con Hayden Mark Davis, el creador de la memecoin que disparó la criptoestafa internacional, en las últimas horas se conoció una nueva fotografía que demuestra que ambos habían tenido varios encuentros más del que se conoció luego del escándalo.
+            </p>
+            <p class="timeline-item-p">
+                La imagen que los muestra juntos, sonrientes y confiables data de este año y por el momento no está claro dónde es. Sí se los ve con vestimenta distinta a la que usaron en la selfie que se habían tomado en Casa Rosada, lo cual evidencia que ambos no sólo se volvieron a ver sino que lo hicieron en otro ámbito.
+            </p>
+            <p class="timeline-item-p">
+                La fotografía que hasta ahora había circulado era del encuentro que tuvieron en Casa de Gobierno en enero pasado, luego de que Davis conociera a Milei en la Tech Forum de octubre del 2024 a través del trader Mauricio Novelli.
+            </p>
+            <p class="timeline-item-p">
+                Allí se lo ve a Davis con anteojos, de camisa y corbata negra; y a Milei con una camisa gris y su inefable campera de cuero. En la nueva selfie que reveló un canal de noticias la estética es inversa: Milei con corbata y camisa celeste, y Hayden sonriendo sin los antejos ni una corbata.
+            </p>
+
+            <Tweet tweet={data.Nueva_Foto_Hayden_20_02_2025} />
+
+            <Button
+                color="alternative"
+                href="https://www.pagina12.com.ar/805445-critpogate-se-conocio-otra-foto-de-hayden-davis-con-javier-m"
+                target="_blank">
+                Fuente: Página12
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="La periodista Nancy Pazos confirmó que le escribió a Milei alertando de lo 'trucho' de $LIBRA" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.NancyPazos} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Nancy Pazos</Badge>
+                <Badge rounded large color="dark">María O'Donnell</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                "Como yo algo del mundo cripto conozco porque uno de mis hijos se dedica hace un tiempo largo, digo 'estoy es muy trucho'. (....) En ese momento se me ocurre escribirle a Milei, le puse: 'Hola, Javier, ¿estás?'. Me conoce, sabe que soy woke y zurdita pero tenemos una relación amorosa. Estoy en las antípodas ideológicas pero puedo chatear con él, no me da nota pero sí puedo chatear con él. Le digo '¿Vos estás seguro? Es muy trucho esto'. Al toque me dice: 'Quedate tranquila, en un rato sale un comunicado'. Esto fue antes de las 10 de la noche, el seguía con el tuit fijado. A las dos horas lo bajó".
+            </p>
+            <p class="timeline-item-p">
+                "'La empresa va a sacar un comunicado', eso fue lo que me dijo a las 10 de la noche", cuenta Nancy Pazos en diálogo con María O'Donnell.
+            </p>
+
+            <Tweet tweet={data.Nancy_Pazos_Milei_20_02_2025} />
+        </TimelineItem>
+
+        <TimelineItem title="Santiago Siri sobre la participación de Karina Milei y Mauricio Novelli" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MariaODonnell} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">María O'Donnell</Badge>
+                <Badge rounded large color="dark">Santiago Siri</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Karina Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                "Estuve hablando ayer con una persona muy cercana al entorno de Wenceslao Casares y me contaba que en los esfuerzos que hicieron el año pasado para que Milei se juntara con Vitalik Buterin siempre derivaban primero a Karina Milei y Karina luego derivaban a Novelli".
+            </p>
+
+            <Tweet tweet={data.Siri_Karina_Milei_20_02_2025} />
+        </TimelineItem>
+
+        <TimelineItem title="Editorial de María O'Donnell sobre la estafa de la criptomoneda $LIBRA" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.MariaODonnell} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">María O'Donnell</Badge>
+                <Badge rounded large color="dark">Javier Milei</Badge>
+                <Badge rounded large color="dark">Karina Milei</Badge>
+                <Badge rounded large color="dark">Mauricio Novelli</Badge>
+            </p>
+
+            <Youtube id="M-H8J_nVCBQ" />
+        </TimelineItem>
+
+        <TimelineItem title="El Senado rechazó crear una comisión investigadora por el caso de la criptomoneda $LIBRA" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.DavidCayon} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">David Cayón</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La propuesta para conformar la comisión planteaba un plazo de 180 días para investigar y emitir un informe sobre las irregularidades y posibles delitos asociados a $LIBRA. La misma incluía amplias facultades, como la posibilidad de solicitar información, realizar allanamientos y tomar declaraciones testimoniales, apuntando a presentar las denuncias correspondientes en caso de encontrar pruebas de actos ilícitos. Sin embargo, la iniciativa no alcanzó los dos tercios de los votos necesarios para su aprobación. Con 47 votos a favor y 23 en contra, quedó a un solo voto de lograr los 48 requeridos.
+            </p>
+
+            <Img
+                src="https://www.infobae.com/resizer/v2/ABI6JFBVCFDCTJUDPTRCXYKTYI.jpeg?auth=4a108697ea59f422df4dc88fd45bee29a0172ad451d16ef3421997fc60ce2d72&smart=true&width=1200&height=900&quality=85"
+                alt="El tablero de la votación"
+                size="max-w-2xl"
+                class="rounded-lg"
+            />
+            
+            <p class="timeline-item-p">
+                La iniciativa fue presentada formalmente por el senador Pablo Blanco, de la Unión Cívica Radical (UCR), y por Guadalupe Tagliaferri, representante del PRO. En un intento por agilizar el proceso, el senador Martín Lousteau solicitó que el proyecto fuera tratado sobre tablas, lo que generó un debate interno en el bloque radical ya que algunos miembros del radicalismo que inicialmente habían expresado su apoyo a la propuesta decidieron no acompañarla en el momento de la votación, lo que evidenció las tensiones dentro del espacio político y la presión que había realizado la Casa Rosada sobre los gobernadores y líderes políticos de diferentes provincias.
+            </p>
+            <p class="timeline-item-p">
+                Al término de la exposición de los radicales, Mayans pidió la palabra y adelantó que iban a acompañar, pero pidió un cuarto intermedio para constituir la Comisión. “Que se sepa que ya está conformada”. La senadora Mónica Silva, de Juntos Somos Río Negro, pidió conformar una comisión bicameral, pero esta idea fue rechazada rápidamente por UP y por la UCR.
+            </p>
+            <p class="timeline-item-p">
+                La habilitación del proyecto para que sea tratado en ese momento obtuvo 53 votos a favor contra 17 en contra. Por la negativa votaron los senadores Vigo, Silva, Romero, Espínola y Juez entre otros. Luego se votó la conformación de la Comisión investigadora y, en un hecho insólito, se impuso el oficialismo que logró frenar la conformación de la misma.
+            </p>
+            
+            <Tweet tweet={data.Votacion_senado_20_02_2025} />
+
+            <p class="timeline-item-p">
+                Durante toda la jornada hubo llamados de Casa Rosada a los gobernadores y esto se notó a la hora de votar la conformación de la Comisión. Un ejemplo de esto fue el caso del <strong>senador Vischi, presidente del bloque de la UCR que firmó el proyecto de conformación de la comisión, pero votó en contra.</strong> En esa línea -en contra del proyecto de su bloque- votaron los senadores radicales Galaretto, Zimmerman, Valenzuela, Juri, Olaya. A este grupo se le sumó Juez, Goerling, Alvarez Rivero y Alfredo de Angeli, más los senadores de bloques provinciales.
+            </p>
+
+            <Tweet tweet={data.Bregman_senado_20_02_2025} />
+
+            <p class="timeline-item-p">
+                Frustrada la conformación de la comisión en ese instante, ahora los proyectos de ley deberán ser tratados en las comisiones una vez que se habilite el período de sesiones ordinarias.
+            </p>
+
+            <Button
+                color="alternative"
+                href="https://www.infobae.com/politica/2025/02/20/el-senado-rechazo-crear-una-comision-investigadora-por-el-caso-de-la-criptomoneda-libra/"
+                target="_blank">
+                Fuente: Infobae
+            </Button>
+            <Button
+                color="alternative"
+                href="https://www.laizquierdadiario.com/El-Senado-rechazo-investigar-a-Milei-la-casta-protege-a-los-estafadores"
+                target="_blank">
+                Fuente: La Izquierda Diario
+            </Button>
+        </TimelineItem>
+
+        <TimelineItem title="El Senado también rechazó el pedido de interpelación a Karina Milei" date="20 de febrero, 2025" classTime="text-lg" classH3="text-2xl">
+            <svelte:fragment slot="icon">
+                <TimelineAvatar avatar={CustomAvatar.KarinaMilei} />
+            </svelte:fragment>
+            <p class="timeline-item-p">
+                <Badge rounded large color="dark">Karina Milei</Badge>
+            </p>
+
+            <p class="timeline-item-p">
+                La Cámara de Senadores no logró los dos tercios necesarios para aprobar el pedido de interpelación de la secretaria general de la Presidencia, Karina Milei, por la estafa con la criptomoneda $LIBRA, que había solicitado el bloque de senadores peronistas.
+            </p>
+            <p class="timeline-item-p">
+                El senador formoseño José Mayans había anunciado que los interbloques peronistas pedirían la interpelación de “la secretaria General con rango de ministro”. “Que venga acá a dar explicaciones”, reclamó el legislador.
+            </p>
+            <p class="timeline-item-p">
+                Sin embargo, el pedido no alcanzó los votos necesarios y también fue rechazado. 
+            </p>
+
+            <Tweet tweet={data.UP_Karina_Milei_20_02_2025} />
+
+            <Button
+                color="alternative"
+                href="https://www.pagina12.com.ar/804413-javier-milei-y-sus-horas-mas-dificiles-como-presidente-como-#:~:text=30%20minutos%20atr%C3%A1s-,CON%20KARINA%2C%20TAMPOCO,-La%20C%C3%A1mara%20de"
+                target="_blank">
+                Fuente: Página12
             </Button>
         </TimelineItem>
 

@@ -27,6 +27,10 @@ import HoracioRodriguezLarreta from '$lib/assets/profiles/horacio-rodriguez-larr
 import CristinaPerez from '$lib/assets/profiles/cristina-perez.png';
 import DiogenesCaseres from '$lib/assets/profiles/diogenes-caseres.png';
 import SergioMorales from '$lib/assets/profiles/sergio-morales.png';
+import NancyPazos from '$lib/assets/profiles/nancy-pazos.png';
+import DavidCayon from '$lib/assets/profiles/david-cayon.png';
+import KarinaMilei from '$lib/assets/profiles/karina-milei.png';
+import MariaODonnell from '$lib/assets/profiles/maria-odonnell.png';
 
 export const Photo = {
     JavierMilei,
@@ -57,7 +61,11 @@ export const Photo = {
     HoracioRodriguezLarreta,
     CristinaPerez,
     DiogenesCaseres,
-    SergioMorales
+    SergioMorales,
+    NancyPazos,
+    DavidCayon,
+    KarinaMilei,
+    MariaODonnell
 } as const;
 
 export default Photo; 

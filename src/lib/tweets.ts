@@ -243,5 +243,29 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Contrato_Davis_19_02_2025',
         tweetId: '1892382929403167069'
+    },
+    {
+        tweetName: 'Nancy_Pazos_Milei_20_02_2025',
+        tweetId: '1892545074111902002'
+    },
+    {
+        tweetName: 'Votacion_senado_20_02_2025',
+        tweetId: '1892668208286445820'
+    },
+    {
+        tweetName: 'Bregman_senado_20_02_2025',
+        tweetId: '1892660025060917547'
+    },
+    {
+        tweetName: 'UP_Karina_Milei_20_02_2025',
+        tweetId: '1892647881661665688'
+    },
+    {
+        tweetName: 'Nueva_Foto_Hayden_20_02_2025',
+        tweetId: '1892543821738586162'
+    },
+    {
+        tweetName: 'Siri_Karina_Milei_20_02_2025',
+        tweetId: '1892546822482149562'
     }
 ]; 
