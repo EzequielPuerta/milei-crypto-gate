@@ -27,7 +27,7 @@
     <div class="scroll-bottom-btn">
         <Button
             class="scroll-bottom-btn"
-            pill={true}
+            pill={false}
             color="alternative"
             on:click={scrollToBottom}
         >

@@ -16,22 +16,23 @@
 	import type { PageData } from './$types';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import TimelineAvatar from '$lib/components/TimelineAvatar.svelte';
+    import DateSeparator from '$lib/components/DateSeparator.svelte'
+    import TimeSidebar from '../lib/components/TimeSidebar.svelte';
 
     let { data }: {
 		data: PageData;
 	} = $props();
 
-    // import TimeSidebar from '../lib/components/TimeSidebar.svelte';
-
-    // const anchors = [
-    //     { id: 'anchor-2019', label: '2019' },
-    //     { id: 'anchor-2020', label: '2020' },
-    //     { id: 'anchor-2021', label: '2021' },
-    //     { id: 'anchor-2022', label: '2022' },
-    //     { id: 'anchor-2023', label: '2023' },
-    //     { id: 'anchor-2024', label: '2024' },
-    //     { id: 'anchor-2025', label: '2025' },
-    // ];
+    const anchors = [
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024',
+        'Enero-2025',
+        'Febrero-2025',
+    ];
 </script>
 
 <style>
@@ -52,10 +53,11 @@
 
 
 <div class="timeline">
+    <TimeSidebar {anchors} />
     <Timeline order="vertical">
-        <!-- <TimeSidebar {anchors} /> -->
         <!------------------------------------ 2019 ------------------------------------>
-        <!-- <div id="anchor-2019" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2019" />
+        <!------------------------------------ 2019 ------------------------------------>
 
         <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
@@ -87,7 +89,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2020 ------------------------------------>
-        <!-- <div id="anchor-2020" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2020" />
+        <!------------------------------------ 2020 ------------------------------------>
+
         <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -189,7 +193,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2021 ------------------------------------>
-        <!-- <div id="anchor-2021" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2021" />
+        <!------------------------------------ 2021 ------------------------------------>
+
         <TimelineItem title="Primer fraude: Milei recomienda CoinX World" date="18 de diciembre, 2021" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -215,7 +221,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2022 ------------------------------------>
-        <!-- <div id="anchor-2022" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2022" />
+        <!------------------------------------ 2022 ------------------------------------>
+
         <TimelineItem title="Segundo fraude: Milei recomienda Vulcano" date="18 de febrero, 2022" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -297,7 +305,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2023 ------------------------------------>
-        <!-- <div id="anchor-2023" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2023" />
+        <!------------------------------------ 2023 ------------------------------------>
+
         <TimelineItem title="Allanan por estafa a Coinx, empresa cripto que prometía ganancias extraordinarias" date="9 de junio, 2022" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
@@ -386,7 +396,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2024 ------------------------------------>
-        <!-- <div id="anchor-2024" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="2024" />
+        <!------------------------------------ 2024 ------------------------------------>
+        
         <TimelineItem title="1º reunión de Novelli: Casa Rosada con Karina Milei" date="8 de enero, 2024" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
@@ -896,7 +908,9 @@
         </TimelineItem>
 
         <!------------------------------------ 2025 ------------------------------------>
-        <!-- <div id="anchor-2025" style="position: absolute; top: 0;"></div> -->
+        <DateSeparator date="Enero-2025"/>
+        <!------------------------------------ 2025 ------------------------------------>
+
         <TimelineItem title="Se lanza $TRUMP, la cripto de Donald Trump" date="17 de enero, 2025" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
                 <TimelineAvatar avatar={CustomAvatar.DonaldTrump} />
@@ -973,6 +987,8 @@
                 Fuente: El Destape
             </Button>
         </TimelineItem>
+
+        <DateSeparator date="Febrero-2025" />
 
         <TimelineItem title="Javier Milei sube y dejado fijado el famoso tweet sobre la promoción de $LIBRA" date="14 de febrero, 2025 - 19:01 hs" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
