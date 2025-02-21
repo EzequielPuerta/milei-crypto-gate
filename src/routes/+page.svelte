@@ -1,10 +1,6 @@
 <script lang="ts">
     import {
         Button,
-        Activity,
-        ActivityItem,
-        Group,
-        GroupItem,
         Timeline,
         TimelineItem,
 		Img,
@@ -19,9 +15,38 @@
     import DateSeparator from '$lib/components/DateSeparator.svelte'
     import TimeSidebar from '../lib/components/TimeSidebar.svelte';
 
+    import Event_2019 from '../events/2019/1-Mauricio_Novelli_funda_el_instituto_NW_Professional_Traders.svelte'
+    import Event_2020 from '../events/2020/1-Milei_recomienda_NW_Professional_Traders.svelte'
+
     let { data }: {
 		data: PageData;
 	} = $props();
+    
+    // const eventComponents = import.meta.glob('../events/**/*.svelte');
+    // let events: { date: string; components: any[] }[] = [];
+
+    // async function organizeEvents() {
+    //     const eventPromises = Object.entries(eventComponents).map(async ([path, importFn]) => {
+    //         const match = path.match(/\/(\d{4})\//); // Match the year in the path
+    //         if (match) {
+    //             const date = match[1];
+    //             const module = await importFn(); // Import the component dynamically
+    //             const component = module.default;
+
+    //             // Check if the date already exists in the events array
+    //             const eventIndex = events.findIndex(event => event.date === date);
+    //             if (eventIndex === -1) {
+    //                 // If not, create a new entry
+    //                 events.push({ date, components: [component] });
+    //             } else {
+    //                 events[eventIndex].components.push(component);
+    //             }
+    //         }
+    //     });
+
+    //     await Promise.all(eventPromises);
+    // }
+    // organizeEvents();
 
     const anchors = [
         '2019',
@@ -55,101 +80,21 @@
 <div class="timeline">
     <TimeSidebar {anchors} />
     <Timeline order="vertical">
-        <!------------------------------------ 2019 ------------------------------------>
-        <DateSeparator date="2019" />
-        <!------------------------------------ 2019 ------------------------------------>
+        <DateSeparator date={"2019"} />
+        <Event_2019 {data} />
+        <DateSeparator date={"2020"} />
+        <Event_2020 {data} />
 
-        <TimelineItem title="Mauricio Novelli funda el instituto N&W Professional Traders" date="2019" classTime="text-lg" classH3="text-2xl">
-            <svelte:fragment slot="icon">
-                <TimelineAvatar avatar={CustomAvatar.MauricioNovelli} />
-            </svelte:fragment>
-            <p class="timeline-item-p">
-                <Badge rounded large color="dark">Mauricio Novelli</Badge>
-                <Badge rounded large color="dark">Jeremías Walsh</Badge>
-            </p>
-
-            <p class="timeline-item-p">
-                <strong>Mauricio Gaspar Novelli</strong>, 29 años, licenciado en comercialización, fue empleado de Arrayanes Capital SA y Créditos Al Río. La estafa millonaria en la que esas firmas tuvieron un rol crucial se conoció en público como <strong>caso Wenance</strong>. A pesar de haber tenido puestos en esas dos firmas creadas para el engaño, Novelli se reinventó.
-            </p>
-            <p class="timeline-item-p">
-                Junto con otro trader, <strong>Jeremías Walsh</strong>, fundaron el instituto en el que ofrecían clases para novatos en el arte de la operatoria financiera a un solo click.
-            </p>
-            <Button
-                color="alternative"
-                href="https://www.clarin.com/politica/escandalo-cripto-empresario-acerco-milei-vinculado-fraudes-millonarios_0_QzbQWTVIvj.html?srsltid=AfmBOorUv4ZmfcfgdH3dvjFqnHfRP3vlrvQIg6xoWmqvDj0p51lVhGzJ#:~:text=accedi%C3%B3%20Clar%C3%ADn.-,Novelli%20fue%20empleado%20de%20Arrayanes%20Capital%20SA%20y%20Cr%C3%A9ditos%20Al%20R%C3%ADo,gan%C3%B3%20la%20confianza%20de%20los%20Milei%20en%20los%20%C3%BAltimos%20a%C3%B1os.,-%C3%89l%20oculta%20en"
-                target="_blank">
-                Fuente: Clarín
-            </Button>
-            <Button
-                color="alternative"
-                href="https://www.linkedin.com/company/nwprofessionaltraders/about/#:~:text=Fundaci%C3%B3n,2019"
-                target="_blank">
-                Fuente: LinkedIn de N&W
-            </Button>
-        </TimelineItem>
-
-        <!------------------------------------ 2020 ------------------------------------>
-        <DateSeparator date="2020" />
-        <!------------------------------------ 2020 ------------------------------------>
-
-        <TimelineItem title="Milei recomienda N&W Professional Traders" date="26 de enero, 2020" classTime="text-lg" classH3="text-2xl">
-            <svelte:fragment slot="icon">
-                <TimelineAvatar avatar={CustomAvatar.JavierMilei} />
-            </svelte:fragment>
-            <p class="timeline-item-p">
-                <Badge rounded large color="dark">Javier Milei</Badge>
-                <Badge rounded large color="dark">Mauricio Novelli</Badge>
-                <Badge rounded large color="dark">Jeremías Walsh</Badge>
-                <Badge rounded large color="dark">Agustín Laje</Badge>
-                <Badge rounded large color="dark">Emmanuel Danann</Badge>
-            </p>
-
-            <Tweet tweet={data.Milei_promocion_NW_2020} />
-            <Tweet tweet={data.Milei_promocion_2_NW_2020} />
-
-            <p class="timeline-item-p">
-                A partir de entonces, <strong>Javier Milei</strong> mantendrá un vínculo estrecho con ellos. Es tan así que él mismo se presentaba como parte del staff de N&W, como se puede apreciar en la imagen siguiente, perteneciente a su perfil de Instagram en aquel momento.
-            </p>
-
-            <Img
-                src="https://dobleamarilla-assets.tadevel-cdn.com/67b39740beb6aeb9d6f1ac53/720.webp"
-                alt="sample 1"
-                size="max-w-xl"
-                class="rounded-lg"
-            />
-
-            <p class="timeline-item-p">
-                El libertario fue la puerta de entrada para que dos influencers se sumaran al proyecto: Agustín Laje como capacitador y Emmanuel Danann en la promoción de los cursos.
-            </p>
-
-            <p class="timeline-item-p">
-                Agustín Laje es escritor e influencer de ultraderecha, identificado como aliado de Milei. En YouTube tiene más de 2.2 millones de suscriptores y casi un millón de seguidores en Instagram. Entre sus libros destacan El libro negro de la nueva izquierda (2016), La Batalla Cultural (2022) y Generación Idiota: una crítica al adolescentrismo (2023). Se opone a los movimientos LGBTIQ+ y feminista.
-            </p>
-
-            <p class="timeline-item-p">
-                Por su parte, Emmanuel Danann es un influencer, streamer, youtuber, y activista político argentino ultraconservador y de extrema derecha. A raíz de esto fue que APTRA decidió premiarlo como “Influencer de opinión” en la edición 2021 del Martín Fierro Digital. Logró tener alcance mediático por su canal de YouTube en donde suele hacer críticas soeces a la izquierda política, al feminismo, a la comunidad LGBT, y al ecologismo. Además de ejercer como influencer político, también incursionó en la música donde lidera como vocalista la banda de rock Danann, formada en 2008, donde llevan nueve álbumes de estudio realizados. En 2018 fue contratado por la cúpula de la AFI macrista para supuestamente infiltrarse en el partido que lidera Javier Milei aunque terminó vinculado al mismo. En el año 2024 Pablo Casas, Juez de Primera Instancia en el fuero Penal Contravencional y de Faltas, a cargo del Juzgado Nº 10, dictaminó que debía realizar 40 horas de tareas comunitarias y participar de un taller de formación contra la violencia de género por el hostigamiento sistemático en redes sociales por motivos de género contra la periodista Marina Abiuso.
-            </p>
-
-            <embed type="video/mp4" src="https://rudo.video/vod/bTKdWy?volume=0" height="530" />
-            <Button
-                color="alternative"
-                href="https://www.perfil.com/noticias/politica/escandalo-libra-de-que-se-trataban-los-cursos-que-dictaron-agustin-laje-y-javier-milei-en-nw-professional-traders.phtml#:~:text=El%20libertario%20fue%20la%20puerta%20de%20entrada%20para%20que%20dos%20influencers%20se%20sumaran%20al%20proyecto%3A%20Agust%C3%ADn%20Laje%20como%20capacitador%20y%20Emanuel%20Dannan%20en%20la%20promoci%C3%B3n%20de%20los%20cursos."
-                target="_blank">
-                Fuente: Perfil
-            </Button>
-            <Button
-                color="alternative"
-                href="https://es.wired.com/articulos/no-solo-es-milei-estas-figuras-publicas-tambien-han-sido-implicadas-en-el-escandalo-dollarlibra#:~:text=y%20transici%C3%B3n%20energ%C3%A9tica.-,Agust%C3%ADn%20Laje,adolescentrismo%20(2023).%20Se%20opone%20a%20los%20movimientos%20LGBTIQ%2B%20y%20feminista.,-Mart%C3%ADn%20Menem"
-                target="_blank">
-                Fuente: Wired
-            </Button>
-            <Button
-                color="alternative"
-                href="https://www.pagina12.com.ar/480920-dannan-el-influencer-antiderechos-misogino-libertario-y-tamb"
-                target="_blank">
-                Fuente: Página12
-            </Button>
-        </TimelineItem>
+        <!-- {#each events as { date, components }}
+            <DateSeparator date={date} />
+            {#each components as component}
+                {#await component() then DynamicComponentEvent}
+                    <DynamicComponentEvent {data} />
+                {:catch error}
+                    <p>Error loading component: {error.message}</p>
+                {/await}
+            {/each}
+        {/each} -->
 
         <TimelineItem title="Emmanuel Danann realiza un 'vivo' con Novelli de N&W Professional Traders" date="agosto, 2020" classTime="text-lg" classH3="text-2xl">
             <svelte:fragment slot="icon">
@@ -2531,54 +2476,5 @@
                 Fuente: Página12
             </Button>
         </TimelineItem>
-
-        <!-- <Activity>
-            <ActivityItem
-                activities={[
-                    {
-                        title: 'Bonnie moved <a href="/" class="font-semibold text-primary-600 dark:text-primary-500 hover:underline">Jese Leos</a> to <span class="bg-gray-100 text-gray-800 text-xs font-normal me-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300">Funny Group</span>',
-                        date: 'just now',
-                        alt: 'image alt here',
-                        src: JavierMilei
-                    },
-                    {
-                        title: 'We don’t serve their kind here! What? Your droids. ',
-                        date: '2 hours ago',
-                        alt: 'image alt here',
-                        src: '/images/profile-picture-2.webp',
-                        text: 'The approach will not be easy. You are required to maneuver straight down this trench and skim the surface to this point. The target area is only two meters wide. '
-                    },
-                    {
-                        title: 'They’ll have to wait outside. We don’t want them here. ',
-                        date: '1 day ago',
-                        alt: 'image alt here',
-                        src: '/images/profile-picture-3.webp'
-                    }
-                ]}
-                imgClass="me-3 mb-3 w-12 h-12 rounded-full sm:mb-0"
-                spanClass='flex absolute -start-5 justify-center items-center w-12 h-12'
-            />
-        </Activity>
-
-        <Group date="January 13th, 2022">
-            <GroupItem timelines={[
-                {
-                    title: '<span class="font-medium text-gray-900 dark:text-white">Jese Leos</span> likes <span class="font-medium text-gray-900 dark:text-white">Bonnie Green\'s</span> post in <span class="font-medium text-gray-900 dark:text-white"> How to start with Flowbite library</span>',
-                    src: JavierMilei,
-                    alt: 'alt here',
-                    href: '/',
-                    isPrivate: true,
-                    comment: '"I wanted to share a webinar zeroheight."'
-                },
-                {
-                    title: '<span class="font-medium text-gray-900 dark:text-white">Bonnie Green</span> react to <span class="font-medium text-gray-900 dark:text-white">Thomas Lean\'s</span> comment',
-                    src: '/images/profile-picture-2.webp',
-                    alt: 'alt here',
-                    href: '/',
-                    isPrivate: true,
-                    comment: '"I wanted to share a webinar zeroheight."'
-                }
-            ]} />
-        </Group> -->
     </Timeline>
 </div>
