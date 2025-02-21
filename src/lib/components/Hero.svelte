@@ -40,7 +40,7 @@
             Crypto-Gate
         </h1>
         <p class="mt-4 text-lg md:text-xl">
-            Todos los hechos vinculados con el escándalo del <em>token</em> llamado <strong>$LIBRA,</strong><br/>lanzado por Javier Milei el 14 de febrero del 2025, en orden cronológico
+            Todos los hechos vinculados con el escándalo del <em>token</em> <strong>$LIBRA,</strong><br/>lanzado por Javier Milei el 14 de febrero del 2025, en orden cronológico
         </p>
     </div>
 </div>
