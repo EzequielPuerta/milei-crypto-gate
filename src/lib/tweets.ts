@@ -49,12 +49,28 @@ export const tweets: Tweet[] = [
         tweetId: '1847771285809431028'
     },
     {
+        tweetName: 'Primera_fila_1_19_10_2024',
+        tweetId: '1893080872376582615'
+    },
+    {
+        tweetName: 'Primera_fila_2_19_10_2024',
+        tweetId: '1893080876314927578'
+    },
+    {
         tweetName: 'Milei_Peh_20_10_2024',
         tweetId: '1847910484789408250'
     },
     {
         tweetName: 'Grupal_Tech_Forum_20_10_2024',
         tweetId: '1848084819399549062'
+    },
+    {
+        tweetName: 'Sergio_Morales_CNV_Tech_Forum_21_10_2024',
+        tweetId: '1848444770039042495'
+    },
+    {
+        tweetName: 'KIP_Protocol_GCBA_06_01_2025',
+        tweetId: '1876132896681111951'
     },
     {
         tweetName: 'Trump_token_17_01_2025',
@@ -127,6 +143,22 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Bullrich_defensa_15_02_2025',
         tweetId: '1890785455123136769'
+    },
+    {
+        tweetName: 'Bullrich_Maxi_Firtman_15_02_2025',
+        tweetId: '1890807040462799191'
+    },
+    {
+        tweetName: 'Bullrich_Claudia_Neira_16_02_2025',
+        tweetId: '1891104394407457194'
+    },
+    {
+        tweetName: 'Diego_Fernandez_15_02_2025',
+        tweetId: '1890791526332092715'
+    },
+    {
+        tweetName: 'GCBA_sponsors_16_02_2025',
+        tweetId: '1891124334434906169'
     },
     {
         tweetName: 'Davis_descargo_15_02_2025',
@@ -267,5 +299,65 @@ export const tweets: Tweet[] = [
     {
         tweetName: 'Siri_Karina_Milei_20_02_2025',
         tweetId: '1892546822482149562'
+    },
+    {
+        tweetName: 'Vitalik_Argentina_20_02_2025',
+        tweetId: '1892598319752355970'
+    },
+    {
+        tweetName: 'Maxi_Firtman_entrevista_borrada_22_02_2025',
+        tweetId: '1893486327913435254'
+    },
+    {
+        tweetName: 'Hugo_Alconada_champagne_22_02_2025',
+        tweetId: '1893251603261517876'
+    },
+    {
+        tweetName: 'Yanina_Nicoletti_hackeo_1_23_02_2025',
+        tweetId: '1893297075321971076'
+    },
+    {
+        tweetName: 'Yanina_Nicoletti_hackeo_2_23_02_2025',
+        tweetId: '1893842646512074830'
+    },
+    {
+        tweetName: 'Yanina_Nicoletti_hackeo_3_23_02_2025',
+        tweetId: '1893841523365585357'
+    },
+    {
+        tweetName: 'Maxi_Firtman_Cube_Exchange_23_02_2025',
+        tweetId: '1893501234708930818'
+    },
+    {
+        tweetName: 'Cube_Exchange_X_Milei_23_02_2025',
+        tweetId: '1845902189602263529'
+    },
+    {
+        tweetName: 'KIP_Protocol_desligue_24_02_2025',
+        tweetId: '1893944012064882702'
+    },
+    {
+        tweetName: 'Maxi_Firtman_KIP_Protocol_desligue_24_02_2025',
+        tweetId: '1894004499016028303'
+    },
+    {
+        tweetName: 'Maxi_Firtman_KIP_Binance_Square_1_24_02_2025',
+        tweetId: '1894130010752942266'
+    },
+    {
+        tweetName: 'Maxi_Firtman_KIP_Binance_Square_2_24_02_2025',
+        tweetId: '1894179655831167195'
+    },
+    {
+        tweetName: 'HCDN_Expo_cripto_25_02_2025',
+        tweetId: '1894437272683982974'
+    },
+    {
+        tweetName: 'HCDN_Expo_cripto_Fernando_Molina_25_02_2025',
+        tweetId: '1894513564368736583'
+    },
+    {
+        tweetName: 'Bullrich_Stellar_25_02_2025',
+        tweetId: '1511064420407037956'
     }
 ]; 
