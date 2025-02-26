@@ -12,12 +12,12 @@
 
 <div id={date}>
     <Hr classHr="my-8" />
-    <Card class="mt-10 mb-10 min-w-lg" border={false} shadow={false}>
+    <Card class="card mt-10 mb-10 lg:min-w-lg" border={false} shadow={false}>
         <br/>
         <Heading
             tag={hTag}
             class="mb-4"
-            customSize="text-4xl font-extrabold  md:text-5xl lg:text-6xl">
+            customSize="text-2xl font-extrabold md:text-2xl lg:text-4xl">
                 {date}
         </Heading>
     </Card>

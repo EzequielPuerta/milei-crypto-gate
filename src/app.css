@@ -6,3 +6,193 @@ body {
 	height: 100%;
     font-family: "Atkinson Hyperlegible";
 }
+
+.layout {
+    position: relative;
+    height: 100%;
+    max-inline-size: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-inline: auto;
+    padding-inline: var(--size-7);
+}
+
+.scroll-bottom-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 50;
+}
+
+.main {
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+@media only screen and (min-width: 791px) {
+    .layout {
+        max-inline-size: 1440px;
+        padding-inline: 0;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 790px) {
+    .layout {
+        width: 600px;
+    }
+
+    .main {
+        width: 580px;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .timeline {
+        max-width: 100vh;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: large;
+        width: 580px;
+    }
+
+    time {
+        width: 580px;
+    }
+
+    .card {
+        margin-top: 5em;
+        width: 200px;
+    }
+
+    embed {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 640px) {
+    .layout {
+        width: 500px;
+    }
+
+    .main {
+        width: 500px;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .timeline {
+        max-width: 100vh;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: large;
+        width: 500px;
+    }
+
+    time {
+        width: 500px;
+    }
+
+    .card {
+        margin-top: 5em;
+        width: 200px;
+    }
+
+    embed {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 576px) {
+    .layout {
+        width: 400px;
+    }
+
+    .main {
+        width: 400px;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .timeline {
+        max-width: 100vh;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: large;
+        width: 380px;
+    }
+
+    time {
+        width: 400px;
+    }
+
+    .card {
+        margin-top: 5em;
+        width: 200px;
+    }
+
+    embed {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .layout {
+        width: 300px;
+    }
+
+    .main {
+        width: 300px;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .timeline {
+        max-width: 100vh;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: large;
+        width: 280px;
+    }
+
+    time {
+        width: 300px;
+    }
+
+    .card {
+        margin-top: 5em;
+        width: 200px;
+    }
+
+    embed {
+        width: 100%;
+    }
+}

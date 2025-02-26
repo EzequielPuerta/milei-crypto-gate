@@ -21,24 +21,66 @@
         /* Dark mode styles */
         color: #9ca3af; 
     }
+
+    @media only screen and (min-width: 641px) and (max-width: 790px) {
+        :global(.content-pic) {
+            width: 600px;
+        }
+
+        :global(.timeline-item-p) {
+            font-size: medium;
+        }
+    }
+
+    @media only screen and (min-width: 577px) and (max-width: 640px) {
+        :global(.content-pic) {
+            width: 480px;
+        }
+
+        :global(.timeline-item-p) {
+            font-size: medium;
+        }
+    }
+
+    @media only screen and (min-width: 361px) and (max-width: 576px) {
+        :global(.content-pic) {
+            width: 360px;
+        }
+
+        :global(.timeline-item-p) {
+            font-size: medium;
+        }
+    }
+
+    @media only screen and (max-width: 360px) {
+        :global(.content-pic) {
+            width: 250px;
+        }
+
+        :global(.timeline-item-p) {
+            font-size: medium;
+        }
+    }
 </style>
 
 <TimelineItem title={title} date={date} classTime="text-lg" classH3="text-2xl">
     <svelte:fragment slot="icon">
         <TimelineAvatar avatar={avatar} />
     </svelte:fragment>
-    <p class="timeline-item-p flex space-x-1">
+    <p class="timeline-item-p flex flex-wrap space-x-1">
         {#each parties as party}
-            <Badge rounded large color="dark">{party}</Badge>
+            <Badge class="mt-1" rounded large color="dark">{party}</Badge>
         {/each}
     </p>
     <slot />
     {#if sources.length > 0}
-        <div class="flex space-x-1 mt-5">
+        <div class="space-x-1 mt-5">
             {#each sources as { label, url }}
-                <Button color="alternative" href={url} target="_blank">
-                    Fuente: {label}
-                </Button>
+                <div class="element">
+                    <Button class="mt-1" color="alternative" href={url} target="_blank">
+                        Fuente: {label}
+                    </Button>
+                </div>
             {/each}
         </div>
     {/if}

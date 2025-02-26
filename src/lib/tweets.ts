@@ -74,7 +74,7 @@ export const tweets: Tweet[] = [
     },
     {
         tweetName: 'Domain_info_14_02_2025',
-        tweetId: '1890528233860325742'
+        tweetId: '1890708966423888357'
     },
     {
         tweetName: 'Ripio_tweet_14_02_2025',

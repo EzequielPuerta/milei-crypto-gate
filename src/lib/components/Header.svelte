@@ -1,15 +1,19 @@
 <script lang="ts">
     import * as config from '$lib/config'
-    import { Button, Navbar, NavBrand } from 'flowbite-svelte';
+    import {
+        Button,
+        Navbar,
+        NavBrand
+    } from 'flowbite-svelte';
     import { BarsOutline } from 'flowbite-svelte-icons';
-    import { Photo } from '../lib/components/Photo';
-    import SocialButtons from '../lib/components/SocialButtons.svelte'
-    import { isSidebarHidden } from '../lib/stores/timeSidebarStore';
+    import { Photo } from './Photo';
+    import { isSidebarHidden } from '../stores/timeSidebarStore';
 </script>
 
 <Navbar fluid={true} class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
     <div class="flex space-x-4">
         <Button
+            id="navbar-bars"
             class="text-gray-500 dark:text-white"
             pill={false}
             color="alternative"
@@ -22,5 +26,4 @@
             <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{config.title}</span>
         </NavBrand>
     </div>
-    <SocialButtons />
 </Navbar>

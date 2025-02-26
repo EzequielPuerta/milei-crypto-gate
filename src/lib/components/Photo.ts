@@ -31,6 +31,7 @@ import NancyPazos from '$lib/assets/profiles/nancy-pazos.png';
 import DavidCayon from '$lib/assets/profiles/david-cayon.png';
 import KarinaMilei from '$lib/assets/profiles/karina-milei.png';
 import MariaODonnell from '$lib/assets/profiles/maria-odonnell.png';
+import LourdesArrieta from '$lib/assets/profiles/lourdes-arrieta.png';
 
 export const Photo = {
     JavierMilei,
@@ -65,7 +66,8 @@ export const Photo = {
     NancyPazos,
     DavidCayon,
     KarinaMilei,
-    MariaODonnell
+    MariaODonnell,
+    LourdesArrieta
 } as const;
 
 export default Photo; 

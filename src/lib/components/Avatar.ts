@@ -48,6 +48,7 @@ export const Avatar = {
     DavidCayon: createAvatar("David Cayón", Photo.DavidCayon),
     KarinaMilei: createAvatar("Karina Milei", Photo.KarinaMilei),
     MariaODonnell: createAvatar("Maria O'Donnell", Photo.MariaODonnell),
+    LourdesArrieta: createAvatar("Lourdes Arrieta", Photo.LourdesArrieta),
 } as const;
 
 export const TimelineAvatar = (avatar: AvatarConfig) => `

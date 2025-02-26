@@ -2,7 +2,7 @@
     import Event from '$lib/components/Event.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
-    // export let data;
+    export let data;
 </script>
 
 <Event

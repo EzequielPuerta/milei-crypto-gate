@@ -6,7 +6,7 @@
 <style>
     .hero {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-size: cover;
         background-position: center;
@@ -15,6 +15,7 @@
         justify-content: center;
         color: white;
         text-align: center;
+        overflow: hidden;
     }
 
     .hero::before {
@@ -29,17 +30,29 @@
     }
 
     .hero-content {
-        position: absolute;
+        position: relative;
         z-index: 2;
+    }
+
+    @media only screen and (max-width: 640px) {
+        #main-title {
+            font-size: xx-large;
+        }
+
+        #subtitle {
+            padding-left: 3em;
+            padding-right: 3em;
+            font-size: medium;
+        }
     }
 </style>
 
 <div class="hero" style="background-image: url({backgroundImage});">
     <div class="hero-content">
-        <h1 class="text-4xl md:text-6xl font-bold">
+        <h1 id="main-title" class="text-4xl md:text-6xl font-bold">
             Crypto-Gate
         </h1>
-        <p class="mt-4 text-lg md:text-xl">
+        <p id="subtitle" class="mt-4 text-lg md:text-xl">
             Todos los hechos vinculados con el escándalo del <em>token</em> <strong>$LIBRA,</strong><br/>lanzado por Javier Milei el 14 de febrero del 2025, en orden cronológico
         </p>
     </div>

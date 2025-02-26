@@ -4,7 +4,7 @@
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import { Tweet } from 'sveltekit-tweet';
 
-    // export let data;
+    export let data;
 </script>
 
 <Event
@@ -27,8 +27,8 @@
         }
     ]}
 >
-    <!-- <Tweet tweet={data.Milei_promocion_NW_2020} />
-    <Tweet tweet={data.Milei_promocion_2_NW_2020} /> -->
+    <Tweet tweet={data.Milei_promocion_NW_2020} />
+    <Tweet tweet={data.Milei_promocion_2_NW_2020} />
 
     <p class="timeline-item-p">
         A partir de entonces, <strong>Javier Milei</strong> mantendrá un vínculo estrecho con ellos. Es tan así que él mismo se presentaba como parte del staff de N&W, como se puede apreciar en la imagen siguiente, perteneciente a su perfil de Instagram en aquel momento.
@@ -38,7 +38,7 @@
         src="https://dobleamarilla-assets.tadevel-cdn.com/67b39740beb6aeb9d6f1ac53/720.webp"
         alt="sample 1"
         size="max-w-xl"
-        class="rounded-lg"
+        class="rounded-lg content-pic"
     />
 
     <p class="timeline-item-p">
