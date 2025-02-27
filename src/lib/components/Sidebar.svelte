@@ -5,28 +5,27 @@
         Heading,
         Sidebar,
         SidebarGroup,
-        SidebarItem,
-        SidebarDropdownWrapper,
-        SidebarDropdownItem
+        SidebarItem
     } from 'flowbite-svelte';
     import SocialButtons from './SocialButtons.svelte'
-    import { CalendarMonthOutline } from 'flowbite-svelte-icons';
+    import { UsersGroupSolid, CalendarMonthOutline } from 'flowbite-svelte-icons';
   
     import { sineIn } from 'svelte/easing';
-    import { isSidebarHidden } from '../stores/timeSidebarStore';
+    import { isSidebarHidden } from '$lib/stores/sidebarStore';
 
-    export let anchors: string[] = [];
     let transitionParams = {
         x: -320,
         duration: 200,
         easing: sineIn
     };
+    import { page } from '$app/stores';
+    $: activeUrl = $page.url.pathname;
 </script>
 
 <Drawer
     backdrop={false}
     bgOpacity={"bg-opacity-25"}
-    divClass="flex flex-col  h-[100vh] md:h-full overflow-y-auto z-50 p-4 bg-gray-100 border-gray-800 border-r-1 dark:bg-gray-800 dark:border-gray-600"
+    divClass="flex flex-col  h-[100vh] md:h-full overflow-y-auto z-9999 p-4 bg-gray-100 border-gray-800 border-r-1 dark:bg-gray-800 dark:border-gray-600"
     placement="left"
     transitionType="fly"
     transitionParams={transitionParams}
@@ -45,21 +44,24 @@
     </div>
 
     <div class="flex-grow">
-        <Sidebar asideClass="w-75">
+        <Sidebar asideClass="w-75" {activeUrl}>
             <SidebarGroup border={true}>
-                <SidebarItem label="Grafo">
-                    <svelte:fragment slot="icon">
-                    <CalendarMonthOutline class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-                    </svelte:fragment>
+                <SidebarItem
+                    label="Vínculos"
+                    href="/graph"
+                    on:click={() => isSidebarHidden.set(true)} >
+                        <svelte:fragment slot="icon">
+                        <UsersGroupSolid class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+                        </svelte:fragment>
                 </SidebarItem>
-                <SidebarDropdownWrapper label="Fecha">
-                    <svelte:fragment slot="icon">
-                    <CalendarMonthOutline class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
-                    </svelte:fragment>
-                    {#each anchors as anchor}
-                        <SidebarDropdownItem label="{anchor}" href={"#" + anchor}/>
-                    {/each}
-                </SidebarDropdownWrapper>
+                <SidebarItem
+                    label="Línea del Tiempo"
+                    href="/timeline"
+                    on:click={() => isSidebarHidden.set(true)} >
+                        <svelte:fragment slot="icon">
+                        <CalendarMonthOutline class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" />
+                        </svelte:fragment>
+                </SidebarItem>
             </SidebarGroup>
         </Sidebar>
     </div>

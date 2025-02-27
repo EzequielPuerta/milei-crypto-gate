@@ -7,7 +7,7 @@
     } from 'flowbite-svelte';
     import { BarsOutline } from 'flowbite-svelte-icons';
     import { Photo } from './Photo';
-    import { isSidebarHidden } from '../stores/timeSidebarStore';
+    import { isSidebarHidden } from '$lib/stores/sidebarStore';
 </script>
 
 <Navbar fluid={true} class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
