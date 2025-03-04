@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import { Tweet } from 'sveltekit-tweet';
 
@@ -27,11 +27,9 @@
         La propuesta para conformar la comisión planteaba un plazo de 180 días para investigar y emitir un informe sobre las irregularidades y posibles delitos asociados a $LIBRA. La misma incluía amplias facultades, como la posibilidad de solicitar información, realizar allanamientos y tomar declaraciones testimoniales, apuntando a presentar las denuncias correspondientes en caso de encontrar pruebas de actos ilícitos. Sin embargo, la iniciativa no alcanzó los dos tercios de los votos necesarios para su aprobación. Con 47 votos a favor y 23 en contra, quedó a un solo voto de lograr los 48 requeridos.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://www.infobae.com/resizer/v2/ABI6JFBVCFDCTJUDPTRCXYKTYI.jpeg?auth=4a108697ea59f422df4dc88fd45bee29a0172ad451d16ef3421997fc60ce2d72&smart=true&width=1200&height=900&quality=85"
         alt="El tablero de la votación"
-        size="max-w-2xl"
-        class="rounded-lg content-pic"
     />
 
     <p class="timeline-item-p">

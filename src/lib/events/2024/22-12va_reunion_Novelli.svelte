@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -26,10 +26,8 @@
         Esta visita <strong>no fue informada en el Registro de Audiencias</strong>. Se conoció por un pedido de acceso a la información pública realizado por La Nación.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://resizer.glanacion.com/resizer/v2/mauricio-novelli-y-mark-hayden-davis-ingresaron-a-NAJGHA7JZ5E3HJI644Z34IITUM.jpg?auth=55ffaaef124a7740698f1ad318f577bbb56a4098230d2b181a98400581dbe700&width=780&height=351&quality=70&smart=true"
         alt="Mauricio Novelli y Mark Hayden Davis ingresaron a la Casa Rosada el 21 de noviembre del año pasado, según documentos oficiales."
-        size="max-w-xl"
-        class="rounded-lg content-pic"
     />
 </Event>

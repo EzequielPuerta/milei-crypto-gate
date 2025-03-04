@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import { Tweet } from 'sveltekit-tweet';
 
@@ -34,11 +34,9 @@
         A partir de entonces, <strong>Javier Milei</strong> mantendrá un vínculo estrecho con ellos. Es tan así que él mismo se presentaba como parte del staff de N&W, como se puede apreciar en la imagen siguiente, perteneciente a su perfil de Instagram en aquel momento.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://dobleamarilla-assets.tadevel-cdn.com/67b39740beb6aeb9d6f1ac53/720.webp"
-        alt="sample 1"
-        size="max-w-xl"
-        class="rounded-lg content-pic"
+        alt="Perfil de Instagram de Javier Milei en el 2020"
     />
 
     <p class="timeline-item-p">

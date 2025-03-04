@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -20,10 +20,8 @@
         Como tantos otros tweets y posteos, fue borrado al poco tiempo.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://media.minutouno.com/p/95c02b5819a435b95af9a0fa893f3688/adjuntos/150/imagenes/042/187/0042187667/610x0/smart/imagepng.png"
         alt="El Gordo Dan sale a bancar a Milei"
-        size="max-w-xl"
-        class="rounded-lg content-pic"
     />
 </Event>

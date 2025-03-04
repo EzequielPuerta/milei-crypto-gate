@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import { Tweet } from 'sveltekit-tweet';
 
@@ -19,11 +19,9 @@
         }
     ]}
 >
-    <Img
+    <ClickableImage
         src="https://www.infobae.com/resizer/v2/GZE6OLFVWVEWRDZWIL7R3QYKE4.png?auth=d5bf68514d2ec9098dfd0956fb6d41243e9bd73278e7cbdca2a8e810e8631742&smart=true&width=1200&height=1800&quality=85"
-        size="max-w-lg"
         alt="Terrones Godoy, Walsh y Novelli en la puerta del teatro Colón en la gala de asunción de Milei"
-        class="rounded-lg content-pic"
     />
     <Tweet tweet={data.Asume_Milei_10_12_2023} />
 </Event>

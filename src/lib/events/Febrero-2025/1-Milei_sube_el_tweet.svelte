@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -28,10 +28,8 @@
     <p class="timeline-item-p">
         Spoiler: el tweet en cuestión no está presente (se adjunta una captura de la misma donde se aprecia que estaba fijado en su cuenta) ya que será borrado a las horas, cuando ya era muy tarde.
     </p>
-    <Img
+    <ClickableImage
         src="https://www.clarin.com/2025/02/14/7of_Na1Is_720x0__1.jpg"
-        alt="sample 1"
-        size="max-w-xl"
-        class="rounded-lg content-pic"
+        alt="El tweet original que Javier Milei publicó en X (ex Twitter) publicitando el token $LIBRA"
     />
 </Event>

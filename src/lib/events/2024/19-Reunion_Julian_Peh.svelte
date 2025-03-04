@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
     import { Tweet } from 'sveltekit-tweet';
 
@@ -54,10 +54,8 @@
         Del encuentro privado de Milei con Peh participaron el vocero presidencial Manuel Adorni y Novelli. Según la información oficial: “Analizaron cómo la tecnología de IA descentralizada de KIP puede respaldar a Argentina”. “El presidente Milei expresó un fuerte apoyo a estas innovaciones e iniciativas, posicionando a KIP como un actor fundamental en la transformación tecnológica de Argentina. Este compromiso de alto nivel coloca a $KIP en el centro de atención como un actor clave de IA en Latinoamérica”, sostuvo Julian Peh tras el encuentro con Milei.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://www.infobae.com/resizer/v2/UFTFCI5NGRAH3KWIQBJWKN2J6U.png?auth=f6de3541f6a1023267da39abf25484498c5711087cb206f696096a871fd4b206&smart=true&width=1200&height=800&quality=85"
         alt="Tres de las visitas de Novelli a la Casa Rosada en septiembre y octubre de 2024, con Milei en la Presidencia"
-        size="max-w-xl"
-        class="rounded-lg content-pic"
     />
 </Event>

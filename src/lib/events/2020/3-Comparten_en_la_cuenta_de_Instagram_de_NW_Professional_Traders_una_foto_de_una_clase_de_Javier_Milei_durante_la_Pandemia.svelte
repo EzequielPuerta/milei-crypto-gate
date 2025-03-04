@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -18,9 +18,8 @@
         }
     ]}
 >
-    <Img
+    <ClickableImage
         src="https://www.infobae.com/resizer/v2/QK3WDR6OW5DMNCHN2MO4VCA2PA.png?auth=c3b4287d879b976ddaa9b4affa2bcedd98b99db0c483274e11719bc494103db3&smart=true&width=1200&height=733&quality=85"
         alt="Clase de Milei en N&W"
-        class="rounded-lg content-pic"
     />
 </Event>

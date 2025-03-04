@@ -1,7 +1,7 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     
     export let data;
 </script>
@@ -29,10 +29,8 @@
         Pocas semanas después, el token de la empresa de videojuegos, <strong>$VULC</strong>, se desplomó a $0 con denuncias de fraude, igual que sucedió con <strong>$LIBRA</strong>.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://media.c5n.com/p/bce6674c1e30baa973c5fce3c1ceaa04/adjuntos/326/imagenes/000/315/0000315489/790x0/smart/tuit-javier-milei-vulcano-game-nft-gaming-guillermo-novelli-18-febrero-2022.png"
         alt="El tweet de Milei recomendando Vulcano, antes de ser borrado."
-        size="max-w-lg"
-        class="rounded-lg content-pic"
     />
 </Event>

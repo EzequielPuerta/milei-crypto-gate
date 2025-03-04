@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -32,9 +32,8 @@
         Un dato curioso: al mismo momento entraron a la Casa Rosada 3 importantes representantes del FMI: Luis Cubeduu, Ashvin Ahuja y Ben Kelmanson. Según la planilla los directivos del FMI se reunieron con el entonces jefe de gabinete Nicolás Posse. Y más curioso es que, según las mismas planillas de ingreso, Novelli y los hombres del FMI se retiraron a exactamente a la misma hora, las 19.33hs.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://resizer.glanacion.com/resizer/v2/mauricio-novelli-ingreso-a-casa-rosada-autorizado-PKYO5MXU65EDJGO54FP22ZIMQ4.jpg?auth=e7501e372e2b3518478ed10f933ce4794a5d9937d6ea085a2f738ae243d46301&width=780&height=336&quality=70&smart=true"
         alt="Mauricio Novelli ingresó a Casa Rosada autorizado por Karina Milei el 8 de enero de 2024, según documentos oficiales."
-        class="rounded-lg content-pic"
     />
 </Event>

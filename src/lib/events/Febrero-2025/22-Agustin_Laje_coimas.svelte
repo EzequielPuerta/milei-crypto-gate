@@ -1,6 +1,6 @@
 <script lang="ts">
     import Event from '$lib/components/Event.svelte';
-    import { Img } from 'flowbite-svelte';
+    import ClickableImage from '$lib/components/ClickableImage.svelte';
     import { Avatar as CustomAvatar } from '$lib/components/Avatar';
 
     export let data;
@@ -48,11 +48,9 @@
         En la siguiente foto se ve a Agustín Laje y Mauricio Novelli en un partido de la NBA, a una semana del lanzamiento de $LIBRA. La foto sería eliminada posteriormente.
     </p>
 
-    <Img
+    <ClickableImage
         src="https://fotos.perfil.com///2025/02/17/900/0/escandalo-libra-1968787.jpg?webp"
         alt="Agustín Laje y Mauricio Novelli una semana antes del lanzamiento de $LIBRA"
-        size="max-w-xl"
-        class="rounded-lg content-pic"
     />
 
     <p class="timeline-item-p">
