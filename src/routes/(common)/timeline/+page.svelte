@@ -10,6 +10,8 @@
         SidebarGroup,
         SidebarItem
     } from 'flowbite-svelte';
+    import { sineIn } from 'svelte/easing';
+    import { writable } from 'svelte/store';
     import { CalendarMonthOutline } from 'flowbite-svelte-icons';
     import DateSeparator from '$lib/components/DateSeparator.svelte'
 
@@ -31,12 +33,11 @@
     const anchors = Object.keys(eventsByDate);
     for (const date in eventsByDate) {
         eventsByDate[date].sort((a, b) => {
-            const indexA = parseInt(a.split('/')[4].split('-')[0]);
-            const indexB = parseInt(b.split('/')[4].split('-')[0]);
+            const indexA = parseInt(a.split('/')[5].split('-')[0]);
+            const indexB = parseInt(b.split('/')[5].split('-')[0]);
             return indexA - indexB;
         });
     }
-
     async function loadComponent(path: string) {
         const module = await eventComponents[path]();
         return module.default;
@@ -46,8 +47,6 @@
 		data: PageData;
 	} = $props();
 
-    import { writable } from 'svelte/store';
-    import { sineIn } from 'svelte/easing';
     const isTimeSidebarHidden = writable(true);
     let transitionParams = {
         x: 320,
